@@ -1,10 +1,13 @@
 "use client";
 
+// 句型意义检测：展示一个句型（如「〜てもいいです」），四选一选择正确的中文含义。
+// 逐题判分逻辑和 MeaningQuizRunner 基本一致（前端选择题、本地缓存答题记录）。
+
 import { useMemo, useState } from "react";
-import { Furigana } from "./Furigana";
 import { addLocalAttempt } from "@/lib/localStore";
 import { useEnterToAdvance } from "@/hooks/useEnterToAdvance";
-import type { WordWithProgress } from "@/lib/types";
+import { Furigana } from "./Furigana";
+import type { SentencePattern } from "@/lib/types";
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -16,27 +19,27 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 interface QuizItem {
-  word: WordWithProgress;
+  pattern: SentencePattern;
   options: string[];
   correctIndex: number;
 }
 
-function buildQuizItems(words: WordWithProgress[]): QuizItem[] {
-  const allMeanings = words.map((w) => w.meaning_cn);
-  return shuffle(words).map((word) => {
-    const distractorPool = allMeanings.filter((m) => m !== word.meaning_cn);
+function buildQuizItems(patterns: SentencePattern[]): QuizItem[] {
+  const allMeanings = patterns.map((p) => p.meaning_cn);
+  return shuffle(patterns).map((pattern) => {
+    const distractorPool = allMeanings.filter((m) => m !== pattern.meaning_cn);
     const distractors = shuffle(distractorPool).slice(0, 3);
-    const options = shuffle([word.meaning_cn, ...distractors]);
+    const options = shuffle([pattern.meaning_cn, ...distractors]);
     return {
-      word,
+      pattern,
       options,
-      correctIndex: options.indexOf(word.meaning_cn),
+      correctIndex: options.indexOf(pattern.meaning_cn),
     };
   });
 }
 
-export function MeaningQuizRunner({ words }: { words: WordWithProgress[] }) {
-  const quizItems = useMemo(() => buildQuizItems(words), [words]);
+export function PatternQuizRunner({ patterns }: { patterns: SentencePattern[] }) {
+  const quizItems = useMemo(() => buildQuizItems(patterns), [patterns]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [correctCount, setCorrectCount] = useState(0);
@@ -51,16 +54,11 @@ export function MeaningQuizRunner({ words }: { words: WordWithProgress[] }) {
     const isCorrect = optionIndex === current.correctIndex;
     if (isCorrect) setCorrectCount((c) => c + 1);
 
-    // 之前这里是 `await recordMeaningQuizResult(...)`，内部对 Supabase 做了两次串行的
-    // 网络往返（先查当前 weight 再 upsert），选完选项要等这两次请求都完成才能点"下一题"，
-    // 是整个应用"检测很慢"最主要的原因。
-    // 现在改成：判分依旧是纯前端逻辑，答题记录直接写本地 IndexedDB 缓存，
-    // 不 await 任何网络请求，选完立刻就能看到结果、点下一题，网络同步交给手动同步按钮。
     addLocalAttempt({
       id: crypto.randomUUID(),
-      quiz_type: "meaning",
-      word_id: current.word.id,
-      pattern_id: null,
+      quiz_type: "pattern",
+      word_id: null,
+      pattern_id: current.pattern.id,
       conjugation_form: null,
       user_answer: current.options[optionIndex],
       correct: isCorrect,
@@ -73,13 +71,12 @@ export function MeaningQuizRunner({ words }: { words: WordWithProgress[] }) {
     setSelected(null);
   }
 
-  // 已选择答案后允许按 Enter 直接进入下一题
   useEnterToAdvance(selected !== null, handleNext);
 
-  if (words.length < 4) {
+  if (patterns.length < 4) {
     return (
       <p className="text-white/50">
-        已学单词数量不足（至少需要 4 个）以生成选项，请先在记忆页多标记一些单词。
+        句型数量不足（至少需要 4 个）以生成选项，请先在学习页导入更多句型。
       </p>
     );
   }
@@ -91,28 +88,19 @@ export function MeaningQuizRunner({ words }: { words: WordWithProgress[] }) {
         <p className="mt-2 text-white/60">
           正确 {correctCount} / {quizItems.length}
         </p>
-        <p className="mt-1 text-xs text-white/40">
-          答错的单词会在你点击&ldquo;同步&rdquo;后回到记忆页，权重会更高，之后会优先复习
-        </p>
       </div>
     );
   }
 
   return (
-    // key={index} 让每换一题都重新挂载这个容器，从而重新触发 slide-transition 的入场动画，
-    // 视觉上形成"新题目从下方滑入叠加在旧题目位置"的转场效果
-    <div
-      key={index}
-      className="glass-panel slide-transition rounded-2xl p-8"
-    >
+    <div key={index} className="glass-panel slide-transition rounded-2xl p-8">
       <p className="text-sm text-white/40 mb-4">
         第 {index + 1} / {quizItems.length} 题
       </p>
 
-      <Furigana
-        segments={current.word.segments}
-        className="block text-center text-4xl font-medium text-white mb-8"
-      />
+      <p className="block text-center text-3xl font-medium text-white mb-8">
+        {current.pattern.pattern}
+      </p>
 
       <div className="grid gap-3">
         {current.options.map((option, i) => {
@@ -140,6 +128,13 @@ export function MeaningQuizRunner({ words }: { words: WordWithProgress[] }) {
           );
         })}
       </div>
+
+      {selected !== null && current.pattern.example && (
+        <div className="mt-6 rounded-xl border border-white/10 bg-black/20 p-3 text-left">
+          <Furigana segments={current.pattern.example.segments} className="text-white/85" />
+          <p className="mt-1 text-sm text-white/50">{current.pattern.example.cn}</p>
+        </div>
+      )}
 
       {selected !== null && (
         <button

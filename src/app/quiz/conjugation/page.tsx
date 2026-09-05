@@ -1,9 +1,9 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
-import { MeaningQuizRunner } from "@/components/MeaningQuizRunner";
+import { ConjugationQuizRunner } from "@/components/ConjugationQuizRunner";
 import { listLearnedWordsWithProgress } from "@/lib/data/words";
 
-export default async function MeaningQuizPage() {
+export default async function ConjugationQuizPage() {
   const supabase = await createClient();
   const { data: userData } = await supabase.auth.getUser();
   const user = userData?.user;
@@ -13,11 +13,11 @@ export default async function MeaningQuizPage() {
 
   return (
     <>
-      <h1 className="text-xl font-semibold text-white mb-1">词义检测</h1>
+      <h1 className="text-xl font-semibold text-white mb-1">动词/形容词变位检测</h1>
       <p className="text-sm text-white/50 mb-6">
-        选择正确的释义，答错的单词会加权并回到记忆页优先复习
+        只给出辞书形和考的变形，不标注振假名，请输入变形后的纯假名读音
       </p>
-      <MeaningQuizRunner words={learnedWords} />
+      <ConjugationQuizRunner words={learnedWords} />
     </>
   );
 }

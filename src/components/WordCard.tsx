@@ -3,12 +3,17 @@
 import { useState, useTransition } from "react";
 import { Furigana } from "./Furigana";
 import { markWordLearned, toggleStar } from "@/app/memorize/actions";
+import { getWordTypeLabel } from "@/lib/conjugation";
 import type { WordWithProgress } from "@/lib/types";
 
 export function WordCard({ word }: { word: WordWithProgress }) {
   const [learned, setLearned] = useState(word.progress?.learned ?? false);
   const [starred, setStarred] = useState(word.progress?.starred ?? false);
   const [isPending, startTransition] = useTransition();
+
+  // 根据 verb_type/adj_type 算出"五段动词/一段动词/カ変/サ変/い形容词/な形容词"这类精确标签，
+  // 没有分类信息（比如名词）时返回 null，不渲染标签
+  const wordTypeLabel = getWordTypeLabel(word);
 
   function handleMarkLearned() {
     setLearned(true);
@@ -26,11 +31,13 @@ export function WordCard({ word }: { word: WordWithProgress }) {
   }
 
   return (
-    <div className="relative rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-xl p-6 shadow-xl">
+    // 用 .glass-panel 统一液态玻璃质感 + hover 时的光晕/抬起特效（由皮肤设置里的
+    // liquidEffects 开关控制是否启用，见 globals.css 里 data-liquid-effects 相关规则）
+    <div className="glass-panel relative rounded-2xl p-6 shadow-xl">
       <button
         onClick={handleToggleStar}
         aria-label={starred ? "取消星标" : "标记星标"}
-        className={`absolute right-4 top-4 text-xl transition-colors ${
+        className={`liquid-btn absolute right-4 top-4 text-xl ${
           starred ? "text-amber-400" : "text-white/25 hover:text-white/50"
         }`}
       >
@@ -42,8 +49,14 @@ export function WordCard({ word }: { word: WordWithProgress }) {
         className="text-3xl font-medium text-white leading-relaxed"
       />
 
-      <div className="mt-2 flex items-center gap-2 text-sm text-white/50">
+      <div className="mt-2 flex flex-wrap items-center gap-2 text-sm text-white/50">
         {word.pos && <span className="rounded-full bg-white/10 px-2 py-0.5">{word.pos}</span>}
+        {/* 精确变位分类标签：只有动词/形容词才会有，用高亮色区分于普通的 pos 标签 */}
+        {wordTypeLabel && (
+          <span className="rounded-full bg-cyan-400/15 text-cyan-200 px-2 py-0.5">
+            {wordTypeLabel}
+          </span>
+        )}
         <span>{word.reading}</span>
       </div>
 
@@ -59,11 +72,10 @@ export function WordCard({ word }: { word: WordWithProgress }) {
       <button
         onClick={handleMarkLearned}
         disabled={learned || isPending}
-        className={`mt-5 w-full rounded-lg py-2 text-sm font-medium transition-colors ${
-          learned
-            ? "bg-emerald-500/20 text-emerald-300 cursor-default"
-            : "bg-cyan-500 hover:bg-cyan-400 text-black"
+        className={`liquid-btn mt-5 w-full rounded-lg py-2 text-sm font-medium ${
+          learned ? "bg-emerald-500/20 text-emerald-300 cursor-default" : "text-black"
         }`}
+        style={learned ? undefined : { backgroundColor: "var(--accent)" }}
       >
         {learned ? "已标记为记住" : "标记为记住"}
       </button>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Noto_Sans_JP } from "next/font/google";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -24,7 +25,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="zh-CN"
       className={`${spaceGrotesk.variable} ${notoSansJP.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {/* ThemeProvider 挂在最外层，负责把用户保存的皮肤设置应用成 CSS 变量 */}
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }

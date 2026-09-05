@@ -3,6 +3,8 @@
 import { useMemo, useState } from "react";
 import { Furigana } from "./Furigana";
 import { normalizeKana } from "@/lib/kana";
+import { addLocalAttempt } from "@/lib/localStore";
+import { useEnterToAdvance } from "@/hooks/useEnterToAdvance";
 import type { WordWithProgress } from "@/lib/types";
 
 function shuffle<T>(arr: T[]): T[] {
@@ -28,9 +30,23 @@ export function KanjiQuizRunner({ words }: { words: WordWithProgress[] }) {
     e.preventDefault();
     if (!current || result) return;
 
+    // 判分本身一直就是纯前端逻辑（字符串比较），这部分没有性能问题。
     const isCorrect = normalizeKana(input) === normalizeKana(current.reading);
     setResult(isCorrect ? "correct" : "incorrect");
     if (isCorrect) setCorrectCount((c) => c + 1);
+
+    // 把这次答题记录写入本地 IndexedDB 缓存，不等待网络，界面立即可以继续下一题。
+    // 云端同步交给导航栏的"同步"按钮统一处理。
+    addLocalAttempt({
+      id: crypto.randomUUID(),
+      quiz_type: "kanji",
+      word_id: current.id,
+      pattern_id: null,
+      conjugation_form: null,
+      user_answer: input,
+      correct: isCorrect,
+      client_timestamp: new Date().toISOString(),
+    });
   }
 
   function handleNext() {
@@ -38,6 +54,9 @@ export function KanjiQuizRunner({ words }: { words: WordWithProgress[] }) {
     setInput("");
     setResult(null);
   }
+
+  // 已经显示出对错结果时，允许按 Enter 直接进入下一题，不用每次都用鼠标点按钮
+  useEnterToAdvance(result !== null, handleNext);
 
   if (words.length === 0) {
     return (
@@ -59,7 +78,7 @@ export function KanjiQuizRunner({ words }: { words: WordWithProgress[] }) {
   }
 
   return (
-    <div className="rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-xl p-8">
+    <div key={index} className="glass-panel slide-transition rounded-2xl p-8">
       <p className="text-sm text-white/40 mb-4">
         第 {index + 1} / {quizWords.length} 题
       </p>
@@ -75,13 +94,14 @@ export function KanjiQuizRunner({ words }: { words: WordWithProgress[] }) {
           disabled={!!result}
           autoFocus
           placeholder="请输入纯假名读音"
-          className="w-full max-w-sm rounded-lg border border-white/15 bg-black/40 px-4 py-2 text-center text-lg text-white outline-none focus:border-cyan-400/60 disabled:opacity-60"
+          className="w-full max-w-sm rounded-lg border border-white/15 bg-black/40 px-4 py-2 text-center text-lg text-white outline-none focus:border-[var(--accent)] disabled:opacity-60"
         />
 
         {!result && (
           <button
             type="submit"
-            className="rounded-lg bg-cyan-500 hover:bg-cyan-400 text-black font-medium px-6 py-2"
+            className="liquid-btn rounded-lg text-black font-medium px-6 py-2"
+            style={{ backgroundColor: "var(--accent)" }}
           >
             提交
           </button>
@@ -108,9 +128,9 @@ export function KanjiQuizRunner({ words }: { words: WordWithProgress[] }) {
           )}
           <button
             onClick={handleNext}
-            className="mt-5 rounded-lg border border-white/20 hover:border-white/40 text-white px-6 py-2"
+            className="liquid-btn mt-5 rounded-lg border border-white/20 hover:border-white/40 text-white px-6 py-2"
           >
-            下一题
+            下一题（Enter）
           </button>
         </div>
       )}
