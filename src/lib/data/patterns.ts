@@ -25,6 +25,26 @@ export async function listSentencePatterns(
 }
 
 /**
+ * 语法点的"难度"筛选，和单词记忆页的词库选择器（BankSelector/word_banks）作用一致，
+ * 但语法点本身没有独立的"库"表——难度信息就存在 sentence_patterns.level 字段里
+ * （导入数据时按 N5/N4/N3/N2/N1 分文件写入），所以这里直接从已有数据里"提炼"出
+ * 所有出现过的 level 取值，作为下拉选择器的选项，不需要额外建表。
+ *
+ * 排序固定为 N5→N4→N3→N2→N1（由易到难），而不是取到什么顺序就用什么顺序，
+ * 因为 JS 的 Set/数组遍历顺序取决于数据库返回顺序，不一定符合直觉。
+ */
+const LEVEL_ORDER = ["N5", "N4", "N3", "N2", "N1"] as const;
+
+export function listPatternLevels(patterns: SentencePattern[]): string[] {
+  const present = new Set(patterns.map((p) => p.level).filter((l): l is string => !!l));
+  const ordered = LEVEL_ORDER.filter((l) => present.has(l));
+  // 万一未来导入了不在预设顺序里的取值（比如历史上出现过的 "N5-N3" 合并级别），
+  // 追加在后面，保证不会被静默丢弃
+  const extra = [...present].filter((l) => !LEVEL_ORDER.includes(l as typeof LEVEL_ORDER[number]));
+  return [...ordered, ...extra];
+}
+
+/**
  * 获取某个用户的全部语法点学习进度，返回 pattern_id -> 进度 的映射。
  * 语法点总量（目前几百条，远小于单词的上万条）不会触发 URL 长度限制，
  * 所以这里不需要像 getUserProgressForBank 那样绕开 IN 查询，直接按 user_id 查询即可。
