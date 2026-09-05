@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Space_Grotesk, Noto_Sans_JP } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { AmbientBackground } from "@/components/AmbientBackground";
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   description: "记忆、检测日语单词，标注振假名，随时复习",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="zh-CN"
