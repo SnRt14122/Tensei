@@ -13,9 +13,9 @@ export default async function PatternQuizPage() {
 
   return (
     <>
-      <h1 className="text-xl font-semibold text-white mb-1">句型意义检测</h1>
+      <h1 className="text-xl font-semibold text-white mb-1">语法点意义检测</h1>
       <p className="text-sm text-white/50 mb-6">
-        选择该句型正确的中文含义
+        选择该语法点正确的中文含义
       </p>
       <PatternQuizRunner patterns={patterns} />
     </>

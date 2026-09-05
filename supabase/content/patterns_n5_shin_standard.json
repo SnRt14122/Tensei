@@ -1,0 +1,1397 @@
+{
+  "patterns": [
+    {
+      "pattern": "NはNです",
+      "reading": null,
+      "meaning_cn": "A是B。用于介绍身份、属性或事物。",
+      "explanation": "把话题放在は前，です放在句末，语气礼貌；回答身份、职业、国籍时最常用。",
+      "lesson": "新标日初级上·第1课",
+      "connection": "名词1 は 名词2 です",
+      "usage": "把话题放在は前，です放在句末，语气礼貌；回答身份、职业、国籍时最常用。",
+      "notes": "は提示话题，不等于中文“是”；句末です不能省略。",
+      "example": {
+        "segments": [
+          {
+            "text": "私は会社員です。"
+          }
+        ],
+        "cn": "我是公司职员。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "私は会社員です。"
+            }
+          ],
+          "cn": "我是公司职员。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "NはNではありません",
+      "reading": null,
+      "meaning_cn": "A不是B。",
+      "explanation": "です的礼貌否定形式，用于正式、客气地否定判断。口语也常用じゃありません。",
+      "lesson": "新标日初级上·第1课",
+      "connection": "名词1 は 名词2 ではありません",
+      "usage": "です的礼貌否定形式，用于正式、客气地否定判断。口语也常用じゃありません。",
+      "notes": "不要写成“ではないです”来替代基础礼貌形式。",
+      "example": {
+        "segments": [
+          {
+            "text": "私は学生ではありません。"
+          }
+        ],
+        "cn": "我不是学生。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "私は学生ではありません。"
+            }
+          ],
+          "cn": "我不是学生。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "NはNですか",
+      "reading": null,
+      "meaning_cn": "A是B吗？",
+      "explanation": "把疑问か放在句末；回答通常用はい、そうです或いいえ、違います。",
+      "lesson": "新标日初级上·第1课",
+      "connection": "名词1 は 名词2 ですか",
+      "usage": "把疑问か放在句末；回答通常用はい、そうです或いいえ、違います。",
+      "notes": "日语疑问句不需要倒装。",
+      "example": {
+        "segments": [
+          {
+            "text": "田中さんは先生ですか。"
+          }
+        ],
+        "cn": "田中先生是老师吗？"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "田中さんは先生ですか。"
+            }
+          ],
+          "cn": "田中先生是老师吗？"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "N1のN2",
+      "reading": null,
+      "meaning_cn": "N1所属、性质或内容的N2。",
+      "explanation": "连接两个名词，表达所属、产地或内容。",
+      "lesson": "新标日初级上·第1课",
+      "connection": "名词1 の 名词2",
+      "usage": "连接两个名词，表达所属、产地或内容。",
+      "notes": "N1和N2都是名词；不要把动词直接接在の前。",
+      "example": {
+        "segments": [
+          {
+            "text": "これは私の傘です。"
+          }
+        ],
+        "cn": "这是我的伞。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "これは私の傘です。"
+            }
+          ],
+          "cn": "这是我的伞。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "これ／それ／あれはNです",
+      "reading": null,
+      "meaning_cn": "这个/那个是N。",
+      "explanation": "これ指靠近说话人，それ指靠近听话人，あれ指离双方都远的事物。",
+      "lesson": "新标日初级上·第2课",
+      "connection": "これ／それ／あれ は 名词 です",
+      "usage": "これ指靠近说话人，それ指靠近听话人，あれ指离双方都远的事物。",
+      "notes": "后面直接接です，不说“これの”。",
+      "example": {
+        "segments": [
+          {
+            "text": "それは日本語の辞書です。"
+          }
+        ],
+        "cn": "那是日语词典。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "それは日本語の辞書です。"
+            }
+          ],
+          "cn": "那是日语词典。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "この／その／あのN",
+      "reading": null,
+      "meaning_cn": "这个/那个N。",
+      "explanation": "必须直接修饰名词；距离规则与これ／それ／あれ相同。",
+      "lesson": "新标日初级上·第2课",
+      "connection": "この／その／あの＋名词",
+      "usage": "必须直接修饰名词；距离规则与これ／それ／あれ相同。",
+      "notes": "不能单独使用；单独指代要用これ／それ／あれ。",
+      "example": {
+        "segments": [
+          {
+            "text": "この時計は私のです。"
+          }
+        ],
+        "cn": "这块表是我的。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "この時計は私のです。"
+            }
+          ],
+          "cn": "这块表是我的。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "ここ／そこ／あそこはNです",
+      "reading": null,
+      "meaning_cn": "这里/那里是N。",
+      "explanation": "说明场所或设施的位置；こちら等是更礼貌的说法。",
+      "lesson": "新标日初级上·第3课",
+      "connection": "ここ／そこ／あそこ は 名词 です",
+      "usage": "说明场所或设施的位置；こちら等是更礼貌的说法。",
+      "notes": "指场所时不用これ／それ／あれ。",
+      "example": {
+        "segments": [
+          {
+            "text": "ここは図書館です。"
+          }
+        ],
+        "cn": "这里是图书馆。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "ここは図書館です。"
+            }
+          ],
+          "cn": "这里是图书馆。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Nはどこですか",
+      "reading": null,
+      "meaning_cn": "N在哪里？",
+      "explanation": "询问地点、设施或人的位置；回答用场所名词＋です。",
+      "lesson": "新标日初级上·第3课",
+      "connection": "名词 は どこ ですか",
+      "usage": "询问地点、设施或人的位置；回答用场所名词＋です。",
+      "notes": "问人时也可用どちら表示礼貌。",
+      "example": {
+        "segments": [
+          {
+            "text": "銀行はどこですか。"
+          }
+        ],
+        "cn": "银行在哪里？"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "銀行はどこですか。"
+            }
+          ],
+          "cn": "银行在哪里？"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "今～時～分です",
+      "reading": null,
+      "meaning_cn": "现在是几点几分。",
+      "explanation": "报时和询问时间，分的读法会因数字发生音变。",
+      "lesson": "新标日初级上·第4课",
+      "connection": "今 は 数字時 数字分 です",
+      "usage": "报时和询问时间，分的读法会因数字发生音变。",
+      "notes": "三点读さんじ，四点读よじ，七点读しちじ，九点读くじ。",
+      "example": {
+        "segments": [
+          {
+            "text": "今は七時半です。"
+          }
+        ],
+        "cn": "现在是七点半。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "今は七時半です。"
+            }
+          ],
+          "cn": "现在是七点半。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "NからNまで",
+      "reading": null,
+      "meaning_cn": "从N到N。",
+      "explanation": "から表示起点，まで表示终点，可单独或同时使用。",
+      "lesson": "新标日初级上·第4课",
+      "connection": "时间/地点名词 から 时间/地点名词 まで",
+      "usage": "から表示起点，まで表示终点，可单独或同时使用。",
+      "notes": "时间段和地点范围都能用。",
+      "example": {
+        "segments": [
+          {
+            "text": "九時から五時まで働きます。"
+          }
+        ],
+        "cn": "从九点工作到五点。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "九時から五時まで働きます。"
+            }
+          ],
+          "cn": "从九点工作到五点。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Nにあります／います",
+      "reading": null,
+      "meaning_cn": "N在某处。",
+      "explanation": "あります用于无生命物，います用于人和动物。",
+      "lesson": "新标日初级上·第4课",
+      "connection": "场所 に 物／人 が あります／います",
+      "usage": "あります用于无生命物，います用于人和动物。",
+      "notes": "不要对人使用あります。",
+      "example": {
+        "segments": [
+          {
+            "text": "机の上に本があります。"
+          }
+        ],
+        "cn": "桌子上有一本书。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "机の上に本があります。"
+            }
+          ],
+          "cn": "桌子上有一本书。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Nへ行きます／来ます／帰ります",
+      "reading": null,
+      "meaning_cn": "去、来、回某处。",
+      "explanation": "へ表示移动方向，读作え。",
+      "lesson": "新标日初级上·第5课",
+      "connection": "场所へ 行きます／来ます／帰ります",
+      "usage": "へ表示移动方向，读作え。",
+      "notes": "存在句的地点通常用に。",
+      "example": {
+        "segments": [
+          {
+            "text": "明日、学校へ行きます。"
+          }
+        ],
+        "cn": "明天去学校。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "明日、学校へ行きます。"
+            }
+          ],
+          "cn": "明天去学校。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Nで行きます",
+      "reading": null,
+      "meaning_cn": "乘坐或使用某交通工具去。",
+      "explanation": "で表示交通手段，也可表示动作工具。",
+      "lesson": "新标日初级上·第5课",
+      "connection": "交通工具 で 移动动词",
+      "usage": "で表示交通手段，也可表示动作工具。",
+      "notes": "步行说歩いて，不说歩きで。",
+      "example": {
+        "segments": [
+          {
+            "text": "電車で会社へ行きます。"
+          }
+        ],
+        "cn": "坐电车去公司。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "電車で会社へ行きます。"
+            }
+          ],
+          "cn": "坐电车去公司。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Nと行きます",
+      "reading": null,
+      "meaning_cn": "和某人一起去。",
+      "explanation": "と表示共同动作的对象，只表达同伴。",
+      "lesson": "新标日初级上·第5课",
+      "connection": "人 と 移动动词",
+      "usage": "と表示共同动作的对象，只表达同伴。",
+      "notes": "“和朋友去”用友達と，不用友達で。",
+      "example": {
+        "segments": [
+          {
+            "text": "友達と映画館へ行きます。"
+          }
+        ],
+        "cn": "和朋友去电影院。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "友達と映画館へ行きます。"
+            }
+          ],
+          "cn": "和朋友去电影院。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "NをVます",
+      "reading": null,
+      "meaning_cn": "对N做V。",
+      "explanation": "を标记动作直接作用的对象。",
+      "lesson": "新标日初级上·第6课",
+      "connection": "名词 を 动词ます形",
+      "usage": "を标记动作直接作用的对象。",
+      "notes": "を读作お；自动词不一定能接を。",
+      "example": {
+        "segments": [
+          {
+            "text": "毎朝、コーヒーを飲みます。"
+          }
+        ],
+        "cn": "每天早上喝咖啡。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "毎朝、コーヒーを飲みます。"
+            }
+          ],
+          "cn": "每天早上喝咖啡。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "NでVます",
+      "reading": null,
+      "meaning_cn": "在N做V。",
+      "explanation": "で表示动作发生的场所。",
+      "lesson": "新标日初级上·第6课",
+      "connection": "场所 で 动词ます形",
+      "usage": "で表示动作发生的场所。",
+      "notes": "“在学校学习”用学校で，不用学校に。",
+      "example": {
+        "segments": [
+          {
+            "text": "図書館で日本語を勉強します。"
+          }
+        ],
+        "cn": "在图书馆学习日语。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "図書館で日本語を勉強します。"
+            }
+          ],
+          "cn": "在图书馆学习日语。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Vませんか",
+      "reading": null,
+      "meaning_cn": "一起做……吗？",
+      "explanation": "礼貌地邀请对方做某事，语气比命令柔和。",
+      "lesson": "新标日初级上·第6课",
+      "connection": "动词ます形去ます＋ませんか",
+      "usage": "礼貌地邀请对方做某事，语气比命令柔和。",
+      "notes": "接受可说ええ、ぜひ；拒绝要委婉说明。",
+      "example": {
+        "segments": [
+          {
+            "text": "週末、いっしょに美術館へ行きませんか。"
+          }
+        ],
+        "cn": "周末一起去美术馆吗？"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "週末、いっしょに美術館へ行きませんか。"
+            }
+          ],
+          "cn": "周末一起去美术馆吗？"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Vましょう",
+      "reading": null,
+      "meaning_cn": "一起做……吧。",
+      "explanation": "表示提议、号召或接受邀请。",
+      "lesson": "新标日初级上·第6课",
+      "connection": "动词ます形去ます＋ましょう",
+      "usage": "表示提议、号召或接受邀请。",
+      "notes": "不能用于单方面命令陌生人。",
+      "example": {
+        "segments": [
+          {
+            "text": "少し休みましょう。"
+          }
+        ],
+        "cn": "休息一会儿吧。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "少し休みましょう。"
+            }
+          ],
+          "cn": "休息一会儿吧。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "NにNをあげます",
+      "reading": null,
+      "meaning_cn": "给某人N。",
+      "explanation": "に表示接受者，を表示给予的东西。",
+      "lesson": "新标日初级上·第7课",
+      "connection": "人 に 物 を あげます",
+      "usage": "に表示接受者，を表示给予的东西。",
+      "notes": "涉及尊长时要注意授受方向和礼貌。",
+      "example": {
+        "segments": [
+          {
+            "text": "妹に花をあげました。"
+          }
+        ],
+        "cn": "我送了花给妹妹。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "妹に花をあげました。"
+            }
+          ],
+          "cn": "我送了花给妹妹。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Nに／からNをもらいます",
+      "reading": null,
+      "meaning_cn": "从某人得到N。",
+      "explanation": "に和から都可表示来源；组织、公司等来源更常用から。",
+      "lesson": "新标日初级上·第7课",
+      "connection": "人 に／から 物 を もらいます",
+      "usage": "に和から都可表示来源；组织、公司等来源更常用から。",
+      "notes": "主语是得到东西的人。",
+      "example": {
+        "segments": [
+          {
+            "text": "友達から写真をもらいました。"
+          }
+        ],
+        "cn": "我从朋友那里得到一张照片。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "友達から写真をもらいました。"
+            }
+          ],
+          "cn": "我从朋友那里得到一张照片。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "もうVました",
+      "reading": null,
+      "meaning_cn": "已经做过……了。",
+      "explanation": "说明动作已经完成；否定回答常说いいえ、まだです。",
+      "lesson": "新标日初级上·第7课",
+      "connection": "もう＋动词ました形",
+      "usage": "说明动作已经完成；否定回答常说いいえ、まだです。",
+      "notes": "不要把もう误解为“马上”。",
+      "example": {
+        "segments": [
+          {
+            "text": "昼ご飯をもう食べました。"
+          }
+        ],
+        "cn": "已经吃过午饭了。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "昼ご飯をもう食べました。"
+            }
+          ],
+          "cn": "已经吃过午饭了。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Nはイ形容词です",
+      "reading": null,
+      "meaning_cn": "N是……的。",
+      "explanation": "い形容词直接作谓语，礼貌句末加です。",
+      "lesson": "新标日初级上·第8课",
+      "connection": "い形容词原形",
+      "usage": "い形容词直接作谓语，礼貌句末加です。",
+      "notes": "い形容词的い不能删掉再接です。",
+      "example": {
+        "segments": [
+          {
+            "text": "この料理は辛いです。"
+          }
+        ],
+        "cn": "这道菜很辣。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "この料理は辛いです。"
+            }
+          ],
+          "cn": "这道菜很辣。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Nはイ形容词くないです",
+      "reading": null,
+      "meaning_cn": "N不……。",
+      "explanation": "い形容词的礼貌否定，也可用くありません。",
+      "lesson": "新标日初级上·第8课",
+      "connection": "い形容词去い＋くないです",
+      "usage": "い形容词的礼貌否定，也可用くありません。",
+      "notes": "いい的否定是不规则的よくないです。",
+      "example": {
+        "segments": [
+          {
+            "text": "この部屋は広くないです。"
+          }
+        ],
+        "cn": "这个房间不宽敞。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "この部屋は広くないです。"
+            }
+          ],
+          "cn": "这个房间不宽敞。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Nはナ形容词です",
+      "reading": null,
+      "meaning_cn": "N是……的。",
+      "explanation": "な形容词作谓语时不接な；修饰名词时才接な。",
+      "lesson": "新标日初级上·第8课",
+      "connection": "な形容词词干＋です",
+      "usage": "な形容词作谓语时不接な；修饰名词时才接な。",
+      "notes": "静かな町，但町は静かです。",
+      "example": {
+        "segments": [
+          {
+            "text": "この町は静かです。"
+          }
+        ],
+        "cn": "这座城市很安静。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "この町は静かです。"
+            }
+          ],
+          "cn": "这座城市很安静。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Nはナ形容词ではありません",
+      "reading": null,
+      "meaning_cn": "N不……。",
+      "explanation": "な形容词的礼貌否定，口语可说じゃありません。",
+      "lesson": "新标日初级上·第8课",
+      "connection": "な形容词词干＋ではありません",
+      "usage": "な形容词的礼貌否定，口语可说じゃありません。",
+      "notes": "否定的是状态，不是名词本身。",
+      "example": {
+        "segments": [
+          {
+            "text": "この部屋はきれいではありません。"
+          }
+        ],
+        "cn": "这个房间不漂亮。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "この部屋はきれいではありません。"
+            }
+          ],
+          "cn": "这个房间不漂亮。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Nが好きです／嫌いです",
+      "reading": null,
+      "meaning_cn": "喜欢或不喜欢N。",
+      "explanation": "好き、嫌い是な形容词，喜好对象用が标记。",
+      "lesson": "新标日初级上·第9课",
+      "connection": "名词 が 好きです／嫌いです",
+      "usage": "好き、嫌い是な形容词，喜好对象用が标记。",
+      "notes": "初级表达优先用が，不要机械套用を。",
+      "example": {
+        "segments": [
+          {
+            "text": "私は音楽が好きです。"
+          }
+        ],
+        "cn": "我喜欢音乐。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "私は音楽が好きです。"
+            }
+          ],
+          "cn": "我喜欢音乐。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Nがわかります",
+      "reading": null,
+      "meaning_cn": "懂N、明白N。",
+      "explanation": "表示理解语言、意思、规则等。",
+      "lesson": "新标日初级上·第9课",
+      "connection": "名词 が わかります",
+      "usage": "表示理解语言、意思、规则等。",
+      "notes": "わかりません是“不明白/不知道”。",
+      "example": {
+        "segments": [
+          {
+            "text": "この説明がよくわかりません。"
+          }
+        ],
+        "cn": "我不太明白这个说明。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "この説明がよくわかりません。"
+            }
+          ],
+          "cn": "我不太明白这个说明。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "～から",
+      "reading": null,
+      "meaning_cn": "因为……，所以……。",
+      "explanation": "先说原因，再说结果；也可以把から放在句首或句末。",
+      "lesson": "新标日初级上·第9课",
+      "connection": "普通句＋から",
+      "usage": "先说原因，再说结果；也可以把から放在句首或句末。",
+      "notes": "前后句体保持一致更自然。",
+      "example": {
+        "segments": [
+          {
+            "text": "今日は雨ですから、出かけません。"
+          }
+        ],
+        "cn": "因为今天下雨，所以不出门。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "今日は雨ですから、出かけません。"
+            }
+          ],
+          "cn": "因为今天下雨，所以不出门。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "NやNなど",
+      "reading": null,
+      "meaning_cn": "N、N之类。",
+      "explanation": "や列举代表性项目，暗示还有其他同类事物。",
+      "lesson": "新标日初级上·第10课",
+      "connection": "名词 や 名词 など",
+      "usage": "や列举代表性项目，暗示还有其他同类事物。",
+      "notes": "与と不同，や不是穷尽列举。",
+      "example": {
+        "segments": [
+          {
+            "text": "机の上に本や辞書などがあります。"
+          }
+        ],
+        "cn": "桌上有书、词典之类的东西。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "机の上に本や辞書などがあります。"
+            }
+          ],
+          "cn": "桌上有书、词典之类的东西。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "数量词＋あります／います",
+      "reading": null,
+      "meaning_cn": "有几个、多少个。",
+      "explanation": "说明存在数量；人数使用人计数。",
+      "lesson": "新标日初级上·第11课",
+      "connection": "数量词＋あります／います",
+      "usage": "说明存在数量；人数使用人计数。",
+      "notes": "数量词和助数词要按对象选择。",
+      "example": {
+        "segments": [
+          {
+            "text": "教室に学生が三人います。"
+          }
+        ],
+        "cn": "教室里有三名学生。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "教室に学生が三人います。"
+            }
+          ],
+          "cn": "教室里有三名学生。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "NよりNのほうが～です",
+      "reading": null,
+      "meaning_cn": "与N相比，N更……。",
+      "explanation": "より引出比较基准，のほうが指出更高的一方。",
+      "lesson": "新标日初级上·第12课",
+      "connection": "N1 より N2 のほうが 形容词です",
+      "usage": "より引出比较基准，のほうが指出更高的一方。",
+      "notes": "两边应保持同一比较维度。",
+      "example": {
+        "segments": [
+          {
+            "text": "電車よりバスのほうが安いです。"
+          }
+        ],
+        "cn": "比起电车，公交车更便宜。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "電車よりバスのほうが安いです。"
+            }
+          ],
+          "cn": "比起电车，公交车更便宜。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Nほど～ない",
+      "reading": null,
+      "meaning_cn": "没有N那么……。",
+      "explanation": "以N2为标准，说明N1程度不及N2。",
+      "lesson": "新标日初级上·第12课",
+      "connection": "N1 は N2 ほど 形容词否定",
+      "usage": "以N2为标准，说明N1程度不及N2。",
+      "notes": "ほど后必须接否定形式。",
+      "example": {
+        "segments": [
+          {
+            "text": "今年は去年ほど暑くないです。"
+          }
+        ],
+        "cn": "今年没有去年那么热。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "今年は去年ほど暑くないです。"
+            }
+          ],
+          "cn": "今年没有去年那么热。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Nがほしいです",
+      "reading": null,
+      "meaning_cn": "想要N。",
+      "explanation": "表达说话人想得到某个物品。",
+      "lesson": "新标日初级上·第13课",
+      "connection": "名词 が ほしいです",
+      "usage": "表达说话人想得到某个物品。",
+      "notes": "询问他人的愿望时要注意礼貌。",
+      "example": {
+        "segments": [
+          {
+            "text": "新しい辞書がほしいです。"
+          }
+        ],
+        "cn": "我想要一本新词典。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "新しい辞書がほしいです。"
+            }
+          ],
+          "cn": "我想要一本新词典。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Vたいです",
+      "reading": null,
+      "meaning_cn": "想做……。",
+      "explanation": "表达说话人当前想做的动作。",
+      "lesson": "新标日初级上·第13课",
+      "connection": "动词ます形去ます＋たいです",
+      "usage": "表达说话人当前想做的动作。",
+      "notes": "たい形按い形容词变化：行きたくないです。",
+      "example": {
+        "segments": [
+          {
+            "text": "日本へ旅行に行きたいです。"
+          }
+        ],
+        "cn": "我想去日本旅行。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "日本へ旅行に行きたいです。"
+            }
+          ],
+          "cn": "我想去日本旅行。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Vてください",
+      "reading": null,
+      "meaning_cn": "请做……。",
+      "explanation": "礼貌请求对方做某事。",
+      "lesson": "新标日初级上·第14课",
+      "connection": "动词て形＋ください",
+      "usage": "礼貌请求对方做某事。",
+      "notes": "对上级或陌生人仍需结合语气和敬语。",
+      "example": {
+        "segments": [
+          {
+            "text": "ここに名前を書いてください。"
+          }
+        ],
+        "cn": "请在这里写名字。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "ここに名前を書いてください。"
+            }
+          ],
+          "cn": "请在这里写名字。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Vています",
+      "reading": null,
+      "meaning_cn": "正在……或处于……状态。",
+      "explanation": "可表示正在进行、持续状态或职业习惯，具体含义看语境。",
+      "lesson": "新标日初级上·第14课",
+      "connection": "动词て形＋います",
+      "usage": "可表示正在进行、持续状态或职业习惯，具体含义看语境。",
+      "notes": "不是所有ている都只翻译成“正在”。",
+      "example": {
+        "segments": [
+          {
+            "text": "今、資料を読んでいます。"
+          }
+        ],
+        "cn": "我现在正在看资料。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "今、資料を読んでいます。"
+            }
+          ],
+          "cn": "我现在正在看资料。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Vてもいいです",
+      "reading": null,
+      "meaning_cn": "可以做……。",
+      "explanation": "表示许可；疑问形式用于请求许可。",
+      "lesson": "新标日初级上·第15课",
+      "connection": "动词て形＋もいいです",
+      "usage": "表示许可；疑问形式用于请求许可。",
+      "notes": "与禁止句Vてはいけません相反。",
+      "example": {
+        "segments": [
+          {
+            "text": "ここで写真を撮ってもいいですか。"
+          }
+        ],
+        "cn": "可以在这里拍照吗？"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "ここで写真を撮ってもいいですか。"
+            }
+          ],
+          "cn": "可以在这里拍照吗？"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Vてはいけません",
+      "reading": null,
+      "meaning_cn": "不可以做……。",
+      "explanation": "表示禁止，规则和公共场所提示中常见。",
+      "lesson": "新标日初级上·第15课",
+      "connection": "动词て形＋はいけません",
+      "usage": "表示禁止，规则和公共场所提示中常见。",
+      "notes": "日常对话中可用だめです缓和。",
+      "example": {
+        "segments": [
+          {
+            "text": "この部屋で食べてはいけません。"
+          }
+        ],
+        "cn": "不能在这个房间吃东西。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "この部屋で食べてはいけません。"
+            }
+          ],
+          "cn": "不能在这个房间吃东西。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Vてから",
+      "reading": null,
+      "meaning_cn": "做完……之后再……。",
+      "explanation": "强调前后动作顺序，先完成前项再做后项。",
+      "lesson": "新标日初级上·第16课",
+      "connection": "动词て形＋から",
+      "usage": "强调前后动作顺序，先完成前项再做后项。",
+      "notes": "から前后主语通常一致时最自然。",
+      "example": {
+        "segments": [
+          {
+            "text": "宿題をしてから、テレビを見ます。"
+          }
+        ],
+        "cn": "做完作业后看电视。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "宿題をしてから、テレビを見ます。"
+            }
+          ],
+          "cn": "做完作业后看电视。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Vないでください",
+      "reading": null,
+      "meaning_cn": "请不要……。",
+      "explanation": "礼貌请求对方不要做某事。",
+      "lesson": "新标日初级上·第17课",
+      "connection": "动词ない形＋でください",
+      "usage": "礼貌请求对方不要做某事。",
+      "notes": "与禁止句相比更像请求。",
+      "example": {
+        "segments": [
+          {
+            "text": "ここでタバコを吸わないでください。"
+          }
+        ],
+        "cn": "请不要在这里吸烟。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "ここでタバコを吸わないでください。"
+            }
+          ],
+          "cn": "请不要在这里吸烟。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Vなければなりません",
+      "reading": null,
+      "meaning_cn": "必须……。",
+      "explanation": "表示义务或必要，口语常缩略为なきゃ。",
+      "lesson": "新标日初级上·第17课",
+      "connection": "动词ない形去ない＋なければなりません",
+      "usage": "表示义务或必要，口语常缩略为なきゃ。",
+      "notes": "不要把なければ和其他否定形式混接。",
+      "example": {
+        "segments": [
+          {
+            "text": "明日、早く起きなければなりません。"
+          }
+        ],
+        "cn": "明天必须早起。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "明日、早く起きなければなりません。"
+            }
+          ],
+          "cn": "明天必须早起。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Vなくてもいいです",
+      "reading": null,
+      "meaning_cn": "不……也可以。",
+      "explanation": "表示没有必要做某事。",
+      "lesson": "新标日初级上·第17课",
+      "connection": "动词ない形去ない＋なくてもいいです",
+      "usage": "表示没有必要做某事。",
+      "notes": "与Vてはいけません不同：前者是不必做，后者是禁止做。",
+      "example": {
+        "segments": [
+          {
+            "text": "明日は来なくてもいいです。"
+          }
+        ],
+        "cn": "明天不来也可以。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "明日は来なくてもいいです。"
+            }
+          ],
+          "cn": "明天不来也可以。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Vたことがあります",
+      "reading": null,
+      "meaning_cn": "曾经做过……。",
+      "explanation": "叙述过去有过某种经历，不强调具体时间。",
+      "lesson": "新标日初级上·第19课",
+      "connection": "动词た形＋ことがあります",
+      "usage": "叙述过去有过某种经历，不强调具体时间。",
+      "notes": "具体时间明确时通常用一般过去时。",
+      "example": {
+        "segments": [
+          {
+            "text": "日本料理を食べたことがあります。"
+          }
+        ],
+        "cn": "我吃过日本料理。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "日本料理を食べたことがあります。"
+            }
+          ],
+          "cn": "我吃过日本料理。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Vたり、Vたりします",
+      "reading": null,
+      "meaning_cn": "做做……、做做……。",
+      "explanation": "列举代表性动作，暗示还有其他活动。",
+      "lesson": "新标日初级上·第19课",
+      "connection": "动词た形＋り、动词た形＋りします",
+      "usage": "列举代表性动作，暗示还有其他活动。",
+      "notes": "た形在这里不表示逐项按时间先后。",
+      "example": {
+        "segments": [
+          {
+            "text": "休日は本を読んだり、映画を見たりします。"
+          }
+        ],
+        "cn": "休息日会读书、看电影等。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "休日は本を読んだり、映画を見たりします。"
+            }
+          ],
+          "cn": "休息日会读书、看电影等。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "普通形と思います",
+      "reading": null,
+      "meaning_cn": "我认为……或我想……。",
+      "explanation": "表达个人判断、推测或委婉意见。",
+      "lesson": "新标日初级上·第21课",
+      "connection": "普通形＋と思います",
+      "usage": "表达个人判断、推测或委婉意见。",
+      "notes": "名词、な形容词接とき要用だ：便利だと思います。",
+      "example": {
+        "segments": [
+          {
+            "text": "この方法が一番いいと思います。"
+          }
+        ],
+        "cn": "我认为这个方法最好。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "この方法が一番いいと思います。"
+            }
+          ],
+          "cn": "我认为这个方法最好。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "普通形と言いました",
+      "reading": null,
+      "meaning_cn": "说了……。",
+      "explanation": "转述某人说过的话。",
+      "lesson": "新标日初级上·第21课",
+      "connection": "普通形＋と言いました",
+      "usage": "转述某人说过的话。",
+      "notes": "引用内容放在と前，保持普通形。",
+      "example": {
+        "segments": [
+          {
+            "text": "田中さんは明日来ると言いました。"
+          }
+        ],
+        "cn": "田中说他明天会来。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "田中さんは明日来ると言いました。"
+            }
+          ],
+          "cn": "田中说他明天会来。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "Vたほうがいいです",
+      "reading": null,
+      "meaning_cn": "最好做……。",
+      "explanation": "给出建议，表示做某事更好；否定建议用Vないほうがいい。",
+      "lesson": "新标日初级上·第22课",
+      "connection": "动词た形＋ほうがいいです",
+      "usage": "给出建议，表示做某事更好；否定建议用Vないほうがいい。",
+      "notes": "属于建议而非强制命令。",
+      "example": {
+        "segments": [
+          {
+            "text": "少し休んだほうがいいです。"
+          }
+        ],
+        "cn": "你最好休息一会儿。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "少し休んだほうがいいです。"
+            }
+          ],
+          "cn": "你最好休息一会儿。"
+        }
+      ],
+      "level": "N5"
+    },
+    {
+      "pattern": "可能形",
+      "reading": null,
+      "meaning_cn": "能够做……。",
+      "explanation": "表示能力或可能性；可能对象常用が。",
+      "lesson": "新标日初级上·第24课",
+      "connection": "五段动词改え段＋る；一段动词去る＋られる",
+      "usage": "表示能力或可能性；可能对象常用が。",
+      "notes": "本条是初级能力表达的总览，具体变化需结合动词类别。",
+      "example": {
+        "segments": [
+          {
+            "text": "私は日本語が少し話せます。"
+          }
+        ],
+        "cn": "我会说一点日语。"
+      },
+      "examples": [
+        {
+          "segments": [
+            {
+              "text": "私は日本語が少し話せます。"
+            }
+          ],
+          "cn": "我会说一点日语。"
+        }
+      ],
+      "level": "N5"
+    }
+  ]
+}
+

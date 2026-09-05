@@ -101,7 +101,9 @@ export async function listLearnedWordsWithProgress(
 // 标记为"简单"的词在生成"今日词库"时，只以这个概率被保留，其余情况直接跳过。
 // 参考同类项目（nami-console）的做法：不是彻底移除简单词（万一以后还想复习/巩固），
 // 只是让它出现的概率大幅降低（1/6），几乎不影响每日新词/复习词的学习节奏。
-const EASY_KEEP_RATIO = 1 / 6;
+// 导出给 src/lib/data/patterns.ts 的 selectDailyPatterns 复用，两边"简单词保留概率"
+// 保持完全一致，避免以后各改各的导致体验不统一。
+export const EASY_KEEP_RATIO = 1 / 6;
 
 /**
  * 计算"今日词库"（默认约40词）：

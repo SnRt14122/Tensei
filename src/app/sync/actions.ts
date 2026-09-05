@@ -57,7 +57,7 @@ export async function syncQuizAttempts(attempts: QuizAttempt[]): Promise<SyncRes
   if (insertError) throw insertError;
 
   // ---------- 第二步：按单词聚合，重新推算 user_word_progress ----------
-  // 只处理带 word_id 的记录（句型检测记录 pattern_id，不影响单词的复习权重）。
+  // 只处理带 word_id 的记录（语法点检测记录 pattern_id，不影响单词的复习权重）。
   const wordAttempts = attempts.filter(
     (a): a is QuizAttempt & { word_id: string } => a.word_id !== null
   );

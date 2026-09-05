@@ -1,6 +1,6 @@
 "use client";
 
-// 句型意义检测：展示一个句型（如「〜てもいいです」），四选一选择正确的中文含义。
+// 语法点意义检测：展示一个语法点（如「〜てもいいです」），四选一选择正确的中文含义。
 // 逐题判分逻辑和 MeaningQuizRunner 基本一致（前端选择题、本地缓存答题记录）。
 
 import { useMemo, useState } from "react";
@@ -76,7 +76,7 @@ export function PatternQuizRunner({ patterns }: { patterns: SentencePattern[] })
   if (patterns.length < 4) {
     return (
       <p className="text-white/50">
-        句型数量不足（至少需要 4 个）以生成选项，请先在学习页导入更多句型。
+        语法点数量不足（至少需要 4 个）以生成选项，请先在学习页导入更多语法点。
       </p>
     );
   }

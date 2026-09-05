@@ -32,7 +32,7 @@ export async function updateSession(request: NextRequest) {
   const isAuthPage = request.nextUrl.pathname.startsWith("/login");
   const isDebugLogin = request.nextUrl.pathname.startsWith("/debug-login");
   const isPublicPage = request.nextUrl.pathname === "/";
-  // 词库/句型批量导入接口（/api/import/words、/api/import/patterns）用的是
+  // 词库/语法点批量导入接口（/api/import/words、/api/import/patterns）用的是
   // 独立的 Bearer 密钥鉴权（见 src/lib/importAuth.ts），不依赖 Supabase 登录会话。
   // 之前这里没有把它排除在外，导致任何未登录的请求（包括导入脚本用 curl 发的
   // POST 请求）都会先被这层中间件当成"未登录访客"重定向到 /login，

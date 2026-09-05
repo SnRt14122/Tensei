@@ -3,7 +3,7 @@
 // 为什么需要这个：words/sentence_patterns 表的 RLS 策略只允许所有登录用户"读取"，
 // 没有开放"写入"给普通用户（写入被限定为"仅服务端用 service role 维护"，
 // 见 0001_init.sql 和 0002_conjugation_patterns_attempts.sql 里的注释）。
-// 词库/句型批量导入接口跑在服务端，需要用这个特权客户端才能写入。
+// 词库/语法点批量导入接口跑在服务端，需要用这个特权客户端才能写入。
 //
 // ⚠️ service role key 拥有绕过所有 RLS 的权限，绝不能暴露给浏览器，
 // 只能在 server-only 的代码里使用（本文件不加 "use client"，且只应被 route.ts/actions.ts 引用）。

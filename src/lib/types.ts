@@ -80,16 +80,45 @@ export interface WordWithProgress extends Word {
   progress: UserWordProgress | null;
 }
 
-/** 句型（学习页"句型记忆"板块 + "句型意义检测"共用的数据结构） */
+/** 语法点（学习页"语法点记忆"板块 + "语法点意义检测"共用的数据结构，数据库表名/字段名沿用原来的 sentence_patterns，未改名） */
 export interface SentencePattern {
   id: string;
   pattern: string;
   reading: string | null;
   meaning_cn: string;
   explanation: string | null;
+  lesson: string | null;
+  connection: string | null;
+  usage: string | null;
+  notes: string | null;
   example: ExampleSentence | null;
+  examples: ExampleSentence[];
   level: string | null;
   created_at: string;
+}
+
+/**
+ * 用户对单条语法点的学习进度，字段设计对照 UserWordProgress（见上方），
+ * 语义完全一致：learned=已记住、starred=星标、easy=简单不用再学、weight=复习权重。
+ * 对应数据库表 user_pattern_progress（迁移 0007_pattern_progress.sql）。
+ */
+export interface UserPatternProgress {
+  id: string;
+  user_id: string;
+  pattern_id: string;
+  learned: boolean;
+  starred: boolean;
+  easy: boolean;
+  weight: number;
+  last_result: "correct" | "incorrect" | null;
+  learned_at: string | null;
+  last_reviewed_at: string | null;
+  created_at: string;
+}
+
+/** 学习页"语法点记忆"单卡展示用的合并数据 */
+export interface PatternWithProgress extends SentencePattern {
+  progress: UserPatternProgress | null;
 }
 
 /** 四种检测类型的统一标识 */

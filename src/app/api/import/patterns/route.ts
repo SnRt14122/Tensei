@@ -1,4 +1,4 @@
-// 句型批量导入接口：POST JSON 数组，批量 upsert 到 sentence_patterns 表。
+// 语法点批量导入接口：POST JSON 数组，批量 upsert 到 sentence_patterns 表（表名沿用原来的命名，未改名）。
 //
 // 请求示例：
 //   POST /api/import/patterns
@@ -30,6 +30,11 @@ interface ImportPatternInput {
   explanation?: string | null;
   example?: unknown;
   level?: string | null;
+  lesson?: string | null;
+  connection?: string | null;
+  usage?: string | null;
+  notes?: string | null;
+  examples?: unknown;
 }
 
 interface ImportPatternsBody {
@@ -71,6 +76,11 @@ export async function POST(request: NextRequest) {
     explanation: p.explanation ?? null,
     example: p.example ?? null,
     level: p.level ?? null,
+    lesson: p.lesson ?? null,
+    connection: p.connection ?? null,
+    usage: p.usage ?? null,
+    notes: p.notes ?? null,
+    examples: p.examples ?? (p.example ? [p.example] : []),
   }));
 
   const { data, error } = await supabase

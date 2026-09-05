@@ -1,19 +1,18 @@
 "use client";
 
-// "检测"一级 tab 下的二级标签，四种检测题型共用同一套导航样式。
-// 用 usePathname 判断当前激活哪个子路由，纯客户端组件，不涉及数据请求。
+// "学习"一级 tab 下的二级标签：变位教程 / 语法点记忆，两块内容形态差异较大
+// （一个是固定6卡片的静态教程，一个是数据库驱动的单卡逐个学习流），拆成独立路由后
+// 用这套二级标签切换，写法和 QuizTabs（/quiz 下的二级标签）完全对照。
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const tabs = [
-  { href: "/quiz/kanji", label: "汉字" },
-  { href: "/quiz/meaning", label: "词义" },
-  { href: "/quiz/conjugation", label: "动词/形容词变位" },
-  { href: "/quiz/pattern", label: "语法点意义" },
+  { href: "/learn/conjugation", label: "变位教程" },
+  { href: "/learn/pattern", label: "语法点记忆" },
 ];
 
-export function QuizTabs() {
+export function LearnTabs() {
   const pathname = usePathname();
 
   return (

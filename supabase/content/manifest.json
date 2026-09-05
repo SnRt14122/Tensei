@@ -1,14 +1,30 @@
 {
   "source": "/Users/snrt/Downloads/N5-N1（词汇+语法）及时转存，避免丢失",
+  "n5_tutorial_source": "/Users/snrt/Downloads/N5-N1（词汇+语法）及时转存，避免丢失/新标日/新版中日交流标准日本语 初级 上册.pdf",
   "counts": {
     "words_N2": 4303,
     "words_N3-N4": 2089,
     "words_N1": 9063,
-    "patterns": 392
+    "patterns_n5_shin_standard": 48,
+    "patterns_n4_shin_standard": 59,
+    "patterns_n3_shin_standard": 55,
+    "patterns_n2_shin_standard": 52,
+    "patterns_n1_shin_standard": 119
   },
   "omissions": [
     "N5/N4 PDF词汇未纳入：PDF无可提取文本；N5-N3句型表已纳入。",
     "N2语法PDF为多栏布局，文本抽取会串列，未自动导入；请人工校对后再提交。",
-    "句型整体 reading 未自动生成：原始资料没有统一读音标注，保留 null 以免伪造读音。"
-  ]
+    "句型整体 reading 未自动生成：原始资料没有统一读音标注，保留 null 以免伪造读音。",
+    "patterns_n5_shin_standard.json 为人工校对的 N5 首批教程数据，来源为新标日初级上册。",
+    "patterns_jlpt_n1_n5.json 已于 2026-09-05 整份废弃：392 条中 192 条 explanation 是「按句型接续规则使用。」占位文案，例句是「这个句子使用〜X」模板，不可作为语法库使用。可从 git HEAD 恢复（commit e80da81）。",
+    "N2 原始 xls 没有词性列（只有 番号/単語/漢字/意味），3925 条名词无法细分，verb_type 为形态规则推断值，五段例外动词已用白名单修正。"
+  ],
+  "fixes_2026_09_05": {
+    "reading_normalized": 68,
+    "meaning_cn_fixed": 2,
+    "pos_fixed": 1,
+    "adj_type_i_added": 139,
+    "verb_type_godan_fixed": 9,
+    "script": "scripts/fix_words_structure.py"
+  }
 }

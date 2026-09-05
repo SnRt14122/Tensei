@@ -4,7 +4,7 @@
 //
 // 一级 tab 精简为三个：记忆 / 学习 / 检测。
 // 之前的"汉字检测""词义检测"两个独立入口合并进"检测"一级 tab，
-// 检测内部的四种题型（汉字/词义/动词变位/句型意义）用二级标签切换，见 /quiz/layout.tsx。
+// 检测内部的四种题型（汉字/词义/动词变位/语法点意义）用二级标签切换，见 /quiz/layout.tsx。
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
