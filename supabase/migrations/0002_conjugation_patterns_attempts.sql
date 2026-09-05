@@ -115,3 +115,10 @@ create policy "quiz_attempts_select_own" on quiz_attempts
 
 create policy "quiz_attempts_insert_own" on quiz_attempts
   for insert with check (auth.uid() = user_id);
+
+-- ========== 5. 表级权限（GRANT）==========
+-- 光有 RLS 策略还不够：Postgres 要求角色本身先有对这张表的基础权限，
+-- 否则即使 RLS 允许，也会报 "permission denied for table"（之前 word_banks/words 就踩过这个坑）。
+-- sentence_patterns 所有登录用户只读；quiz_attempts 允许本人读和写（插入）。
+grant select on public.sentence_patterns to anon, authenticated;
+grant select, insert on public.quiz_attempts to authenticated;

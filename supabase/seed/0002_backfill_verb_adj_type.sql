@@ -17,9 +17,13 @@ update words set verb_type = 'ichidan' where bank_id = '00000000-0000-0000-0000-
 update words set verb_type = 'kahen' where bank_id = '00000000-0000-0000-0000-000000000001'
   and surface = '来る';
 
--- サ変动词：「勉強」本身是名词，但常以「勉強する」形式作动词使用，归入サ変
-update words set verb_type = 'sahen' where bank_id = '00000000-0000-0000-0000-000000000001'
-  and surface = '勉強';
+-- サ変动词：「勉強」这条种子数据存的是裸名词形态（surface='勉強'，reading='べんきょう'），
+-- 但サ変变位规则的算法要求输入词本身以"する"结尾（去掉词尾"する"再拼接变形后缀），
+-- 用裸名词形态标记 sahen 会导致变位结果读音出错（比如ます形算出来是"べんきします"而不是
+-- "べんきょうします"）。这里把 surface/reading 一起改成标准的"〇〇する"形态再标记 sahen，
+-- 跟日语字典里サ変动词的标准写法保持一致。
+update words set surface = '勉強する', reading = 'べんきょうする', verb_type = 'sahen'
+  where bank_id = '00000000-0000-0000-0000-000000000001' and surface = '勉強';
 
 -- い形容词：词尾"い"本身参与变形
 update words set adj_type = 'i' where bank_id = '00000000-0000-0000-0000-000000000001'
