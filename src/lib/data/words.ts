@@ -24,20 +24,37 @@ export async function listWordsForBank(
   return data ?? [];
 }
 
-export async function getUserProgressForWords(
+/**
+ * 获取某个用户在某个词库下的全部学习进度记录，返回 word_id -> 进度 的映射。
+ *
+ * 【重要】这里故意不用"把词库里所有单词 id 拼成 IN 列表去查进度"的写法（即
+ * `.in("word_id", wordIds)`，wordIds 来自词库全部单词）。原因：
+ * 词库变大后（比如 N1 有 9063 个词），拼出来的 URL 会超过 Supabase 的
+ * PostgREST 接口（背后经过 Cloudflare）对单次请求 URL 长度的限制，
+ * 实测大约 670 个 id、URL 长度 2.5 万字符左右就会被直接拒绝，返回 400 Bad Request，
+ * 导致"记忆"页打开大词库直接崩溃；而且"同步"按钮成功后会调用
+ * `revalidatePath("/memorize")` 让当前页重新渲染，如果当时正停留在大词库页面，
+ * 会再次触发同样的 400，看起来就像"同步"这个操作本身报错了——这两个现象是同一个根因。
+ *
+ * 改成反过来查：以 user_word_progress 表为主表，用 join 过滤 words.bank_id，
+ * 这样请求体量只取决于"这个用户在这个词库里已经产生过进度记录的单词数"，
+ * 而不是"词库总共有多少单词"，词库再大也不会让 URL 变长。
+ */
+export async function getUserProgressForBank(
   supabase: SupabaseClient,
   userId: string,
-  wordIds: string[]
+  bankId: string
 ): Promise<Map<string, UserWordProgress>> {
-  if (wordIds.length === 0) return new Map();
   const { data, error } = await supabase
     .from("user_word_progress")
-    .select("*")
+    // !inner 表示这是一次内连接：只用 words.bank_id 做过滤条件，
+    // 但不需要把 words 表的字段一起选出来（用 "*" 只取 user_word_progress 自身的列）
+    .select("*, words!inner(bank_id)")
     .eq("user_id", userId)
-    .in("word_id", wordIds);
+    .eq("words.bank_id", bankId);
   if (error) throw error;
   const map = new Map<string, UserWordProgress>();
-  for (const p of data ?? []) map.set(p.word_id, p);
+  for (const p of data ?? []) map.set(p.word_id, p as UserWordProgress);
   return map;
 }
 

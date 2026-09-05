@@ -4,7 +4,7 @@ import { NavBar } from "@/components/NavBar";
 import { BankSelector } from "@/components/BankSelector";
 import { WordCard } from "@/components/WordCard";
 import {
-  getUserProgressForWords,
+  getUserProgressForBank,
   listWordBanks,
   listWordsForBank,
   selectDailyWords,
@@ -39,11 +39,10 @@ export default async function MemorizePage({
     : banks[0].id;
 
   const words = await listWordsForBank(supabase, bankId);
-  const progressMap = await getUserProgressForWords(
-    supabase,
-    user.id,
-    words.map((w) => w.id)
-  );
+  // 改用按词库直接查进度（而不是把词库全部单词 id 拼进 IN 列表），
+  // 避免大词库（如 N1 九千多词）触发 Supabase 接口的 URL 长度限制导致 400 报错，
+  // 详见 getUserProgressForBank 函数内的注释
+  const progressMap = await getUserProgressForBank(supabase, user.id, bankId);
   const dailyWords = selectDailyWords(words, progressMap, user.id, bankId, 30);
 
   const learnedCount = dailyWords.filter((w) => w.progress?.learned).length;
