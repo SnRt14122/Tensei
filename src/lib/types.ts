@@ -60,6 +60,14 @@ export interface UserWordProgress {
   word_id: string;
   learned: boolean;
   starred: boolean;
+  /**
+   * 用户标记该词为"简单/已熟练"，不等同于 learned：
+   * learned 表示"已经在记忆卡片流里过了一遍"，easy 表示"这个词我很熟，
+   * 之后应该少抽到"。两者是独立维度，可以同时为 true。
+   * 生成"今日词库"时，标记为 easy 的词只会以很低概率（1/6）被保留，
+   * 详见 src/lib/data/words.ts 的 selectDailyWords。
+   */
+  easy: boolean;
   weight: number;
   last_result: "correct" | "incorrect" | null;
   learned_at: string | null;

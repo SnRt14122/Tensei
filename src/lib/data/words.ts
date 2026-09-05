@@ -88,6 +88,7 @@ export async function listLearnedWordsWithProgress(
       word_id: row.word_id,
       learned: row.learned,
       starred: row.starred,
+      easy: row.easy,
       weight: row.weight,
       last_result: row.last_result,
       learned_at: row.learned_at,
@@ -97,32 +98,50 @@ export async function listLearnedWordsWithProgress(
   }));
 }
 
+// 标记为"简单"的词在生成"今日词库"时，只以这个概率被保留，其余情况直接跳过。
+// 参考同类项目（nami-console）的做法：不是彻底移除简单词（万一以后还想复习/巩固），
+// 只是让它出现的概率大幅降低（1/6），几乎不影响每日新词/复习词的学习节奏。
+const EASY_KEEP_RATIO = 1 / 6;
+
 /**
- * 计算"今日30词"：
- * - 优先纳入之前检测答错、被标记回记忆页的单词（learned=false 且 weight 更高的优先）
+ * 计算"今日词库"（默认约40词）：
+ * - 先按 EASY_KEEP_RATIO 概率筛掉大部分"标记为简单"的词（用当天种子，保证同一天结果稳定）
+ * - 从筛选后的池子里，优先纳入之前检测答错、被标记回记忆页的单词（learned=false 且 weight 更高的优先）
  * - 剩余名额用当天确定性伪随机数从词库中补齐，保证同一天内多次刷新结果一致
  * - 最多返回 count 个，不重复
+ *
+ * 兜底：如果"简单词概率筛选"筛得太狠导致候选池为空（比如整个词库都标了简单，
+ * 概率上又恰好全部被筛掉），退回未筛选的完整池子，避免"今日词库"直接清空。
  */
 export function selectDailyWords(
   words: Word[],
   progressMap: Map<string, UserWordProgress>,
   userId: string,
   bankId: string,
-  count = 30
+  count = 40
 ): WordWithProgress[] {
   const withProgress: WordWithProgress[] = words.map((w) => ({
     ...w,
     progress: progressMap.get(w.id) ?? null,
   }));
 
-  const reviewPriority = withProgress
+  // 种子固定到"用户+词库+当天日期"，保证同一天内无论刷新多少次，
+  // 简单词筛选和后面的洗牌顺序都完全一致（这也是为什么下面共用一个 rng 实例，
+  // 而不是各自 new 一个：保持"同一天调用顺序固定 -> 结果固定"这条链路）。
+  const rng = createSeededRng(`${userId}:${bankId}:${todayDateString()}`);
+
+  const easyFiltered = withProgress.filter(
+    (w) => !w.progress?.easy || rng() < EASY_KEEP_RATIO
+  );
+  const pool = easyFiltered.length > 0 ? easyFiltered : withProgress;
+
+  const reviewPriority = pool
     .filter((w) => w.progress && w.progress.learned === false && w.progress.weight > 1)
     .sort((a, b) => (b.progress!.weight ?? 0) - (a.progress!.weight ?? 0));
 
   const reviewIds = new Set(reviewPriority.map((w) => w.id));
-  const rest = withProgress.filter((w) => !reviewIds.has(w.id));
+  const rest = pool.filter((w) => !reviewIds.has(w.id));
 
-  const rng = createSeededRng(`${userId}:${bankId}:${todayDateString()}`);
   const shuffled = [...rest];
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(rng() * (i + 1));
