@@ -87,7 +87,7 @@ export function ThemeSettingsPanel() {
       <div
         ref={panelRef}
         style={panelStyle}
-        className="glass-panel slide-transition w-[min(24rem,calc(100vw-1.5rem))] max-h-[calc(100vh-1.5rem)] overflow-y-auto rounded-2xl bg-black/70 p-4 shadow-2xl shadow-black/40"
+        className="glass-panel slide-transition w-[min(24rem,calc(100vw-1.5rem))] max-h-[calc(100vh-1.5rem)] overflow-y-auto rounded-2xl bg-black/88 p-4 shadow-2xl shadow-black/40"
       >
         <p className="mb-3 text-sm font-medium text-white">皮肤设置</p>
 

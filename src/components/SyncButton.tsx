@@ -60,9 +60,9 @@ export function SyncButton() {
       onClick={handleSync}
       disabled={pendingCount === 0 || isSyncing}
       className="relative flex items-center gap-1.5 text-xs text-white/50 hover:text-white transition-colors disabled:opacity-40 disabled:hover:text-white/50"
-      title="把本地缓存的检测记录同步到云端"
+      title="把本地做题记录上传到云端，恢复后可继续看到进度和错题"
     >
-      <span>{isSyncing ? "同步中…" : justSynced ? "已同步" : "同步"}</span>
+      <span>{isSyncing ? "同步中…" : justSynced ? "已同步" : "同步记录"}</span>
       {pendingCount > 0 && !isSyncing && (
         <span className="flex h-4 min-w-4 items-center justify-center rounded-full bg-cyan-400/80 px-1 text-[10px] font-medium text-black">
           {pendingCount}
