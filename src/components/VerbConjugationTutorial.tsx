@@ -88,7 +88,18 @@ function VerbTypeCard({ verbType }: { verbType: VerbType }) {
       <div className="rounded-xl border border-white/10 bg-black/25 p-4">
         <p className="text-xs text-white/40 mb-2">{meta.label}</p>
         <ConjugatedReading before={example.reading} after={result.reading} />
-        <p className="mt-3 text-sm text-cyan-200/80">💡 {meta.mnemonic}</p>
+
+        {/* 语法意义说明：这种变形在什么场合用、表达什么意思 */}
+        <p className="mt-3 text-sm text-white/70">{meta.meaningCn}</p>
+
+        {/* 记忆口诀：怎么从辞书形推导出这个变形 */}
+        <p className="mt-2 text-sm text-cyan-200/80">💡 {meta.mnemonic}</p>
+
+        {/* 完整例句：把这个变形放进一句真实的日语句子里，帮助理解实际用法 */}
+        <div className="mt-3 rounded-lg border border-white/10 bg-black/20 p-3">
+          <p className="text-white/90">{meta.example.jp}</p>
+          <p className="mt-1 text-xs text-white/45">{meta.example.cn}</p>
+        </div>
       </div>
     </div>
   );
@@ -125,7 +136,14 @@ function AdjTypeCard({ adjType }: { adjType: AdjType }) {
       <div className="rounded-xl border border-white/10 bg-black/25 p-4">
         <p className="text-xs text-white/40 mb-2">{meta.label}</p>
         <ConjugatedReading before={example.reading} after={result.reading} />
-        <p className="mt-3 text-sm text-cyan-200/80">💡 {meta.mnemonic}</p>
+
+        <p className="mt-3 text-sm text-white/70">{meta.meaningCn}</p>
+        <p className="mt-2 text-sm text-cyan-200/80">💡 {meta.mnemonic}</p>
+
+        <div className="mt-3 rounded-lg border border-white/10 bg-black/20 p-3">
+          <p className="text-white/90">{meta.example.jp}</p>
+          <p className="mt-1 text-xs text-white/45">{meta.example.cn}</p>
+        </div>
       </div>
     </div>
   );

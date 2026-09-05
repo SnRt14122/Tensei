@@ -5,7 +5,7 @@
 // 要求用户输入变形后的纯假名读音（不允许汉字），比如"いかなかった"。
 // 这同时考察了两件事：变位规则记得对不对，以及汉字对应的读音记得对不对。
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import {
   ALL_ADJ_FORMS,
   ALL_VERB_FORMS,
@@ -81,9 +81,13 @@ export function ConjugationQuizRunner({ words }: { words: WordWithProgress[] }) 
   const current = quizItems[index];
   const finished = index >= quizItems.length;
 
-  function handleSubmit(e: React.FormEvent) {
+  // 记录输入框当前是否正在"输入法拼字中"，避免拼字确认候选词的 Enter 被误当成提交
+  const isComposingRef = useRef(false);
+
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!current || result) return;
+    if (isComposingRef.current) return;
 
     // 用户答案要求"没有汉字，纯假名"：即使用户不小心输入了汉字，normalizeKana 也不会
     // 把汉字转成假名，所以只要答案里混了汉字，字符串比较自然就会判错，间接强制了"纯假名"的要求。
@@ -147,6 +151,12 @@ export function ConjugationQuizRunner({ words }: { words: WordWithProgress[] }) 
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          onCompositionStart={() => {
+            isComposingRef.current = true;
+          }}
+          onCompositionEnd={() => {
+            isComposingRef.current = false;
+          }}
           disabled={!!result}
           autoFocus
           placeholder="请输入变形后的纯假名（不要写汉字）"

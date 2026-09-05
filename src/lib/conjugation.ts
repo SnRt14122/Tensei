@@ -57,33 +57,143 @@ export type AdjForm =
   | "politePast" // 敬体过去（礼貌体过去）
   | "politeNegative"; // 敬体否定（礼貌体否定）
 
+/** 一种变形的完整教学信息：JLPT/日语教育标准名称 + 语法意义 + 示例句 + 记忆口诀 */
+export interface FormMeta {
+  /** 日语教育里的标准名称（不用中国教材常见的"masu型"这类叫法），括号内附日语原文术语 */
+  label: string;
+  /** 这种变形在语法上表达什么意义/用于什么场合，用中文说明 */
+  meaningCn: string;
+  /** 示例句：日语原文 + 中文翻译，帮助理解这种变形在实际句子里怎么用 */
+  example: { jp: string; cn: string };
+  /** 变形规则的记忆口诀 */
+  mnemonic: string;
+}
+
 /**
- * 每种变形的中文名 + 记忆口诀，供"学习"页教程和检测题面板展示用。
- * mnemonic 尽量给一句好记的规则总结，而不是单纯翻译语法术语。
+ * 每种变形的完整教学信息，供"学习"页教程和检测题面板展示用。
+ *
+ * 命名标准：采用日本语言学校/日语教育通用的活用形名称（比如"丁寧形""受身形""意向形"），
+ * 而不是中文教材里常用的"masu型/te型"这类罗马字叫法——这是本次改动特别要求的调整，
+ * 因为"masu型"只是内部代号（对应本文件的英文变量名），并不是标准的日语语法术语。
  */
-export const VERB_FORM_META: Record<VerbForm, { label: string; mnemonic: string }> = {
-  masu: { label: "ます形（礼貌体）", mnemonic: "い段假名 + ます，五段把词尾换成い段，一段去る加ます" },
-  nai: { label: "ない形（否定）", mnemonic: "あ段假名 + ない，五段把词尾换成あ段，一段去る加ない" },
-  nakatta: { label: "なかった形（否定过去）", mnemonic: "ない形的『い』换成『かった』：〜くない→〜くなかった" },
-  te: { label: "て形", mnemonic: "五段按『う/つ/る→って，く/ぐ→いて/いで，む/ぶ/ぬ→んで，す→して』变化，一段去る加て" },
-  ta: { label: "た形（过去）", mnemonic: "把て形的『て/で』换成『た/だ』即可，规则完全一致" },
-  potential: { label: "可能形（能……）", mnemonic: "五段换成え段+る，一段去る加られる" },
-  volitional: { label: "意志形（……吧）", mnemonic: "五段换成お段+う，一段去る加よう" },
-  passive: { label: "被动形（被……）", mnemonic: "五段换成あ段+れる，一段去る加られる（和可能形撞形）" },
-  causative: { label: "使役形（让/使……）", mnemonic: "五段换成あ段+せる，一段去る加させる" },
-  conditional: { label: "仮定形（ば形，如果……）", mnemonic: "五段换成え段+ば，一段去る加れば" },
-  imperative: { label: "命令形", mnemonic: "五段换成え段（不加任何词尾），一段去る加ろ" },
+export const VERB_FORM_META: Record<VerbForm, FormMeta> = {
+  masu: {
+    label: "丁寧形（ます形）",
+    meaningCn: "礼貌、正式的现在/将来时态，对不熟悉的人或正式场合说话时使用，日常口语的基本敬体",
+    example: { jp: "毎晩、本を読みます。", cn: "我每晚都看书。" },
+    mnemonic: "い段假名 + ます，五段把词尾换成い段，一段去る加ます",
+  },
+  nai: {
+    label: "否定形（ない形）",
+    meaningCn: "简体（非礼貌体）的否定形式，表示「不……」，日常和朋友、家人说话时用",
+    example: { jp: "今日は学校に行かない。", cn: "今天不去学校。" },
+    mnemonic: "あ段假名 + ない，五段把词尾换成あ段，一段去る加ない",
+  },
+  nakatta: {
+    label: "否定過去形（なかった形）",
+    meaningCn: "简体否定过去时，表示「过去没有做……」",
+    example: { jp: "昨日は勉強しなかった。", cn: "昨天没有学习。" },
+    mnemonic: "ない形的『い』换成『かった』：〜くない→〜くなかった",
+  },
+  te: {
+    label: "て形",
+    meaningCn: "连接前后两个动作/句子的中间形态，也用于请求（〜てください）、许可（〜てもいいです）等句型",
+    example: { jp: "窓を開けてください。", cn: "请打开窗户。" },
+    mnemonic: "五段按『う/つ/る→って，く/ぐ→いて/いで，む/ぶ/ぬ→んで，す→して』变化，一段去る加て",
+  },
+  ta: {
+    label: "過去形（た形）",
+    meaningCn: "简体过去时，表示动作已经完成",
+    example: { jp: "先週、京都へ行った。", cn: "上周去了京都。" },
+    mnemonic: "把て形的『て/で』换成『た/だ』即可，规则完全一致",
+  },
+  potential: {
+    label: "可能形",
+    meaningCn: "表示「能够/会做某事」，强调具备完成这个动作的能力或条件",
+    example: { jp: "彼は漢字が読める。", cn: "他能读懂汉字。" },
+    mnemonic: "五段换成え段+る，一段去る加られる",
+  },
+  volitional: {
+    label: "意向形（意志形）",
+    meaningCn: "表示说话人自己的意志、打算，或用于邀请对方一起做某事，相当于「……吧」",
+    example: { jp: "一緒に映画を見よう。", cn: "一起看电影吧。" },
+    mnemonic: "五段换成お段+う，一段去る加よう",
+  },
+  passive: {
+    label: "受身形",
+    meaningCn: "被动语态，表示「被……」，主语是动作的承受者而不是发出者",
+    example: { jp: "先生に褒められた。", cn: "被老师表扬了。" },
+    mnemonic: "五段换成あ段+れる，一段去る加られる（和可能形撞形，需靠语境区分）",
+  },
+  causative: {
+    label: "使役形",
+    meaningCn: "使役语态，表示「让/叫/使某人做某事」，主语是命令或允许的一方",
+    example: { jp: "子供に野菜を食べさせる。", cn: "让孩子吃蔬菜。" },
+    mnemonic: "五段换成あ段+せる，一段去る加させる",
+  },
+  conditional: {
+    label: "仮定形（ば形）",
+    meaningCn: "表示假设条件，「如果……的话（就会……）」，强调前项是后项发生的必要条件",
+    example: { jp: "早く出発すれば、間に合う。", cn: "如果早点出发，就能赶上。" },
+    mnemonic: "五段换成え段+ば，一段去る加れば",
+  },
+  imperative: {
+    label: "命令形",
+    meaningCn: "命令语气，语气强硬，多见于书面、告示牌、体育指导或长辈对孩子说话，日常对话中较少直接使用",
+    example: { jp: "危ない、早く逃げろ！", cn: "危险，快跑！" },
+    mnemonic: "五段换成え段（不加任何词尾），一段去る加ろ",
+  },
 };
 
-export const ADJ_FORM_META: Record<AdjForm, { label: string; mnemonic: string }> = {
-  negative: { label: "否定形", mnemonic: "い形容词去い加くない；な形容词直接加じゃない" },
-  past: { label: "过去形", mnemonic: "い形容词去い加かった；な形容词直接加だった" },
-  pastNegative: { label: "否定过去形", mnemonic: "い形容词去い加くなかった；な形容词直接加じゃなかった" },
-  te: { label: "て形（连接）", mnemonic: "い形容词去い加くて；な形容词直接加で" },
-  conditional: { label: "仮定形（如果……）", mnemonic: "い形容词去い加ければ；な形容词直接加なら" },
-  politeAffirmative: { label: "敬体现在（です）", mnemonic: "两类形容词都直接在辞书形后加です" },
-  politePast: { label: "敬体过去", mnemonic: "过去形直接加です：い形容词かった+です，な形容词だった→でした" },
-  politeNegative: { label: "敬体否定", mnemonic: "否定形直接加です，或な形容词用じゃありません更礼貌" },
+export const ADJ_FORM_META: Record<AdjForm, FormMeta> = {
+  negative: {
+    label: "否定形",
+    meaningCn: "简体否定，表示「不……」",
+    example: { jp: "この問題は難しくない。", cn: "这个问题不难。" },
+    mnemonic: "い形容词去い加くない；な形容词直接加じゃない",
+  },
+  past: {
+    label: "過去形",
+    meaningCn: "简体过去，表示过去某种状态/性质",
+    example: { jp: "昨日は忙しかった。", cn: "昨天很忙。" },
+    mnemonic: "い形容词去い加かった；な形容词直接加だった",
+  },
+  pastNegative: {
+    label: "過去否定形",
+    meaningCn: "简体过去否定，表示「过去不是/没有……」",
+    example: { jp: "テストは難しくなかった。", cn: "考试不难。" },
+    mnemonic: "い形容词去い加くなかった；な形容词直接加じゃなかった",
+  },
+  te: {
+    label: "て形",
+    meaningCn: "连接下一句，或表示并列/原因，相当于中文的「……而且……」",
+    example: { jp: "この店は安くておいしい。", cn: "这家店便宜又好吃。" },
+    mnemonic: "い形容词去い加くて；な形容词直接加で",
+  },
+  conditional: {
+    label: "仮定形",
+    meaningCn: "表示假设条件，「如果……的话」",
+    example: { jp: "天気がよければ、出かけよう。", cn: "如果天气好的话，就出门吧。" },
+    mnemonic: "い形容词去い加ければ；な形容词直接加なら",
+  },
+  politeAffirmative: {
+    label: "丁寧形（です形）",
+    meaningCn: "礼貌体现在肯定，用于对不熟悉的人或正式场合陈述性质/状态",
+    example: { jp: "この本は面白いです。", cn: "这本书很有趣。" },
+    mnemonic: "两类形容词都直接在辞书形后加です",
+  },
+  politePast: {
+    label: "丁寧過去形",
+    meaningCn: "礼貌体过去，用于礼貌地陈述过去的性质/状态",
+    example: { jp: "旅行は楽しかったです。", cn: "旅行很愉快。" },
+    mnemonic: "过去形直接加です：い形容词かった+です，な形容词だった→でした",
+  },
+  politeNegative: {
+    label: "丁寧否定形",
+    meaningCn: "礼貌体否定，比简体否定更客气",
+    example: { jp: "この料理は辛くないです。", cn: "这道菜不辣。" },
+    mnemonic: "否定形直接加です，或な形容词用じゃありません更礼貌",
+  },
 };
 
 // ============================================================

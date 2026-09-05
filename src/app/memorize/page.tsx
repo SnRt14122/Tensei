@@ -22,8 +22,9 @@ export default async function MemorizePage({
 
   const banks = await listWordBanks(supabase);
   if (banks.length === 0) {
+    // 去掉硬编码的 bg-[#05060a]：会盖住根布局里的 AmbientBackground 背景动效层
     return (
-      <main className="min-h-screen bg-[#05060a]">
+      <main className="min-h-screen">
         <NavBar email={user.email} />
         <div className="mx-auto max-w-4xl px-4 py-16 text-white/60">
           还没有词库，请先在 Supabase 中导入 supabase/seed 下的种子数据。
@@ -48,7 +49,7 @@ export default async function MemorizePage({
   const learnedCount = dailyWords.filter((w) => w.progress?.learned).length;
 
   return (
-    <main className="min-h-screen bg-[#05060a]">
+    <main className="min-h-screen">
       <NavBar email={user.email} />
       <div className="mx-auto max-w-4xl px-4 py-8">
         <div className="mb-6 flex flex-wrap items-center justify-between gap-3">

@@ -8,13 +8,13 @@ export default async function Home() {
   const isLoggedIn = !!data?.user;
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[#05060a]">
-      {/* 背景几何装饰（drift 模式）+ 极光流动层（aurora 模式，由皮肤设置里的 backgroundEffect 控制显隐） */}
+    // 去掉硬编码的 bg-[#05060a]：会盖住根布局里的 AmbientBackground 背景动效层，
+    // 也不会跟随皮肤设置里的"背景色"选项变化，让 body 上的 var(--background) 透出来即可。
+    <main className="relative min-h-screen overflow-hidden">
+      {/* 通用的几何漂浮/极光流动背景已经挂在根布局（AmbientBackground，见 src/app/layout.tsx），
+          所有页面共用，不需要在这里重复渲染。这里只保留首页专属的静态渐变叠加层，
+          给首页增加一点额外的视觉层次。 */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="shard shard-hex drift absolute -left-16 top-24 h-56 w-56 sm:h-72 sm:w-72" />
-        <div className="shard shard-diamond drift absolute right-[-4rem] top-[8rem] h-40 w-40 sm:h-56 sm:w-56" />
-        <div className="shard shard-hex drift absolute bottom-[-3rem] left-1/3 h-64 w-64 opacity-70" />
-        <div className="aurora-layer" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(var(--accent-rgb),0.12),transparent_45%),radial-gradient(circle_at_80%_75%,rgba(168,85,247,0.12),transparent_45%)]" />
       </div>
 

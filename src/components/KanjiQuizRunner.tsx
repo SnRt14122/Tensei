@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { Furigana } from "./Furigana";
 import { normalizeKana } from "@/lib/kana";
 import { addLocalAttempt } from "@/lib/localStore";
@@ -26,9 +26,21 @@ export function KanjiQuizRunner({ words }: { words: WordWithProgress[] }) {
   const current = quizWords[index];
   const finished = index >= quizWords.length;
 
-  function handleSubmit(e: React.FormEvent) {
+  // 记录输入框当前是否正在"输入法拼字中"（比如打拼音还没敲出候选词就按了 Enter）。
+  // 用 ref 而不是 state：这个值只在事件回调里读取判断，不需要触发重渲染。
+  const isComposingRef = useRef(false);
+
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!current || result) return;
+
+    // 防止"输入法拼字过程中确认候选词"的那次 Enter 被误当成提交答案：
+    // 如果用拼音/罗马音输入法打假名，敲完拼音后第一次按 Enter 往往是
+    // "把候选词上屏"，不是"提交表单"，但浏览器仍会把这次 keydown 传导成
+    // form 的 submit 事件。isComposingRef 由输入框的 onCompositionStart/
+    // onCompositionEnd 维护，如果此刻还在拼字状态，直接放弃这次提交
+    // （不判分、不清空输入），等上屏完成后用户再按一次 Enter 才是真正提交。
+    if (isComposingRef.current) return;
 
     // 判分本身一直就是纯前端逻辑（字符串比较），这部分没有性能问题。
     const isCorrect = normalizeKana(input) === normalizeKana(current.reading);
@@ -91,6 +103,12 @@ export function KanjiQuizRunner({ words }: { words: WordWithProgress[] }) {
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          onCompositionStart={() => {
+            isComposingRef.current = true;
+          }}
+          onCompositionEnd={() => {
+            isComposingRef.current = false;
+          }}
           disabled={!!result}
           autoFocus
           placeholder="请输入纯假名读音"

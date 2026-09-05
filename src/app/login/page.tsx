@@ -8,7 +8,10 @@ export default async function LoginPage({
   const params = await searchParams;
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-[#05060a] px-4">
+    // 之前这里写死了 bg-[#05060a] 不透明背景色，会盖住挂在根布局里的
+    // AmbientBackground 背景动效层（几何漂浮/极光流动），也不会跟随皮肤设置里的
+    // "背景色"选项变化。去掉硬编码背景色，让 body 上的 var(--background) 透出来。
+    <main className="min-h-screen flex items-center justify-center px-4">
       <div className="w-full max-w-md rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 shadow-2xl">
         <h1 className="text-2xl font-semibold text-white mb-1">日语单词记忆</h1>
         <p className="text-sm text-white/50 mb-6">登录或注册以同步你的学习进度</p>

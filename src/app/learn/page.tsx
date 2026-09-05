@@ -16,7 +16,9 @@ export default async function LearnPage() {
   const patterns = await listSentencePatterns(supabase);
 
   return (
-    <main className="min-h-screen bg-[#05060a]">
+    // 去掉硬编码的 bg-[#05060a]：会盖住根布局里的 AmbientBackground 背景动效层，
+    // 也不会跟随皮肤设置里的"背景色"选项变化，让 body 上的 var(--background) 透出来即可。
+    <main className="min-h-screen">
       <NavBar email={user.email} />
       <div className="mx-auto max-w-4xl px-4 py-8 space-y-12">
         <section>

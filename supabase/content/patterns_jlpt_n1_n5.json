@@ -1,0 +1,8236 @@
+{
+  "patterns": [
+    {
+      "pattern": "〜前に",
+      "reading": null,
+      "meaning_cn": "之前，前面",
+      "explanation": "の形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜前に"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜前に”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜後/〜後で/〜後に",
+      "reading": null,
+      "meaning_cn": "后（に），之后（马上）",
+      "explanation": "の形；た形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜後/〜後で/〜後に"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜後/〜後で/〜後に”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜てから",
+      "reading": null,
+      "meaning_cn": "之后",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜てから"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜てから”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜時（1)",
+      "reading": null,
+      "meaning_cn": "的时候",
+      "explanation": "の形；な形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜時（1)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜時（1)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜時(2)",
+      "reading": null,
+      "meaning_cn": "的时候",
+      "explanation": "だった；だった；かった；た形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜時(2)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜時(2)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ながら",
+      "reading": null,
+      "meaning_cn": "一边…一边…",
+      "explanation": "ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ながら"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ながら”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "それから",
+      "reading": null,
+      "meaning_cn": "然后，后来，还有",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "それから"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“それから”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜おきに",
+      "reading": null,
+      "meaning_cn": "每隔",
+      "explanation": "数量词",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜おきに"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜おきに”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜間/〜間に",
+      "reading": null,
+      "meaning_cn": "时，期间（に）",
+      "explanation": "の形；な形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜間/〜間に"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜間/〜間に”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ないうちに",
+      "reading": null,
+      "meaning_cn": "趁还没…时",
+      "explanation": "ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ないうちに"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ないうちに”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜までに",
+      "reading": null,
+      "meaning_cn": "在…之前",
+      "explanation": "词干；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜までに"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜までに”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜から",
+      "reading": null,
+      "meaning_cn": "因为（主观）",
+      "explanation": "だ形；だ形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜から"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜から”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜て/〜で",
+      "reading": null,
+      "meaning_cn": "因为（轻微）",
+      "explanation": "で形；で形；くて形；て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜て/〜で"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜て/〜で”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜なくて",
+      "reading": null,
+      "meaning_cn": "因为（轻微）",
+      "explanation": "で形；で形；く形；ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜なくて"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜なくて”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ので",
+      "reading": null,
+      "meaning_cn": "因为（客观）",
+      "explanation": "な形；な形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ので"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ので”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜し",
+      "reading": null,
+      "meaning_cn": "（并例、原因例举）",
+      "explanation": "だ形；だ形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜し"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜し”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ため（に）",
+      "reading": null,
+      "meaning_cn": "因为（多消极结果）",
+      "explanation": "の形；な形；原形；た形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ため（に）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ため（に）”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜が",
+      "reading": null,
+      "meaning_cn": "虽然…但是…",
+      "explanation": "だ形；だ形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜が"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜が”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "しかし",
+      "reading": null,
+      "meaning_cn": "可是，但是，不过",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "しかし"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“しかし”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜のに",
+      "reading": null,
+      "meaning_cn": "虽然…却（消极，客观）",
+      "explanation": "な形；な形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜のに"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜のに”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "それでは/では",
+      "reading": null,
+      "meaning_cn": "那样的话，那么",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "それでは/では"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“それでは/では”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜たり〜たりする（1)",
+      "reading": null,
+      "meaning_cn": "又…又…（例举）",
+      "explanation": "だった；だった；かった；た形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜たり〜たりする（1)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜たり〜たりする（1)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜たり〜たりする（2)",
+      "reading": null,
+      "meaning_cn": "一会儿…一会儿…（相反例）",
+      "explanation": "だった；だった；かった；た形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜たり〜たりする（2)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜たり〜たりする（2)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜も〜し、〜も〜",
+      "reading": null,
+      "meaning_cn": "既…又，既…而且",
+      "explanation": "词干；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜も〜し、〜も〜"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜も〜し、〜も〜”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜も〜も",
+      "reading": null,
+      "meaning_cn": "也，都",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜も〜も"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜も〜も”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜も〜も〜ない",
+      "reading": null,
+      "meaning_cn": "既不，又不",
+      "explanation": "词干；词干；く形；ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜も〜も〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜も〜も〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜など",
+      "reading": null,
+      "meaning_cn": "等等，等",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜など"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜など”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜もあれば、〜もある",
+      "reading": null,
+      "meaning_cn": "有…也有",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜もあれば、〜もある"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜もあれば、〜もある”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜とか〜とか",
+      "reading": null,
+      "meaning_cn": "啦…啦",
+      "explanation": "词干；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜とか〜とか"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜とか〜とか”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜たことがある/〜たことがない",
+      "reading": null,
+      "meaning_cn": "过，曾经…过",
+      "explanation": "だった；た形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜たことがある/〜たことがない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜たことがある/〜たことがない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ことがある/〜ないことがある",
+      "reading": null,
+      "meaning_cn": "有时，偶尔",
+      "explanation": "な形；词干；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ことがある/〜ないことがある"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ことがある/〜ないことがある”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜てください",
+      "reading": null,
+      "meaning_cn": "请",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜てください"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜てください”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ないでください",
+      "reading": null,
+      "meaning_cn": "请不要",
+      "explanation": "ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ないでください"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ないでください”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜をぐださいませんか/〜てくださいませんか",
+      "reading": null,
+      "meaning_cn": "能否，可否",
+      "explanation": "词干；て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜をぐださいませんか/〜てくださいませんか"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜をぐださいませんか/〜てくださいませんか”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜をください",
+      "reading": null,
+      "meaning_cn": "请给我，请把…给我",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜をください"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜をください”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "お〜ください",
+      "reading": null,
+      "meaning_cn": "请",
+      "explanation": "ごサ词干；ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "お〜ください"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“お〜ください”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜（さ）せてください",
+      "reading": null,
+      "meaning_cn": "请让我",
+      "explanation": "使役形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜（さ）せてください"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜（さ）せてください”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜てくれ",
+      "reading": null,
+      "meaning_cn": "（命令对方做某事）",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜てくれ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜てくれ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜なさい",
+      "reading": null,
+      "meaning_cn": "请",
+      "explanation": "ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜なさい"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜なさい”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "命令形",
+      "reading": null,
+      "meaning_cn": "强硬命令（男性间）",
+      "explanation": "命令形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "命令形"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“命令形”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜る•な",
+      "reading": null,
+      "meaning_cn": "不要，别（男性用）",
+      "explanation": "原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜る•な"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜る•な”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜がほしい",
+      "reading": null,
+      "meaning_cn": "想要（第一人称）",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜がほしい"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜がほしい”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜たい",
+      "reading": null,
+      "meaning_cn": "想（第一人称）",
+      "explanation": "ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜たい"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜たい”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜がる",
+      "reading": null,
+      "meaning_cn": "想（第三人称）",
+      "explanation": "词干；词干；词干；ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜がる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜がる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜てほしい/〜ないでほしい",
+      "reading": null,
+      "meaning_cn": "希望（他人做某事）、",
+      "explanation": "て/ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜てほしい/〜ないでほしい"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜てほしい/〜ないでほしい”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜といい/〜たらいい/〜ばいい/〜ならいい",
+      "reading": null,
+      "meaning_cn": "…就好了",
+      "explanation": "だ形；だ形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜といい/〜たらいい/〜ばいい/〜ならいい"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜といい/〜たらいい/〜ばいい/〜ならいい”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜に(行く等移动动词）",
+      "reading": null,
+      "meaning_cn": "去等...（…へ…に）",
+      "explanation": "サ词干；ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜に(行く等移动动词）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜に(行く等移动动词）”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜るのに（不常用）",
+      "reading": null,
+      "meaning_cn": "为了，对",
+      "explanation": "原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜るのに（不常用）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜るのに（不常用）”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ために",
+      "reading": null,
+      "meaning_cn": "为了",
+      "explanation": "の形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ために"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ために”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜のため（に）",
+      "reading": null,
+      "meaning_cn": "为（了）",
+      "explanation": "人物/团体",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜のため（に）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜のため（に）”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜るように/〜ないように",
+      "reading": null,
+      "meaning_cn": "为了",
+      "explanation": "原/ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜るように/〜ないように"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜るように/〜ないように”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜くなる/〜になる（客观）",
+      "reading": null,
+      "meaning_cn": "成为，变成",
+      "explanation": "に；に；く形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜くなる/〜になる（客观）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜くなる/〜になる（客观）”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜くする/〜にする（主观）",
+      "reading": null,
+      "meaning_cn": "（选择，决定，变化等...）",
+      "explanation": "に；に；く形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜くする/〜にする（主观）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜くする/〜にする（主观）”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜るようになる/〜ないようになる/〜なくなる",
+      "reading": null,
+      "meaning_cn": "变得",
+      "explanation": "原/ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜るようになる/〜ないようになる/〜なくなる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜るようになる/〜ないようになる/〜なくなる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜てくる",
+      "reading": null,
+      "meaning_cn": "来（从远到近变化）",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜てくる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜てくる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ていく",
+      "reading": null,
+      "meaning_cn": "去（从近到沅变化）",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ていく"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ていく”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ている（1)",
+      "reading": null,
+      "meaning_cn": "正在进行中（他动）",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ている（1)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ている（1)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ている（2)",
+      "reading": null,
+      "meaning_cn": "持续某状态（自动）",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ている（2)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ている（2)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜てある",
+      "reading": null,
+      "meaning_cn": "完成某动作（他动）",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜てある"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜てある”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜そうだ（1)",
+      "reading": null,
+      "meaning_cn": "好像，似乎",
+      "explanation": "词干；词干；ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜そうだ（1)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜そうだ（1)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜そうだ(2)",
+      "reading": null,
+      "meaning_cn": "眼看就要，将要",
+      "explanation": "ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜そうだ(2)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜そうだ(2)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜がする（感觉、感受词）",
+      "reading": null,
+      "meaning_cn": "（觉得）",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜がする（感觉、感受词）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜がする（感觉、感受词）”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜をしている（1)",
+      "reading": null,
+      "meaning_cn": "担任/做（某职业等）",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜をしている（1)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜をしている（1)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜をしている（2)",
+      "reading": null,
+      "meaning_cn": "穿着，戴着等",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜をしている（2)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜をしている（2)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜をしている（3)",
+      "reading": null,
+      "meaning_cn": "（呈现某状态等…）",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜をしている（3)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜をしている（3)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜は〜が",
+      "reading": null,
+      "meaning_cn": "属于前项的后项具有某性质、状态...",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜は〜が"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜は〜が”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜まま/〜ままを/〜ままだ",
+      "reading": null,
+      "meaning_cn": "（保持原状）",
+      "explanation": "の形；な形；原形；た形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜まま/〜ままを/〜ままだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜まま/〜ままを/〜ままだ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ないで",
+      "reading": null,
+      "meaning_cn": "没有（不）…就…",
+      "explanation": "ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ないで"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ないで”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜くらい/〜ぐらい",
+      "reading": null,
+      "meaning_cn": "大约，左右",
+      "explanation": "数量词",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜くらい/〜ぐらい"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜くらい/〜ぐらい”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "数量词ほど",
+      "reading": null,
+      "meaning_cn": "将近，左右",
+      "explanation": "数量词",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "数量词ほど"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“数量词ほど”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "数量词ばかり",
+      "reading": null,
+      "meaning_cn": "大概，左右",
+      "explanation": "数量词",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "数量词ばかり"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“数量词ばかり”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "そして/そうして",
+      "reading": null,
+      "meaning_cn": "并且，而且",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "そして/そうして"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“そして/そうして”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜だけでなく〜も/〜ばかりでなく〜も",
+      "reading": null,
+      "meaning_cn": "不仅…也…",
+      "explanation": "词干；词干；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜だけでなく〜も/〜ばかりでなく〜も"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜だけでなく〜も/〜ばかりでなく〜も”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "それに",
+      "reading": null,
+      "meaning_cn": "还有，而且，又",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "それに"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“それに”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "その上",
+      "reading": null,
+      "meaning_cn": "而且，加上",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "その上"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“その上”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "あまり〜ない/あんまり〜ない",
+      "reading": null,
+      "meaning_cn": "不太",
+      "explanation": "では；く形；ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "あまり〜ない/あんまり〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“あまり〜ない/あんまり〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜はめったに〜ない",
+      "reading": null,
+      "meaning_cn": "很少",
+      "explanation": "词干；ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜はめったに〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜はめったに〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "べつに〜ない",
+      "reading": null,
+      "meaning_cn": "并不",
+      "explanation": "词干＋助词；では；く形；ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "べつに〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“べつに〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "ほとんど〜ない",
+      "reading": null,
+      "meaning_cn": "几乎不",
+      "explanation": "原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "ほとんど〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“ほとんど〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "けっして〜ない",
+      "reading": null,
+      "meaning_cn": "决不",
+      "explanation": "词干＋では；く形；ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "けっして〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“けっして〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "ちっとも〜ない",
+      "reading": null,
+      "meaning_cn": "一点也不",
+      "explanation": "く形；ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "ちっとも〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“ちっとも〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "少しも〜ない",
+      "reading": null,
+      "meaning_cn": "一点都不",
+      "explanation": "く形；ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "少しも〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“少しも〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "ぜんぜん〜ない",
+      "reading": null,
+      "meaning_cn": "根本不，完全不，一点都不",
+      "explanation": "く形；ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "ぜんぜん〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“ぜんぜん〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "まったく〜ない",
+      "reading": null,
+      "meaning_cn": "一点也不，根本不",
+      "explanation": "く形；ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "まったく〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“まったく〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "疑问词も",
+      "reading": null,
+      "meaning_cn": "都",
+      "explanation": "疑＋助词",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "疑问词も"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“疑问词も”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "疑问词でも（肯定）",
+      "reading": null,
+      "meaning_cn": "都",
+      "explanation": "疑问词",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "疑问词でも（肯定）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“疑问词でも（肯定）”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜か、それとも〜か",
+      "reading": null,
+      "meaning_cn": "是…还是…（句子+）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜か、それとも〜か"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜か、それとも〜か”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜は〜より",
+      "reading": null,
+      "meaning_cn": "比（与より前项比）",
+      "explanation": "词干；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜は〜より"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜は〜より”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜より〜ほうが",
+      "reading": null,
+      "meaning_cn": "比起…更…",
+      "explanation": "词干；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜より〜ほうが"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜より〜ほうが”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜（中)で〜がいちばん",
+      "reading": null,
+      "meaning_cn": "（某范围中）最…",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜（中)で〜がいちばん"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜（中)で〜がいちばん”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜と〜と〜どちらが",
+      "reading": null,
+      "meaning_cn": "…和…，选哪个",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜と〜と〜どちらが"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜と〜と〜どちらが”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜は〜ほど〜ない",
+      "reading": null,
+      "meaning_cn": "不如…，不像…",
+      "explanation": "词干；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜は〜ほど〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜は〜ほど〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "それほど〜ない",
+      "reading": null,
+      "meaning_cn": "并不那么（没那种程度）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "それほど〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“それほど〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜は〜が、〜は",
+      "reading": null,
+      "meaning_cn": "虽然…但是…",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜は〜が、〜は"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜は〜が、〜は”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜すぎる",
+      "reading": null,
+      "meaning_cn": "过于，太过",
+      "explanation": "词干；词干；原形；ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜すぎる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜すぎる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜かどうか",
+      "reading": null,
+      "meaning_cn": "是否，XX不XX",
+      "explanation": "词干；词干；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜かどうか"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜かどうか”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜か〜ないか",
+      "reading": null,
+      "meaning_cn": "是不是（同上)",
+      "explanation": "词干；词干；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜か〜ないか"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜か〜ないか”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜として/〜としての/〜といたしましては",
+      "reading": null,
+      "meaning_cn": "作为，以…身份",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜として/〜としての/〜といたしましては"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜として/〜としての/〜といたしましては”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜はじめる",
+      "reading": null,
+      "meaning_cn": "开始",
+      "explanation": "ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜はじめる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜はじめる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜つづける",
+      "reading": null,
+      "meaning_cn": "连续",
+      "explanation": "ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜つづける"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜つづける”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜おわる",
+      "reading": null,
+      "meaning_cn": "…完/结束",
+      "explanation": "ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜おわる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜おわる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜だす",
+      "reading": null,
+      "meaning_cn": "...起来",
+      "explanation": "ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜だす"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜だす”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜るところだ",
+      "reading": null,
+      "meaning_cn": "正要",
+      "explanation": "原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜るところだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜るところだ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ているところだ",
+      "reading": null,
+      "meaning_cn": "真在",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ているところだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ているところだ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜たところだ",
+      "reading": null,
+      "meaning_cn": "刚…",
+      "explanation": "た形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜たところだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜たところだ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜たばかりだ",
+      "reading": null,
+      "meaning_cn": "刚刚…",
+      "explanation": "た形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜たばかりだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜たばかりだ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ることができる/〜ができる",
+      "reading": null,
+      "meaning_cn": "能，会",
+      "explanation": "が；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ることができる/〜ができる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ることができる/〜ができる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜（ら）れる",
+      "reading": null,
+      "meaning_cn": "能，可以",
+      "explanation": "可能形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜（ら）れる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜（ら）れる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "带有可能含义的自动词",
+      "reading": null,
+      "meaning_cn": "見える、聞こえる、分る、入る、要る等…",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "带有可能含义的自动词"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“带有可能含义的自动词”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "自发",
+      "reading": null,
+      "meaning_cn": "不由得（思う、感じる等）",
+      "explanation": "被动形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "自发"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“自发”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜やすい/〜にくい",
+      "reading": null,
+      "meaning_cn": "容易/难",
+      "explanation": "ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜やすい/〜にくい"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜やすい/〜にくい”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜でしよう/〜だろう（1)（降调）",
+      "reading": null,
+      "meaning_cn": "…吧，大概…",
+      "explanation": "词干；词干；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜でしよう/〜だろう（1)（降调）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜でしよう/〜だろう（1)（降调）”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜でしよう/〜だろう（2)",
+      "reading": null,
+      "meaning_cn": "…吧（升调，确认）",
+      "explanation": "词干；词干；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜でしよう/〜だろう（2)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜でしよう/〜だろう（2)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "きっと",
+      "reading": null,
+      "meaning_cn": "一定",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "きっと"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“きっと”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "たぶん〜だろう",
+      "reading": null,
+      "meaning_cn": "大概…吧，也许…吧",
+      "explanation": "词干；词干；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "たぶん〜だろう"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“たぶん〜だろう”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "おそらく〜だろう",
+      "reading": null,
+      "meaning_cn": "恐怕，大概",
+      "explanation": "词干；词干；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "おそらく〜だろう"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“おそらく〜だろう”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜だろうか /〜でしようか",
+      "reading": null,
+      "meaning_cn": "…吗？",
+      "explanation": "词干；词干；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜だろうか /〜でしようか"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜だろうか /〜でしようか”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜かもしれない",
+      "reading": null,
+      "meaning_cn": "也许，或许",
+      "explanation": "词干；词干；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜かもしれない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜かもしれない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜かもわからない",
+      "reading": null,
+      "meaning_cn": "也许，有可能",
+      "explanation": "词干；词干；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜かもわからない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜かもわからない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜はずだ（1)",
+      "reading": null,
+      "meaning_cn": "按理…应该",
+      "explanation": "の形；な形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜はずだ（1)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜はずだ（1)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜はずだ(2)",
+      "reading": null,
+      "meaning_cn": "怪不得",
+      "explanation": "の形；な形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜はずだ(2)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜はずだ(2)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ようだ",
+      "reading": null,
+      "meaning_cn": "好像，似乎",
+      "explanation": "の形；な形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ようだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ようだ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜らしい",
+      "reading": null,
+      "meaning_cn": "像，地道的，像样的",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜らしい"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜らしい”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜はずがない",
+      "reading": null,
+      "meaning_cn": "不可能",
+      "explanation": "の形；な形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜はずがない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜はずがない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜そうだ",
+      "reading": null,
+      "meaning_cn": "听说，据说",
+      "explanation": "词干；词干；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜そうだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜そうだ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜によると〜そうだ/〜によれば〜そうだ",
+      "reading": null,
+      "meaning_cn": "听说，根据",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜によると〜そうだ/〜によれば〜そうだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜によると〜そうだ/〜によれば〜そうだ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜という〜",
+      "reading": null,
+      "meaning_cn": "叫做，称为",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜という〜"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜という〜”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜「…」と/〜と",
+      "reading": null,
+      "meaning_cn": "间接/直接引用",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜「…」と/〜と"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜「…」と/〜と”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ように（と）",
+      "reading": null,
+      "meaning_cn": "间接引用",
+      "explanation": "原形･ない",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ように（と）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ように（と）”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "禁止形と/命令形と",
+      "reading": null,
+      "meaning_cn": "间接引用",
+      "explanation": "ない･命令",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "禁止形と/命令形と"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“禁止形と/命令形と”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜のだ",
+      "reading": null,
+      "meaning_cn": "解释，说明，强调，原因，理由，希望等",
+      "explanation": "な形；な形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜のだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜のだ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜のは〜だ",
+      "reading": null,
+      "meaning_cn": "是，之所以...是因为…（后项说明前项）",
+      "explanation": "な形；な形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜のは〜だ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜のは〜だ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ないか/〜ませんか",
+      "reading": null,
+      "meaning_cn": "不…吗？",
+      "explanation": "ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ないか/〜ませんか"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ないか/〜ませんか”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜よう/〜ましよう（1)",
+      "reading": null,
+      "meaning_cn": "…吧！（主动提出做某事）",
+      "explanation": "意志/ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜よう/〜ましよう（1)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜よう/〜ましよう（1)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜よう/ましよう（2)",
+      "reading": null,
+      "meaning_cn": "…吧！（邀请、呼吁）",
+      "explanation": "意志/ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜よう/ましよう（2)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜よう/ましよう（2)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ようか/〜ましようか",
+      "reading": null,
+      "meaning_cn": "…吧！一起…好吗？",
+      "explanation": "意志/ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ようか/〜ましようか"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ようか/〜ましようか”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜るほうがいい/〜たほうがいい/〜ないほうがいい",
+      "reading": null,
+      "meaning_cn": "最好是…，还是…的好，建议…",
+      "explanation": "の形；な形；原形；原形等",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜るほうがいい/〜たほうがいい/〜ないほうがいい"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜るほうがいい/〜たほうがいい/〜ないほうがいい”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜といい/〜ばいい/〜たらいい",
+      "reading": null,
+      "meaning_cn": "就行，就可以",
+      "explanation": "原形等",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜といい/〜ばいい/〜たらいい"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜といい/〜ばいい/〜たらいい”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜たらいいか/〜ばいいか",
+      "reading": null,
+      "meaning_cn": "怎么…好呢？",
+      "explanation": "た/ば形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜たらいいか/〜ばいいか"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜たらいいか/〜ばいいか”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜たらどうか",
+      "reading": null,
+      "meaning_cn": "…怎么样",
+      "explanation": "た形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜たらどうか"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜たらどうか”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ずつ",
+      "reading": null,
+      "meaning_cn": "每，各",
+      "explanation": "数量词",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ずつ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ずつ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜だけ",
+      "reading": null,
+      "meaning_cn": "只",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜だけ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜だけ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "数量词だけ",
+      "reading": null,
+      "meaning_cn": "只，仅",
+      "explanation": "数量词",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "数量词だけ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“数量词だけ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜しか〜ない",
+      "reading": null,
+      "meaning_cn": "只，仅",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜しか〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜しか〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ばかり（反复）",
+      "reading": null,
+      "meaning_cn": "光，净是，总是，老是",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ばかり（反复）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ばかり（反复）”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ばかりだ",
+      "reading": null,
+      "meaning_cn": "越来越，愈加",
+      "explanation": "原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ばかりだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ばかりだ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜てばかりいる",
+      "reading": null,
+      "meaning_cn": "总是，老是，光是",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜てばかりいる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜てばかりいる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜きり（范围）",
+      "reading": null,
+      "meaning_cn": "只，仅",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜きり（范围）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜きり（范围）”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜たびに",
+      "reading": null,
+      "meaning_cn": "每…都（每次做前项都会产生后项）",
+      "explanation": "の形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜たびに"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜たびに”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ては〜ては",
+      "reading": null,
+      "meaning_cn": "又…又…",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ては〜ては"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ては〜ては”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "すると",
+      "reading": null,
+      "meaning_cn": "于是",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "すると"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“すると”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜について/〜についての/〜については",
+      "reading": null,
+      "meaning_cn": "关于",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜について/〜についての/〜については"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜について/〜についての/〜については”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜てもいい/〜てもかまわない/〜でもいい/〜でもかまわない(1)",
+      "reading": null,
+      "meaning_cn": "可以",
+      "explanation": "で形；で形；くて形；て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜てもいい/〜てもかまわない/〜でもいい/〜でもかまわない(1)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜てもいい/〜てもかまわない/〜でもいい/〜でもかまわない(1)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜てもいい/〜てもかまわない/〜でもいい/〜でもかまわない（2)",
+      "reading": null,
+      "meaning_cn": "也可以，也没关系",
+      "explanation": "で形；で形；くて形；て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜てもいい/〜てもかまわない/〜でもいい/〜でもかまわない（2)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜てもいい/〜てもかまわない/〜でもいい/〜でもかまわない（2)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜てはいけない/〜ではいけない",
+      "reading": null,
+      "meaning_cn": "禁止，不许，不能",
+      "explanation": "で形；で形；く形；て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜てはいけない/〜ではいけない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜てはいけない/〜ではいけない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜なければならない/〜なけれ ばいけない/〜なくてはならない/〜なくてはいけない",
+      "reading": null,
+      "meaning_cn": "应该，必须",
+      "explanation": "で形；で形；く形；ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜なければならない/〜なけれ ばいけない/〜なくてはならない/〜なくてはいけない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜なければならない/〜なけれ ばいけない/〜なくてはならない/〜なくてはいけない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜なければ だめだ/〜なくてはだめだ",
+      "reading": null,
+      "meaning_cn": "必须，应该",
+      "explanation": "で形；で形；く形；ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜なければ だめだ/〜なくてはだめだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜なければ だめだ/〜なくてはだめだ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜なくてもいい/〜なくてもかま わない（1)",
+      "reading": null,
+      "meaning_cn": "不…也可以/也没关系",
+      "explanation": "で形；で形；く形；ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜なくてもいい/〜なくてもかま わない（1)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜なくてもいい/〜なくてもかま わない（1)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜なくてもいい/〜なくてもかまわない（2)",
+      "reading": null,
+      "meaning_cn": "没有必要",
+      "explanation": "で形；で形；く形；ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜なくてもいい/〜なくてもかまわない（2)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜なくてもいい/〜なくてもかまわない（2)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ようだ/〜ような/〜ように（1)",
+      "reading": null,
+      "meaning_cn": "好像，似乎",
+      "explanation": "の形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ようだ/〜ような/〜ように（1)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ようだ/〜ような/〜ように（1)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "まるで〜ようだ/まるで〜みたいだ",
+      "reading": null,
+      "meaning_cn": "宛如/好像…一样",
+      "explanation": "の形/词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "まるで〜ようだ/まるで〜みたいだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“まるで〜ようだ/まるで〜みたいだ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ような/〜ように（2)",
+      "reading": null,
+      "meaning_cn": "像…那样",
+      "explanation": "の形；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ような/〜ように（2)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ような/〜ように（2)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜でも",
+      "reading": null,
+      "meaning_cn": "什么的，之类的（例举）",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜でも"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜でも”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜とは限らない",
+      "reading": null,
+      "meaning_cn": "不一定，不见得",
+      "explanation": "词干；词干；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜とは限らない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜とは限らない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜よう",
+      "reading": null,
+      "meaning_cn": "（说话人想做某事）",
+      "explanation": "意志形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜よう"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜よう”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ようと思う",
+      "reading": null,
+      "meaning_cn": "想…",
+      "explanation": "意志形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ようと思う"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ようと思う”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜つもりだ/ないつもりだ",
+      "reading": null,
+      "meaning_cn": "打算，准备",
+      "explanation": "原･ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜つもりだ/ないつもりだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜つもりだ/ないつもりだ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜たつもりで",
+      "reading": null,
+      "meaning_cn": "就算，当做，权当",
+      "explanation": "た形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜たつもりで"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜たつもりで”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ようにする/〜ないようにする",
+      "reading": null,
+      "meaning_cn": "争取做到，努力使…",
+      "explanation": "原･ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ようにする/〜ないようにする"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ようにする/〜ないようにする”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ようとする",
+      "reading": null,
+      "meaning_cn": "刚要，正要",
+      "explanation": "意志形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ようとする"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ようとする”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ようとしない",
+      "reading": null,
+      "meaning_cn": "不想，不愿",
+      "explanation": "意志形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ようとしない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ようとしない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "かならず",
+      "reading": null,
+      "meaning_cn": "一定",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "かならず"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“かならず”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜になる/〜ることになる/〜ないことになる",
+      "reading": null,
+      "meaning_cn": "决定（集体、团队等）",
+      "explanation": "词干；原･ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜になる/〜ることになる/〜ないことになる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜になる/〜ることになる/〜ないことになる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜にする/〜ることにする/〜ないことにする",
+      "reading": null,
+      "meaning_cn": "决定（个人，自身）",
+      "explanation": "词干；原･ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜にする/〜ることにする/〜ないことにする"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜にする/〜ることにする/〜ないことにする”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ることになっている",
+      "reading": null,
+      "meaning_cn": "（规定，惯例等）",
+      "explanation": "原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ることになっている"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ることになっている”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜てしまう（1)",
+      "reading": null,
+      "meaning_cn": "完了，了（心理强调）",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜てしまう（1)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜てしまう（1)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜てしまう（2)",
+      "reading": null,
+      "meaning_cn": "（带有后悔，遗憾的心情）",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜てしまう（2)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜てしまう（2)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ておく （とく）",
+      "reading": null,
+      "meaning_cn": "事先，事前",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ておく （とく）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ておく （とく）”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ないでおく",
+      "reading": null,
+      "meaning_cn": "不要，别（要保持原状）",
+      "explanation": "ない形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ないでおく"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ないでおく”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜てみる",
+      "reading": null,
+      "meaning_cn": "试，尝试",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜てみる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜てみる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜（さ）せる（1)",
+      "reading": null,
+      "meaning_cn": "使，让，叫（上叫下做）",
+      "explanation": "使役形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜（さ）せる（1)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜（さ）せる（1)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜（さ）せる（2)",
+      "reading": null,
+      "meaning_cn": "使，让（允许他人做）",
+      "explanation": "使役形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜（さ）せる（2)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜（さ）せる（2)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜（さ）せる（3)",
+      "reading": null,
+      "meaning_cn": "使，让（因使动主体导致后项结果）",
+      "explanation": "使役形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜（さ）せる（3)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜（さ）せる（3)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜させてあげる",
+      "reading": null,
+      "meaning_cn": "让，允许（许可，放任）",
+      "explanation": "使役形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜させてあげる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜させてあげる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜（さ）せてもらえますか/〜（さ）せていただけますか/ 〜（さ）せてぐれますか/〜（さ）せてくださいますか",
+      "reading": null,
+      "meaning_cn": "请让我/请允许我…",
+      "explanation": "使役形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜（さ）せてもらえますか/〜（さ）せていただけますか/ 〜（さ）せてぐれますか/〜（さ）せてくださいますか"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜（さ）せてもらえますか/〜（さ）せていただけますか/ 〜（さ）せてぐれますか/〜（さ）せてくださいますか”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜に〜をあげる/〜に〜をさしあげる/〜に〜をやる",
+      "reading": null,
+      "meaning_cn": "给",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜に〜をあげる/〜に〜をさしあげる/〜に〜をやる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜に〜をあげる/〜に〜をさしあげる/〜に〜をやる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜に/から〜をもらう/〜に/から〜をいただく",
+      "reading": null,
+      "meaning_cn": "得到，送给",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜に/から〜をもらう/〜に/から〜をいただく"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜に/から〜をもらう/〜に/から〜をいただく”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜が〜をくれる/〜が〜をくださる",
+      "reading": null,
+      "meaning_cn": "给（我方）",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜が〜をくれる/〜が〜をくださる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜が〜をくれる/〜が〜をくださる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜に〜を〜てあげる/〜に〜を〜てさしあげる/〜に〜を〜てやる",
+      "reading": null,
+      "meaning_cn": "给（说话人为他人做某事）",
+      "explanation": "词干；て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜に〜を〜てあげる/〜に〜を〜てさしあげる/〜に〜を〜てやる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜に〜を〜てあげる/〜に〜を〜てさしあげる/〜に〜を〜てやる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜に〜を〜てもらう/〜に〜を〜ていただく",
+      "reading": null,
+      "meaning_cn": "请…给，让…给（接受他人为自己做的动作）",
+      "explanation": "词干；て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜に〜を〜てもらう/〜に〜を〜ていただく"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜に〜を〜てもらう/〜に〜を〜ていただく”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜てくれる/〜てくださる",
+      "reading": null,
+      "meaning_cn": "（他人积极为说话人做某事，或请他人为自己做某事）",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜てくれる/〜てくださる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜てくれる/〜てくださる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜てよかった",
+      "reading": null,
+      "meaning_cn": "…值得，幸好…",
+      "explanation": "て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜てよかった"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜てよかった”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜さえ（も）/〜でさえ",
+      "reading": null,
+      "meaning_cn": "就连…都…",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜さえ（も）/〜でさえ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜さえ（も）/〜でさえ”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜さえ（も）〜ない",
+      "reading": null,
+      "meaning_cn": "连…都…",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜さえ（も）〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜さえ（も）〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜も〜ない",
+      "reading": null,
+      "meaning_cn": "连…都…",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜も〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜も〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "数量词も",
+      "reading": null,
+      "meaning_cn": "竟（强调数量多）",
+      "explanation": "数量词",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "数量词も"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“数量词も”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "数量词も〜ない",
+      "reading": null,
+      "meaning_cn": "连…都不…",
+      "explanation": "数量词",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "数量词も〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“数量词も〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜すら〜ない/〜ですら〜ない",
+      "reading": null,
+      "meaning_cn": "连…都…",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜すら〜ない/〜ですら〜ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜すら〜ない/〜ですら〜ない”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜まで",
+      "reading": null,
+      "meaning_cn": "甚至连…都…",
+      "explanation": "词干",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜まで"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜まで”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜たら（1)",
+      "reading": null,
+      "meaning_cn": "…的话",
+      "explanation": "だった；だった；かった；た形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜たら（1)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜たら（1)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ば〜なら（ば）",
+      "reading": null,
+      "meaning_cn": "如果…就…（一般条件），一旦…就…（确定条件），如果…的话，就（假定条件）",
+      "explanation": "词干；词干；ければ；原/ば形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ば〜なら（ば）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ば〜なら（ば）”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜と",
+      "reading": null,
+      "meaning_cn": "一…就…",
+      "explanation": "だ形；だ形；词干；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜と"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜と”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜たら（2)",
+      "reading": null,
+      "meaning_cn": "…之后，后",
+      "explanation": "た形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜たら（2)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜たら（2)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜ても/〜でも",
+      "reading": null,
+      "meaning_cn": "即使…也…",
+      "explanation": "で形；で形；くて形；て形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜ても/〜でも"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜ても/〜でも”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜なら",
+      "reading": null,
+      "meaning_cn": "...的话",
+      "explanation": "词干；词干；原形；原形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜なら"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜なら”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜が〜（ら）れる（1)",
+      "reading": null,
+      "meaning_cn": "被…",
+      "explanation": "词干；被动形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜が〜（ら）れる（1)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜が〜（ら）れる（1)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜が〜に〜（ら）れる（2)",
+      "reading": null,
+      "meaning_cn": "被，受到（叙述主语）",
+      "explanation": "词干；被动形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜が〜に〜（ら）れる（2)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜が〜に〜（ら）れる（2)”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜が〜に〜を〜（ら）れる⑶",
+      "reading": null,
+      "meaning_cn": "被（主语因他人的行为造成麻烦，受害等）",
+      "explanation": "词干；被动形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜が〜に〜を〜（ら）れる⑶"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜が〜に〜を〜（ら）れる⑶”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜が〜に〜（ら）れる⑷",
+      "reading": null,
+      "meaning_cn": "被（间接对主语造成损害、伤害、为难等）",
+      "explanation": "词干；被动形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜が〜に〜（ら）れる⑷"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜が〜に〜（ら）れる⑷”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "〜が〜に（さ）せられる",
+      "reading": null,
+      "meaning_cn": "强迫，被逼",
+      "explanation": "词干；使役被动形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "〜が〜に（さ）せられる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“〜が〜に（さ）せられる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "尊他动词",
+      "reading": null,
+      "meaning_cn": "对行为尊敬",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "尊他动词"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“尊他动词”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "お〜になる/ご〜になる",
+      "reading": null,
+      "meaning_cn": "尊称，与ます体相近",
+      "explanation": "サ词干；ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "お〜になる/ご〜になる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“お〜になる/ご〜になる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "（ら）れる",
+      "reading": null,
+      "meaning_cn": "对对方行为尊敬",
+      "explanation": "敬语形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "（ら）れる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“（ら）れる”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "自谦动词",
+      "reading": null,
+      "meaning_cn": "自谦间接提高对方地位",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "自谦动词"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“自谦动词”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "お/ご〜するお/ご〜いたす",
+      "reading": null,
+      "meaning_cn": "自谦",
+      "explanation": "ごサ词干；ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "お/ご〜するお/ご〜いたす"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“お/ご〜するお/ご〜いたす”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "礼貌语",
+      "reading": null,
+      "meaning_cn": "表郑重，如ございます",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "礼貌语"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“礼貌语”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "お/ご〜",
+      "reading": null,
+      "meaning_cn": "接头词，表尊敬、礼貌",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "お/ご〜"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“お/ご〜”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "お〜です/ご〜です",
+      "reading": null,
+      "meaning_cn": "对对方或第三者尊敬",
+      "explanation": "ごサ词干；ます形",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "お〜です/ご〜です"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“お〜です/ご〜です”。"
+      },
+      "level": "N5-N3"
+    },
+    {
+      "pattern": "～あげくに（の）",
+      "reading": null,
+      "meaning_cn": "～的结果；最后～（多用于后果不好或消极的场合）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～あげくに（の）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～あげくに（の）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～あっての",
+      "reading": null,
+      "meaning_cn": "有了～才有～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～あっての"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～あっての”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～いかんだ",
+      "reading": null,
+      "meaning_cn": "取决于～；根据～而定",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～いかんだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～いかんだ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～いかんで",
+      "reading": null,
+      "meaning_cn": "根据～而～；根据～来～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～いかんで"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～いかんで”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～いかんにかかわらず",
+      "reading": null,
+      "meaning_cn": "不管～；不论～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～いかんにかかわらず"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～いかんにかかわらず”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～いかんによっては",
+      "reading": null,
+      "meaning_cn": "由于做法不同．．．结果也不同",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～いかんによっては"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～いかんによっては”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～いかんによらず",
+      "reading": null,
+      "meaning_cn": "不管～；不论～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～いかんによらず"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～いかんによらず”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～",
+      "reading": null,
+      "meaning_cn": "以上は",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～て（は）いられない",
+      "reading": null,
+      "meaning_cn": "不能～；哪能～ 表示动作的主体在心情上无法再保持原来",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～て（は）いられない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～て（は）いられない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～う（よう）が",
+      "reading": null,
+      "meaning_cn": "无论～都～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～う（よう）が"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～う（よう）が”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～う（よう）が、～まいが",
+      "reading": null,
+      "meaning_cn": "不论是～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～う（よう）が、～まいが"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～う（よう）が、～まいが”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～う（よう）と、～まいと",
+      "reading": null,
+      "meaning_cn": "不管是～还是～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～う（よう）と、～まいと"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～う（よう）と、～まいと”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～よ（よう）にも～ない",
+      "reading": null,
+      "meaning_cn": "想～也（不）～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～よ（よう）にも～ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～よ（よう）にも～ない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～う（よう）ものなら",
+      "reading": null,
+      "meaning_cn": "如果～可～；只要～就～（表示强烈的假定条件，后果一般不",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～う（よう）ものなら"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～う（よう）ものなら”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～おそれがある",
+      "reading": null,
+      "meaning_cn": "有～的危险；恐怕要～；有可能～（结果多为消极）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～おそれがある"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～おそれがある”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～かけだ",
+      "reading": null,
+      "meaning_cn": "表示动作刚开始，动作未完而中断，动作即将发生等",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～かけだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～かけだ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～がたい",
+      "reading": null,
+      "meaning_cn": "48",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～がたい"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～がたい”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～かたがた",
+      "reading": null,
+      "meaning_cn": "顺便～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～かたがた"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～かたがた”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～がてら",
+      "reading": null,
+      "meaning_cn": "～的时候，顺便～；～的同时～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～がてら"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～がてら”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～かと",
+      "reading": null,
+      "meaning_cn": "思うと（思ったら）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～かと"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～かと”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～か～ないかのうちに",
+      "reading": null,
+      "meaning_cn": "刚要～就～；刚一～就～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～か～ないかのうちに"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～か～ないかのうちに”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～かねる（～かねない）",
+      "reading": null,
+      "meaning_cn": "难以～；不便～；不能～；不好意思～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～かねる（～かねない）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～かねる（～かねない）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～が",
+      "reading": null,
+      "meaning_cn": "早いか",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～が"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～が”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～からある（からの）",
+      "reading": null,
+      "meaning_cn": "～以上",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～からある（からの）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～からある（からの）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～からして",
+      "reading": null,
+      "meaning_cn": "从～来看；从～就～；不用说别的，就从～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～からして"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～からして”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～からすると",
+      "reading": null,
+      "meaning_cn": "以～来看；就～来说；根据～（来判断，衡量等）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～からすると"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～からすると”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～からすれば",
+      "reading": null,
+      "meaning_cn": "就～来说",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～からすれば"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～からすれば”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～からといって",
+      "reading": null,
+      "meaning_cn": "虽说～然而（也)不～；不要因",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～からといって"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～からといって”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～からには",
+      "reading": null,
+      "meaning_cn": "既然～就（要）～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～からには"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～からには”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～からは",
+      "reading": null,
+      "meaning_cn": "既然如此，就无论如何也要干到底",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～からは"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～からは”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～きらいがある",
+      "reading": null,
+      "meaning_cn": "有点儿～；有～的倾向（多用于消极意义）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～きらいがある"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～きらいがある”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～きる（～",
+      "reading": null,
+      "meaning_cn": "切れる、切れない）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～きる（～"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～きる（～”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～（を）",
+      "reading": null,
+      "meaning_cn": "禁じえない",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～（を）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～（を）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～くせして（くせに）",
+      "reading": null,
+      "meaning_cn": "（本来）～可是（却，竟）～；（尽管）～可是～；虽然～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～くせして（くせに）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～くせして（くせに）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ぐらい",
+      "reading": null,
+      "meaning_cn": "表示程度",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ぐらい"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ぐらい”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～げ（だ）",
+      "reading": null,
+      "meaning_cn": "死去妻子后他的面容总是带着悲伤",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～げ（だ）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～げ（だ）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ごとき",
+      "reading": null,
+      "meaning_cn": "如同～；～样的",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ごとき"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ごとき”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～こととて",
+      "reading": null,
+      "meaning_cn": "因为～；由于～；虽然说是～，（但）～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～こととて"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～こととて”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～（に）",
+      "reading": null,
+      "meaning_cn": "際して（の）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～（に）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～（に）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ざるを",
+      "reading": null,
+      "meaning_cn": "得ない",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ざるを"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ざるを”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～しかない",
+      "reading": null,
+      "meaning_cn": "48",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～しかない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～しかない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～（て）しようがない",
+      "reading": null,
+      "meaning_cn": "～得不",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～（て）しようがない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～（て）しようがない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～の",
+      "reading": null,
+      "meaning_cn": "末（に、の）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～の"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～の”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ずくめ",
+      "reading": null,
+      "meaning_cn": "完全是～；清一色",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ずくめ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ずくめ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ずにはいられない",
+      "reading": null,
+      "meaning_cn": "不能不～；不由得～；非～不可",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ずにはいられない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ずにはいられない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ずにはおかない",
+      "reading": null,
+      "meaning_cn": "不能不～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ずにはおかない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ずにはおかない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ずにはすまない",
+      "reading": null,
+      "meaning_cn": "不能不～；一定得～不可",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ずにはすまない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ずにはすまない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～そばから",
+      "reading": null,
+      "meaning_cn": "随～随～；刚～就～（不用于一次性的事情）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～そばから"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～そばから”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～たが",
+      "reading": null,
+      "meaning_cn": "最後",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～たが"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～たが”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～たら",
+      "reading": null,
+      "meaning_cn": "最後/一旦～可就（见 56）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～たら"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～たら”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～た",
+      "reading": null,
+      "meaning_cn": "末に（た末の）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～た"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～た”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ただ～のみ",
+      "reading": null,
+      "meaning_cn": "48",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ただ～のみ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ただ～のみ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ただ～のみならず",
+      "reading": null,
+      "meaning_cn": "不但～而且；不仅～而且（有时可以省去＂ただ＂）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ただ～のみならず"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ただ～のみならず”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～たといっても",
+      "reading": null,
+      "meaning_cn": "虽说（是）～可是也～；就说～也是～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～たといっても"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～たといっても”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～たとえ（い）～ても（であれば）",
+      "reading": null,
+      "meaning_cn": "即使～也～（前接不定",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～たとえ（い）～ても（であれば）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～たとえ（い）～ても（であれば）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～たところ",
+      "reading": null,
+      "meaning_cn": "可是～；果真～；果然～（表示后述事项是前述事项的结果）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～たところ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～たところ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～たところで",
+      "reading": null,
+      "meaning_cn": "即使～也～；尽管～也～（后项表示前项的结果．但其结果表示不起任",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～たところで"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～たところで”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～たとたんに",
+      "reading": null,
+      "meaning_cn": "正当～的时候，就～；刚一～的时候,就～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～たとたんに"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～たとたんに”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～だに",
+      "reading": null,
+      "meaning_cn": "连～都～；一～就～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～だに"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～だに”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～（て）たまらない",
+      "reading": null,
+      "meaning_cn": "～得不得了；～得受不",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～（て）たまらない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～（て）たまらない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ために（の）",
+      "reading": null,
+      "meaning_cn": "为了～（表示目的）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ために（の）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ために（の）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～たりとも",
+      "reading": null,
+      "meaning_cn": "即使～也～；就是～也～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～たりとも"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～たりとも”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～たるものは",
+      "reading": null,
+      "meaning_cn": "具有～身份，地位等的；作为～的",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～たるものは"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～たるものは”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～つ～つ",
+      "reading": null,
+      "meaning_cn": "时而～时而～（文语助动词）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～つ～つ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～つ～つ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ついでに",
+      "reading": null,
+      "meaning_cn": "顺便～；就便～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ついでに"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ついでに”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～っこない",
+      "reading": null,
+      "meaning_cn": "不会～；不可能～（用在口语，强调语气）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～っこない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～っこない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～っぱなし",
+      "reading": null,
+      "meaning_cn": "放置不管，置之不理",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～っぱなし"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～っぱなし”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～つつも",
+      "reading": null,
+      "meaning_cn": "一面～一面～；且～且～；虽然～可是～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～つつも"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～つつも”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～つつある",
+      "reading": null,
+      "meaning_cn": "正在～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～つつある"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～つつある”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～であれ",
+      "reading": null,
+      "meaning_cn": "尽管是～；不管是～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～であれ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～であれ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～であれ、～であれ",
+      "reading": null,
+      "meaning_cn": "不管是～还是～（语气较强）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～であれ、～であれ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～であれ、～であれ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～てからでないと（てからでなければ）",
+      "reading": null,
+      "meaning_cn": "没～之前，就不～；只有在～以后，才～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～てからでないと（てからでなければ）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～てからでないと（てからでなければ）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～てからというもの",
+      "reading": null,
+      "meaning_cn": "自从～就～；从打～就～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～てからというもの"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～てからというもの”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～てしようがない",
+      "reading": null,
+      "meaning_cn": "～得不得了；～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～てしようがない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～てしようがない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ですら（すら）",
+      "reading": null,
+      "meaning_cn": "甚至～；连～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ですら（すら）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ですら（すら）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～でなくてなんだろう",
+      "reading": null,
+      "meaning_cn": "～不是～又是什么呢！（请问，反问的语气）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～でなくてなんだろう"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～でなくてなんだろう”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ではあるまいし",
+      "reading": null,
+      "meaning_cn": "就算是～也～；即使是～也～（或：～ではないのだから）［口语的表现］",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ではあるまいし"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ではあるまいし”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～てでも",
+      "reading": null,
+      "meaning_cn": "即使～也～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～てでも"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～てでも”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～てまで",
+      "reading": null,
+      "meaning_cn": "後ろの動作、作用の程度を表す＜マイナスに使われることが多い＞",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～てまで"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～てまで”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～てみる",
+      "reading": null,
+      "meaning_cn": "～试试看；试一试～（表示对某种动作，行为的尝试，灵活翻译）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～てみる"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～てみる”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ても",
+      "reading": null,
+      "meaning_cn": "始まらない",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ても"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ても”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～てやまない",
+      "reading": null,
+      "meaning_cn": "永远～；～不止（一般前接和愿望有关的动词，五段动词有音变）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～てやまない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～てやまない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～とあいまって",
+      "reading": null,
+      "meaning_cn": "与～相互作用；～再加上～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～とあいまって"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～とあいまって”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～とあって",
+      "reading": null,
+      "meaning_cn": "因说是～所以～；如果说是～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～とあって"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～とあって”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～とあれば",
+      "reading": null,
+      "meaning_cn": "因说是～所以～；如果说是～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～とあれば"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～とあれば”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～といい～といい",
+      "reading": null,
+      "meaning_cn": "无论～还是～都～；无论～也好～，也好～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～といい～といい"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～といい～といい”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～というと",
+      "reading": null,
+      "meaning_cn": "听说～；据说～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～というと"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～というと”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～というところだ",
+      "reading": null,
+      "meaning_cn": "（表示范围，程度，情况）大致是～（的样",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～というところだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～というところだ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～といったところだ",
+      "reading": null,
+      "meaning_cn": "（表示范围，程度，情况）大致是～（的样子）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～といったところだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～といったところだ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～といえども",
+      "reading": null,
+      "meaning_cn": "即使～也～；虽然～但是～；无论～都～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～といえども"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～といえども”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～といえば（といったら）",
+      "reading": null,
+      "meaning_cn": "要说～；提到～就～；一提～就一定～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～といえば（といったら）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～といえば（といったら）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～といったらありはしない",
+      "reading": null,
+      "meaning_cn": "没有比～更～；～得不得了；～极了；再～不过了；非常～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～といったらありはしない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～といったらありはしない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～といったらない",
+      "reading": null,
+      "meaning_cn": "48",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～といったらない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～といったらない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～といっても",
+      "reading": null,
+      "meaning_cn": "虽说（是）～可是也～；就说～也是～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～といっても"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～といっても”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～とおもいきや",
+      "reading": null,
+      "meaning_cn": "以为～哪曾想～；不料～（雅语．强调非常意外，一次未曾想过）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～とおもいきや"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～とおもいきや”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～と",
+      "reading": null,
+      "meaning_cn": "思うと（と思ったら）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～と"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～と”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～とか",
+      "reading": null,
+      "meaning_cn": "据说～；说什么～（表示记不清或不确实的传闻，实际是＂とか言うことだ＂或＂",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～とか"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～とか”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ときたら（ときては）",
+      "reading": null,
+      "meaning_cn": "提到～的话；提起～来；要说～；至于～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ときたら（ときては）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ときたら（ときては）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ところ",
+      "reading": null,
+      "meaning_cn": "可是～；果真～；果然～（表示后述事项是前述事项的结果）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ところ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ところ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～どころか",
+      "reading": null,
+      "meaning_cn": "不但（不）～反而～；岂止～连～也～；别说～就连～也～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～どころか"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～どころか”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ところを",
+      "reading": null,
+      "meaning_cn": "～的时候（意外地）却～(表示正处于一种状态时，意外地或突然地出现另一",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ところを"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ところを”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～としたって",
+      "reading": null,
+      "meaning_cn": "即使～也～；尽管～也～；就是～也～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～としたって"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～としたって”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～としたところで",
+      "reading": null,
+      "meaning_cn": "即使（作为）～；即使出于～的立场",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～としたところで"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～としたところで”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～としたら",
+      "reading": null,
+      "meaning_cn": "如果～就～；要是～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～としたら"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～としたら”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～としても",
+      "reading": null,
+      "meaning_cn": "作为～的话；以～的身份（或姿格）～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～としても"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～としても”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～とたん",
+      "reading": null,
+      "meaning_cn": "正当～的时候；就～；刚一～的时候，就～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～とたん"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～とたん”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～とて",
+      "reading": null,
+      "meaning_cn": "即使",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～とて"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～とて”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～とは",
+      "reading": null,
+      "meaning_cn": "竟然，没想到竟～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～とは"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～とは”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～たばかりに",
+      "reading": null,
+      "meaning_cn": "动词过去式］＋たばかりに／只因为～（多导致坏的结果）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～たばかりに"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～たばかりに”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にひきかえ（に）",
+      "reading": null,
+      "meaning_cn": "48",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にひきかえ（に）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にひきかえ（に）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ともなく（ともなれば）",
+      "reading": null,
+      "meaning_cn": "无意中～；不知不觉地～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ともなく（ともなれば）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ともなく（ともなれば）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ないではいられない",
+      "reading": null,
+      "meaning_cn": "不能不～；不由得～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ないではいられない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ないではいられない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ないではおかない",
+      "reading": null,
+      "meaning_cn": "不得不～；必须得～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ないではおかない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ないではおかない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ないまでも",
+      "reading": null,
+      "meaning_cn": "即便不是～也～；即使没有～也～（＂まで＂表示程度，即使达不到某种",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ないまでも"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ないまでも”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ないものでもない",
+      "reading": null,
+      "meaning_cn": "不见得不～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ないものでもない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ないものでもない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ながら（ながらも）",
+      "reading": null,
+      "meaning_cn": "尽管～却～；虽然～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ながら（ながらも）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ながら（ながらも）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～なくして（なくしては、なくとも）",
+      "reading": null,
+      "meaning_cn": "没有～（的话）还～；没有～就～（＂て＂，＂",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～なくして（なくしては、なくとも）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～なくして（なくしては、なくとも）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ならでは（の）",
+      "reading": null,
+      "meaning_cn": "只有～，除非～，除～之外；若不是～是不～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ならでは（の）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ならでは（の）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～なり（なりの、なりに）",
+      "reading": null,
+      "meaning_cn": "一～就～，刚一～马上就～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～なり（なりの、なりに）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～なり（なりの、なりに）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にあたって（にあたり）",
+      "reading": null,
+      "meaning_cn": "当～的时候；在～的时候",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にあたって（にあたり）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にあたって（にあたり）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～なあって",
+      "reading": null,
+      "meaning_cn": "48",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～なあって"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～なあって”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～に",
+      "reading": null,
+      "meaning_cn": "至って（は、も）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～に"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～に”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にかかわらず(にかかわりなく)",
+      "reading": null,
+      "meaning_cn": "不论～（都）～；不管～（都）～；不拘～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にかかわらず(にかかわりなく)"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にかかわらず(にかかわりなく)”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にかけては（にかけても）",
+      "reading": null,
+      "meaning_cn": "关于～方面（也）；在～上（也）；论～（也）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にかけては（にかけても）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にかけては（にかけても）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にかたくない",
+      "reading": null,
+      "meaning_cn": "48",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にかたくない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にかたくない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にしたところで",
+      "reading": null,
+      "meaning_cn": "即使（作为）～；即使出于～的立场",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にしたところで"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にしたところで”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にしたら",
+      "reading": null,
+      "meaning_cn": "（若是）把～定为～（的话）；假定～（的话）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にしたら"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にしたら”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にして（にしては）",
+      "reading": null,
+      "meaning_cn": "甚至～；连～都～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にして（にしては）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にして（にしては）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にしても",
+      "reading": null,
+      "meaning_cn": "即使～也～；作为～来说也～；（前接不定词时）无论～都～；尽",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にしても"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にしても”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にしろ",
+      "reading": null,
+      "meaning_cn": "无论～还是～；（无论）～也好～也好；即使～也～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にしろ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にしろ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にたえる（にたえない）",
+      "reading": null,
+      "meaning_cn": "耐～；经得起～；（不）值得～；（不）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にたえる（にたえない）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にたえる（にたえない）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にはあたらない",
+      "reading": null,
+      "meaning_cn": "48",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にはあたらない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にはあたらない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にひきかえ",
+      "reading": null,
+      "meaning_cn": "与～正好相反，～；与～完全不同，～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にひきかえ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にひきかえ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にほかならない",
+      "reading": null,
+      "meaning_cn": "无非是～；不外乎是～；就是～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にほかならない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にほかならない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にもかかわらず",
+      "reading": null,
+      "meaning_cn": "尽管～；虽然～但是～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にもかかわらず"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にもかかわらず”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～にもまして",
+      "reading": null,
+      "meaning_cn": "比～；胜过～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～にもまして"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～にもまして”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～によっては",
+      "reading": null,
+      "meaning_cn": "因～不同～；由于～不同～；有时候～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～によっては"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～によっては”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ぬきで（ぬきでは）",
+      "reading": null,
+      "meaning_cn": "省去；抛开",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ぬきで（ぬきでは）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ぬきで（ぬきでは）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ぬきに（ぬきには）",
+      "reading": null,
+      "meaning_cn": "省去；抛开",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ぬきに（ぬきには）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ぬきに（ぬきには）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～のみならず",
+      "reading": null,
+      "meaning_cn": "不但～而且～；不仅～还～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～のみならず"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～のみならず”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～のわりには",
+      "reading": null,
+      "meaning_cn": "虽然～但是～；与～相比～（多指不相匹配",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～のわりには"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～のわりには”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～はおろか",
+      "reading": null,
+      "meaning_cn": "别说～连～也～；别说～就是～也～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～はおろか"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～はおろか”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ばかりか（ばかりでなく）",
+      "reading": null,
+      "meaning_cn": "不仅～反而～；不但～而且～（也）～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ばかりか（ばかりでなく）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ばかりか（ばかりでなく）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ばそれまでだ",
+      "reading": null,
+      "meaning_cn": "完了；无话可说了；算了",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ばそれまでだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ばそれまでだ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ば～ほど",
+      "reading": null,
+      "meaning_cn": "越～越～（但也可单独使用＂ほど＂）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ば～ほど"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ば～ほど”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～はもとより",
+      "reading": null,
+      "meaning_cn": "本来就～；不用说～连～也～；慢说～就是～也～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～はもとより"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～はもとより”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～べからず",
+      "reading": null,
+      "meaning_cn": "禁止～；不得～；不能～；不可～（文语助动词＂べし＂的未然形，＂べ",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～べからず"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～べからず”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～べく",
+      "reading": null,
+      "meaning_cn": "应该～；为了～（文语助动词＂べし＂的连用形）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～べく"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～べく”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ほかしかたがない",
+      "reading": null,
+      "meaning_cn": "只好～；只得～；除～之外，没有别的办法",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ほかしかたがない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ほかしかたがない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～まい",
+      "reading": null,
+      "meaning_cn": "不打算～；不想～；不会～吧（表示否定的意",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～まい"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～まい”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～まいか",
+      "reading": null,
+      "meaning_cn": "没有这个打算 表示绝对否定",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～まいか"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～まいか”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～まじき",
+      "reading": null,
+      "meaning_cn": "不该～；不应该～；不可以～（文语助动词＂まじ＂的连体形）",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～まじき"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～まじき”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～までだ",
+      "reading": null,
+      "meaning_cn": "只是～罢了；～就算了；不过～而已",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～までだ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～までだ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～までもない",
+      "reading": null,
+      "meaning_cn": "用不着～；无需～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～までもない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～までもない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～まみれ",
+      "reading": null,
+      "meaning_cn": "沾满～；浑身是～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～まみれ"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～まみれ”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～めく",
+      "reading": null,
+      "meaning_cn": "有～样的意味；令人感到～样的气息",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～めく"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～めく”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～も～なら、～も～",
+      "reading": null,
+      "meaning_cn": "即～也～；又～又～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～も～なら、～も～"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～も～なら、～も～”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ものの",
+      "reading": null,
+      "meaning_cn": "虽然～但是～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ものの"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ものの”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ものを",
+      "reading": null,
+      "meaning_cn": "本应该～却～；～就行了，可却～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ものを"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ものを”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～や",
+      "reading": null,
+      "meaning_cn": "一～就～；刚～就～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～や"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～や”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ゆえに（ゆえの）",
+      "reading": null,
+      "meaning_cn": "因～故～；因为～所以",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ゆえに（ゆえの）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ゆえに（ゆえの）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ようが",
+      "reading": null,
+      "meaning_cn": "不管～也～；无论～也～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ようが"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ようが”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ようが～まいが",
+      "reading": null,
+      "meaning_cn": "不管～还是～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ようが～まいが"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ようが～まいが”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ようと",
+      "reading": null,
+      "meaning_cn": "不管～也；无论～也～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ようと"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ようと”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～ようと～まいと",
+      "reading": null,
+      "meaning_cn": "不管～还是～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～ようと～まいと"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～ようと～まいと”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～よりほかはない",
+      "reading": null,
+      "meaning_cn": "除～以外没有～；只～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～よりほかはない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～よりほかはない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～わりに",
+      "reading": null,
+      "meaning_cn": "虽然～但是～；与～相比～（多指不相匹配的",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～わりに"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～わりに”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～をおいて～ない",
+      "reading": null,
+      "meaning_cn": "除～以外，没有～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～をおいて～ない"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～をおいて～ない”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～を",
+      "reading": null,
+      "meaning_cn": "限りに",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～を"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～を”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～をもって",
+      "reading": null,
+      "meaning_cn": "以～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～をもって"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～をもって”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～をものともせずに",
+      "reading": null,
+      "meaning_cn": "不当回事；不放在眼里；不顾",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～をものともせずに"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～をものともせずに”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～をよそに",
+      "reading": null,
+      "meaning_cn": "不顾～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～をよそに"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～をよそに”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～んがために（ための）",
+      "reading": null,
+      "meaning_cn": "为了想～而～（サ变动词未然形",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～んがために（ための）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～んがために（ための）”。"
+      },
+      "level": "N1"
+    },
+    {
+      "pattern": "～んばかりに（んばかりの）",
+      "reading": null,
+      "meaning_cn": "就要～；几乎要～；～似地～",
+      "explanation": "按句型接续规则使用。",
+      "example": {
+        "segments": [
+          {
+            "text": "この文では「"
+          },
+          {
+            "text": "～んばかりに（んばかりの）"
+          },
+          {
+            "text": "」を使います。"
+          }
+        ],
+        "cn": "这个句子使用“～んばかりに（んばかりの）”。"
+      },
+      "level": "N1"
+    }
+  ]
+}

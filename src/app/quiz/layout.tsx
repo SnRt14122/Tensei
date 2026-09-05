@@ -13,7 +13,8 @@ export default async function QuizLayout({ children }: { children: React.ReactNo
   if (!user) redirect("/login");
 
   return (
-    <main className="min-h-screen bg-[#05060a]">
+    // 去掉硬编码的 bg-[#05060a]：会盖住根布局里的 AmbientBackground 背景动效层
+    <main className="min-h-screen">
       <NavBar email={user.email} />
       <div className="mx-auto max-w-2xl px-4 py-8">
         <QuizTabs />

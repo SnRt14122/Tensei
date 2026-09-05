@@ -6,6 +6,11 @@
  * ThemeProvider 挂载后会用 JS 把它们覆盖成用户在设置面板里选的值
  * （见 src/components/ThemeProvider.tsx 的 applyThemeToDocument）。
  * --mouse-x/--mouse-y 同样由 ThemeProvider 实时更新，用于 hover 液态光晕跟随鼠标。
+ * 注意：这两个变量存的是"鼠标相对当前 hover 的那个 .glass-panel 左上角"的坐标，
+ * 不是视口坐标——ThemeProvider 会把它们直接写在具体的 .glass-panel 元素上（覆盖这里
+ * :root 上的默认值），因为 .glass-panel 的 backdrop-filter 会让它变成子元素
+ * absolute 定位的基准，坐标系必须和这个基准对齐，否则光晕会跟着面板离视口原点的
+ * 距离整体偏移（这正是之前"光晕偏到右下方"这个 bug 的原因）。
  */
 :root {
   --background: #05060a;

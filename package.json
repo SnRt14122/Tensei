@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "content:prepare": "python3 scripts/prepare_content.py"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.6",

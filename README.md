@@ -13,6 +13,7 @@
 - `src/lib/data/lyrics.ts` — 首页歌词占位数据（**待你补充真实来源**）
 - `supabase/migrations/0001_init.sql` — 数据库表结构 + RLS 策略
 - `supabase/seed/jlpt_n5.json` / `0001_jlpt_n5.sql` — 示例词库（JLPT N5，44词）
+- `supabase/content/` — 从 N5-N1 附件整理出的接口 payload；生成与导入说明见 `docs/内容导入操作说明.md`
 
 ## 部署步骤
 
@@ -21,7 +22,12 @@
 1. 前往 https://supabase.com/dashboard 创建新项目。
 2. 打开 SQL Editor，依次执行：
    - `supabase/migrations/0001_init.sql`（建表 + RLS）
+   - `supabase/migrations/0002_conjugation_patterns_attempts.sql`（变位检测/句型/答题记录相关表）
+   - `supabase/migrations/0003_fix_missing_grants.sql`（补齐 word_banks/words/user_word_progress
+     一直缺失的 GRANT 权限，否则"记忆页标记已学/星标"和"检测页手动同步"都会报
+     `permission denied for table`）
    - `supabase/seed/0001_jlpt_n5.sql`（导入示例词库，可选）
+   - `supabase/seed/0002_backfill_verb_adj_type.sql`（给示例词库回填变位分类，可选）
 3. 在 Project Settings → API 中获取：
    - `Project URL` → 对应 `NEXT_PUBLIC_SUPABASE_URL`
    - `anon public` key → 对应 `NEXT_PUBLIC_SUPABASE_ANON_KEY`
