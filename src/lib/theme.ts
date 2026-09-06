@@ -79,12 +79,13 @@ export function loadThemeSettings(): ThemeSettings {
 }
 
 /** 保存主题设置到 localStorage */
-export function saveThemeSettings(settings: ThemeSettings): void {
-  if (typeof window === "undefined") return;
+export function saveThemeSettings(settings: ThemeSettings): boolean {
+  if (typeof window === "undefined") return false;
   try {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
+    return true;
   } catch {
-    // A local image can exceed the browser quota. Keep the active theme in memory.
+    return false;
   }
 }
 

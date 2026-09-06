@@ -22,6 +22,7 @@
 // 之后父组件重新渲染传入的新 words 一律忽略，只在本地维护每个词的最新学习状态。
 import { useMemo, useState, useTransition } from "react";
 import { Furigana } from "./Furigana";
+import { PitchAccent } from "./PitchAccent";
 import { markWordLearned, toggleEasy, toggleStar } from "@/app/memorize/actions";
 import { getWordTypeLabel } from "@/lib/conjugation";
 import type { WordWithProgress } from "@/lib/types";
@@ -148,7 +149,7 @@ export function MemoryCardRunner({ words }: { words: WordWithProgress[] }) {
               {wordTypeLabel}
             </span>
           )}
-          <span>{current.reading}</span>
+          <PitchAccent word={current} />
         </div>
 
         <p className="mt-4 text-lg text-cyan-200">{current.meaning_cn}</p>

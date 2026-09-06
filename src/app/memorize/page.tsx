@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { NavBar } from "@/components/NavBar";
 import { BankSelector } from "@/components/BankSelector";
 import { MemoryCardRunner } from "@/components/MemoryCardRunner";
+import { MemoryExperience } from "@/components/MemoryExperience";
 import {
   getUserProgressForBank,
   listWordBanks,
@@ -50,10 +51,7 @@ export default async function MemorizePage({
     <main className="min-h-screen">
       <NavBar email={user.email} />
       <div className="mx-auto max-w-xl px-4 py-8">
-        <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
-          <h1 className="text-xl font-semibold text-white">今日记忆</h1>
-          <BankSelector banks={banks} currentBankId={bankId} />
-        </div>
+        <MemoryExperience selector={<BankSelector banks={banks} currentBankId={bankId} />}>
 
         {/*
          * key={bankId}：切换词库时强制重新挂载 MemoryCardRunner，重置它内部
@@ -61,6 +59,7 @@ export default async function MemorizePage({
          * 挂载时的旧词库数据（详见 MemoryCardRunner 文件头注释里"为什么要冻结顺序"）。
          */}
         <MemoryCardRunner key={bankId} words={dailyWords} />
+        </MemoryExperience>
       </div>
     </main>
   );

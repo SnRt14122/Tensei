@@ -1,6 +1,7 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { UserWordProgress, Word, WordBank, WordWithProgress } from "@/lib/types";
 import { createSeededRng, todayDateString } from "@/lib/seededRandom";
+import { lookupPitchAccent } from "./pitch";
 
 export async function listWordBanks(supabase: SupabaseClient): Promise<WordBank[]> {
   const { data, error } = await supabase
@@ -21,7 +22,7 @@ export async function listWordsForBank(
     .eq("bank_id", bankId)
     .order("created_at", { ascending: true });
   if (error) throw error;
-  return data ?? [];
+  return (data ?? []).map((word: Word) => ({ ...word, pitch_accents: lookupPitchAccent(word.surface, word.reading) }));
 }
 
 /**
@@ -82,6 +83,7 @@ export async function listLearnedWordsWithProgress(
   const rows = ((data ?? []) as ProgressRow[]).filter((row) => row.words);
   return rows.map((row) => ({
     ...(row.words as Word),
+    pitch_accents: lookupPitchAccent(row.words!.surface, row.words!.reading),
     progress: {
       id: row.id,
       user_id: row.user_id,

@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from "react";
 import { Furigana } from "./Furigana";
+import { PitchAccent } from "./PitchAccent";
 import { markWordLearned, toggleStar } from "@/app/memorize/actions";
 import { getWordTypeLabel } from "@/lib/conjugation";
 import type { WordWithProgress } from "@/lib/types";
@@ -57,7 +58,7 @@ export function WordCard({ word }: { word: WordWithProgress }) {
             {wordTypeLabel}
           </span>
         )}
-        <span>{word.reading}</span>
+        <PitchAccent word={word} />
       </div>
 
       <p className="mt-4 text-lg text-cyan-200">{word.meaning_cn}</p>

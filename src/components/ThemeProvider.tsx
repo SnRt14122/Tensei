@@ -14,12 +14,12 @@ const FluidGlass = dynamic(() => import("./FluidGlass"), { ssr: false });
 
 interface ThemeContextValue {
   theme: ThemeSettings;
-  setTheme: (next: ThemeSettings) => void;
+  setTheme: (next: ThemeSettings) => boolean;
 }
 
 const ThemeContext = createContext<ThemeContextValue>({
   theme: DEFAULT_THEME,
-  setTheme: () => {},
+  setTheme: () => false,
 });
 
 export function useTheme() {
@@ -47,8 +47,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, [theme]);
 
   const setTheme = useCallback((next: ThemeSettings) => {
+    if (!saveThemeSettings(next)) return false;
     setThemeState(next);
-    saveThemeSettings(next);
+    return true;
   }, []);
 
   return (

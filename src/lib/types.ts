@@ -44,6 +44,8 @@ export interface Word {
   segments: FuriganaSegment[];
   reading: string;
   meaning_cn: string;
+  /** 词形和读音精确匹配的东京式词典音调；未收录时为 null。 */
+  pitch_accents?: number[] | null;
   pos: string | null;
   /** 动词变格分类，仅动词有值，其余词性为 null（用于驱动变位规则引擎） */
   verb_type: VerbType | null;
