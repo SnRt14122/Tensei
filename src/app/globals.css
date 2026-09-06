@@ -53,22 +53,33 @@ body {
 
 /* 皮肤设置面板：比普通玻璃卡片更实一些，避免正文内容透出来干扰读数 */
 .theme-popover {
+  position: relative;
+  overflow: hidden;
   background: rgba(5, 6, 8, 0.985);
   backdrop-filter: blur(12px) saturate(110%);
   -webkit-backdrop-filter: blur(12px) saturate(110%);
-  border-color: rgba(255, 255, 255, 0.18);
-}
-
-.theme-popover.glass-panel::after {
-  content: none;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease,
+    border-color 0.35s ease;
 }
 
 .theme-popover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
   background: linear-gradient(155deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0) 60%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 :root[data-liquid-effects="on"] .theme-popover:hover {
-  box-shadow: 0 6px 16px -14px rgba(var(--accent-rgb), 0.14);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -18px rgba(var(--accent-rgb), 0.24);
+  border-color: rgba(var(--accent-rgb), 0.25);
 }
 
 .glass-panel::before {
