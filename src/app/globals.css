@@ -125,10 +125,10 @@ body {
   position: absolute;
   left: var(--mouse-x);
   top: var(--mouse-y);
-  width: 28px;
-  height: 28px;
+  width: 150px;
+  height: 150px;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(var(--accent-rgb), 0.018), transparent 72%);
+  background: radial-gradient(circle, rgba(var(--accent-rgb), 0.24), transparent 70%);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -159,12 +159,15 @@ body {
 
 .liquid-btn:hover {
   transform: translateY(-2px);
+  border-color: rgba(var(--accent-rgb), 0.46);
+  background-color: rgba(var(--accent-rgb), 0.12);
+  color: var(--foreground);
 }
 
 :root[data-liquid-effects="on"] .liquid-btn:hover {
   box-shadow:
     0 0 0 1px rgba(var(--accent-rgb), 0.18),
-    0 8px 18px -14px rgba(var(--accent-rgb), 0.3);
+    0 8px 22px -10px rgba(var(--accent-rgb), 0.55);
 }
 
 /* 几何切角装饰形状，用于首页背景 */
