@@ -23,10 +23,10 @@ export function NavBar({ email }: { email?: string }) {
   const pathname = usePathname();
 
   return (
-    <nav className="sticky top-0 z-10 border-b border-white/10 bg-black/40 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-3">
-        <div className="flex items-center gap-6">
-          <Link href="/" className="text-white font-semibold tracking-wide">
+    <nav aria-label="主导航" className="sticky top-0 z-10 border-b border-white/10 bg-black/40 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-3 px-4 py-3">
+        <div className="flex w-full shrink-0 items-center justify-between gap-4 whitespace-nowrap sm:w-auto sm:gap-6">
+          <Link href="/" className="text-white font-semibold">
             単語
           </Link>
           {links.map((l) => {
@@ -36,6 +36,7 @@ export function NavBar({ email }: { email?: string }) {
               <Link
                 key={l.href}
                 href={l.href}
+                aria-current={active ? "page" : undefined}
                 className={`text-sm transition-colors ${
                   active ? "text-white" : "text-white/60 hover:text-white"
                 }`}
@@ -45,10 +46,10 @@ export function NavBar({ email }: { email?: string }) {
             );
           })}
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex w-full items-center justify-between gap-4 whitespace-nowrap sm:w-auto">
           <ThemeSettingsPanel />
           <SyncButton />
-          {email && <span className="text-xs text-white/40">{email}</span>}
+          {email && <span title={email} className="hidden max-w-48 truncate text-xs text-white/40 md:inline-block">{email}</span>}
           <form action={signOut}>
             <button className="text-xs text-white/50 hover:text-white transition-colors">
               退出

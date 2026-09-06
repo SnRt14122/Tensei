@@ -16,7 +16,8 @@
 .activity-overview { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .6rem; margin-bottom: 1.5rem; }
 .activity-overview > div { display: grid; grid-template-columns: auto 1fr; column-gap: .55rem; align-items: center; padding: .8rem .9rem; border: 1px solid rgba(255,255,255,.12); border-radius: 8px; background: rgba(17,22,29,.9); color: var(--accent); }
 .activity-overview strong { color: white; font-size: 1.15rem; font-weight: 600; }
-.activity-overview span { grid-column: 2; color: rgba(255,255,255,.45); font-size: .7rem; }
+.activity-overview > div > span { grid-column: 2; color: rgba(255,255,255,.45); font-size: .7rem; }
+.activity-overview strong { font-variant-numeric: tabular-nums; min-height: 1.5em; }
 .activity-day { margin-bottom: 1rem; border: 1px solid rgba(255,255,255,.12); border-radius: 8px; background: rgba(17,22,29,.86); overflow: hidden; }
 .activity-day-heading { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.1rem; border-bottom: 1px solid rgba(255,255,255,.08); color: var(--accent); }
 .activity-day-heading { width: 100%; text-align: left; cursor: pointer; }
