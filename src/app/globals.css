@@ -38,14 +38,11 @@ body {
 /* 液态玻璃质感面板：柔和的模糊 + 细腻的顶部高光边框 */
 .glass-panel {
   position: relative;
-  background: linear-gradient(
-    155deg,
-    rgba(255, 255, 255, 0.07),
-    rgba(255, 255, 255, 0.02)
-  );
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  background: rgba(8, 10, 14, 0.94);
+  backdrop-filter: blur(16px) saturate(110%);
+  -webkit-backdrop-filter: blur(16px) saturate(110%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   /* 交给 transform/背景一起做过渡，配合下面 hover 规则实现"液态"的柔和形变 */
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease,
     border-color 0.35s ease;
@@ -53,12 +50,10 @@ body {
 
 /* 皮肤设置面板：比普通玻璃卡片更实一些，避免正文内容透出来干扰读数 */
 .theme-popover {
-  position: relative;
-  overflow: hidden;
   background: rgba(5, 6, 8, 0.985);
   backdrop-filter: blur(12px) saturate(110%);
   -webkit-backdrop-filter: blur(12px) saturate(110%);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.14);
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease,
     border-color 0.35s ease;
 }
@@ -74,12 +69,6 @@ body {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
-}
-
-:root[data-liquid-effects="on"] .theme-popover:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px -18px rgba(var(--accent-rgb), 0.24);
-  border-color: rgba(var(--accent-rgb), 0.25);
 }
 
 .glass-panel::before {
@@ -113,9 +102,9 @@ body {
 }
 
 :root[data-liquid-effects="on"] .glass-panel:hover {
-  transform: translateY(-3px) scale(1.01);
-  box-shadow: 0 10px 28px -10px rgba(var(--accent-rgb), 0.22);
-  border-color: rgba(var(--accent-rgb), 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -18px rgba(var(--accent-rgb), 0.24);
+  border-color: rgba(var(--accent-rgb), 0.25);
 }
 
 :root[data-liquid-effects="on"] .glass-panel::after {
@@ -123,10 +112,10 @@ body {
   position: absolute;
   left: var(--mouse-x);
   top: var(--mouse-y);
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(var(--accent-rgb), 0.05), transparent 72%);
+  background: radial-gradient(circle, rgba(var(--accent-rgb), 0.045), transparent 72%);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
