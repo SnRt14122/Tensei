@@ -99,14 +99,19 @@ body {
  * data-liquid-effects="off" 时（用户在皮肤设置里关闭了液态特效）整段规则不生效，
  * 退化为上面 .glass-panel 本身自带的普通颜色过渡。
  */
+.glass-panel:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 0 1px rgba(var(--accent-rgb), 0.1), 0 10px 24px -20px rgba(var(--accent-rgb), 0.18);
+  border-color: rgba(var(--accent-rgb), 0.2);
+}
+
 :root[data-liquid-effects="on"] .glass-panel {
   overflow: hidden;
 }
 
 :root[data-liquid-effects="on"] .glass-panel:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 0 0 1px rgba(var(--accent-rgb), 0.12), 0 8px 18px -22px rgba(var(--accent-rgb), 0.12);
-  border-color: rgba(var(--accent-rgb), 0.22);
+  box-shadow: 0 0 0 1px rgba(var(--accent-rgb), 0.14), 0 10px 24px -20px rgba(var(--accent-rgb), 0.22);
+  border-color: rgba(var(--accent-rgb), 0.26);
 }
 
 :root[data-liquid-effects="on"] .glass-panel::after {
@@ -143,11 +148,15 @@ body {
  */
 .liquid-btn {
   transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.25s ease,
-    border-color 0.25s ease, color 0.25s ease;
+    border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.liquid-btn:hover {
+  transform: translateY(-1px);
 }
 
 :root[data-liquid-effects="on"] .liquid-btn:hover {
-  transform: translateY(-1px);
+  box-shadow: 0 0 0 1px rgba(var(--accent-rgb), 0.14);
 }
 
 /* 几何切角装饰形状，用于首页背景 */
