@@ -51,6 +51,22 @@ body {
     border-color 0.35s ease;
 }
 
+/* 皮肤设置面板：比普通玻璃卡片更实一些，避免正文内容透出来干扰读数 */
+.theme-popover {
+  background: rgba(5, 6, 8, 0.985);
+  backdrop-filter: blur(12px) saturate(110%);
+  -webkit-backdrop-filter: blur(12px) saturate(110%);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.theme-popover::before {
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0) 60%);
+}
+
+:root[data-liquid-effects="on"] .theme-popover:hover {
+  box-shadow: 0 6px 16px -14px rgba(var(--accent-rgb), 0.14);
+}
+
 .glass-panel::before {
   content: "";
   position: absolute;
@@ -92,10 +108,10 @@ body {
   position: absolute;
   left: var(--mouse-x);
   top: var(--mouse-y);
-  width: 200px;
-  height: 200px;
+  width: 72px;
+  height: 72px;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(var(--accent-rgb), 0.1), transparent 72%);
+  background: radial-gradient(circle, rgba(var(--accent-rgb), 0.05), transparent 72%);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
