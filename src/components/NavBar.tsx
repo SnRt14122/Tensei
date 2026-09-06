@@ -2,7 +2,7 @@
 
 // 顶部导航栏（客户端组件，因为要用 usePathname 判断当前 tab 是否激活）
 //
-// 一级 tab 精简为三个：记忆 / 学习 / 检测。
+// 一级 tab：记忆 / 学习 / 检测 / 记录。
 // 之前的"汉字检测""词义检测"两个独立入口合并进"检测"一级 tab，
 // 检测内部的四种题型（汉字/词义/动词变位/语法点意义）用二级标签切换，见 /quiz/layout.tsx。
 
@@ -16,6 +16,7 @@ const links = [
   { href: "/memorize", label: "记忆" },
   { href: "/learn", label: "学习" },
   { href: "/quiz", label: "检测" },
+  { href: "/progress", label: "记录" },
 ];
 
 export function NavBar({ email }: { email?: string }) {

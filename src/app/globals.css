@@ -9,6 +9,41 @@
 .pitch-mora.drop::after { content: ""; position: absolute; width: 1.5px; background: var(--accent); height: 100%; right: -1px; top: 0; }
 .pitch-number { font-size: 12px; color: var(--accent); }
 
+.activity-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; color: var(--accent); }
+.activity-header h1 { margin: .2rem 0 .35rem; color: white; font-size: 1.65rem; font-weight: 600; }
+.activity-header p:last-child { margin: 0; color: rgba(255,255,255,.48); font-size: .85rem; }
+.activity-kicker { margin: 0; color: var(--accent); font-size: .65rem; letter-spacing: .08em; }
+.activity-overview { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .6rem; margin-bottom: 1.5rem; }
+.activity-overview > div { display: grid; grid-template-columns: auto 1fr; column-gap: .55rem; align-items: center; padding: .8rem .9rem; border: 1px solid rgba(255,255,255,.12); border-radius: 8px; background: rgba(17,22,29,.9); color: var(--accent); }
+.activity-overview strong { color: white; font-size: 1.15rem; font-weight: 600; }
+.activity-overview span { grid-column: 2; color: rgba(255,255,255,.45); font-size: .7rem; }
+.activity-day { margin-bottom: 1rem; border: 1px solid rgba(255,255,255,.12); border-radius: 8px; background: rgba(17,22,29,.86); overflow: hidden; }
+.activity-day-heading { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.1rem; border-bottom: 1px solid rgba(255,255,255,.08); color: var(--accent); }
+.activity-date { margin: 0; color: white; font-weight: 600; }
+.activity-summary { margin: .25rem 0 0; color: rgba(255,255,255,.42); font-size: .75rem; }
+.activity-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.activity-item { min-width: 0; padding: 1rem 1.1rem; border-right: 1px solid rgba(255,255,255,.08); }
+.activity-item:last-child { border-right: 0; }
+.activity-item-heading { display: flex; align-items: center; gap: .45rem; color: var(--accent); }
+.activity-item-heading h3 { margin: 0; color: rgba(255,255,255,.8); font-size: .78rem; font-weight: 500; }
+.activity-item-heading span { margin-left: auto; color: rgba(255,255,255,.4); font-size: .75rem; }
+.activity-item ul { display: grid; gap: .5rem; margin: .9rem 0 0; padding: 0; list-style: none; }
+.activity-item li { display: grid; grid-template-columns: auto auto; column-gap: .45rem; align-items: baseline; }
+.activity-item li strong { color: white; font-size: .82rem; }
+.activity-item li span { color: rgba(255,255,255,.46); font-size: .72rem; }
+.activity-item li small { grid-column: 1 / -1; overflow: hidden; color: rgba(255,255,255,.38); font-size: .68rem; text-overflow: ellipsis; white-space: nowrap; }
+.activity-empty { margin: .9rem 0 0; color: rgba(255,255,255,.3); font-size: .75rem; }
+.activity-stats { display: flex; flex-direction: column; align-items: flex-start; margin-top: .75rem; }
+.activity-stats strong { color: white; font-size: 1.6rem; font-weight: 600; }
+.activity-stats span, .activity-stats p, .activity-stats small { margin: 0; color: rgba(255,255,255,.42); font-size: .7rem; }
+.activity-stats p { margin-top: .5rem; color: rgba(255,255,255,.65); }
+.activity-stats small { margin-top: .5rem; }
+.activity-stats .activity-reviewed { color: rgba(255,255,255,.42); line-height: 1.55; }
+.activity-empty-state { display: grid; justify-items: center; gap: .6rem; padding: 4rem 1rem; border: 1px dashed rgba(255,255,255,.16); border-radius: 8px; color: var(--accent); text-align: center; }
+.activity-empty-state h2 { margin: 0; color: white; font-size: 1rem; }
+.activity-empty-state p { margin: 0; color: rgba(255,255,255,.45); font-size: .8rem; }
+@media (max-width: 720px) { .activity-overview { grid-template-columns: repeat(2, minmax(0, 1fr)); } .activity-grid { grid-template-columns: 1fr; } .activity-item { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.08); } .activity-item:last-child { border-bottom: 0; } }
+
 /*
  * 皮肤系统的 CSS 变量入口。
  * --accent/--accent-rgb/--background 这三个变量默认值写在这里，
