@@ -5,20 +5,13 @@
  * --accent/--accent-rgb/--background 这三个变量默认值写在这里，
  * ThemeProvider 挂载后会用 JS 把它们覆盖成用户在设置面板里选的值
  * （见 src/components/ThemeProvider.tsx 的 applyThemeToDocument）。
- * --mouse-x/--mouse-y 同样由 ThemeProvider 实时更新，用于 hover 液态光晕跟随鼠标。
- * 注意：这两个变量存的是"鼠标相对当前 hover 的那个 .glass-panel 左上角"的坐标，
- * 不是视口坐标——ThemeProvider 会把它们直接写在具体的 .glass-panel 元素上（覆盖这里
- * :root 上的默认值），因为 .glass-panel 的 backdrop-filter 会让它变成子元素
- * absolute 定位的基准，坐标系必须和这个基准对齐，否则光晕会跟着面板离视口原点的
- * 距离整体偏移（这正是之前"光晕偏到右下方"这个 bug 的原因）。
+ * 全局鼠标透镜由 FluidGlass 独立渲染，不依赖卡片上的伪元素。
  */
 :root {
   --background: #05060a;
   --foreground: #eef2ff;
   --accent: #22d3ee; /* 主题强调色，默认对应之前硬编码的 cyan-400 */
   --accent-rgb: 34, 211, 238;
-  --mouse-x: 50%;
-  --mouse-y: 50%;
 }
 
 @theme inline {
@@ -51,7 +44,7 @@ body {
 
 /* 皮肤设置面板：比普通玻璃卡片更实一些，避免正文内容透出来干扰读数 */
 .theme-popover {
-  background: rgba(5, 6, 8, 0.8);
+  background: rgba(5, 6, 8, 0.96);
   backdrop-filter: blur(18px) saturate(116%);
   -webkit-backdrop-filter: blur(18px) saturate(116%);
   border-color: rgba(255, 255, 255, 0.12);
@@ -90,15 +83,7 @@ body {
   pointer-events: none;
 }
 
-/*
- * hover 液态玻璃扭曲特效：
- * 面板本身轻微"膨胀+抬起"（transform scale + translateY），配合一层跟随鼠标坐标的
- * 径向光晕（用 --mouse-x/--mouse-y，由 ThemeProvider 实时更新），
- * 模拟"手指按在液体表面，表面跟着凸起并折射光"的感觉。
- * 只用 CSS transform + radial-gradient 实现，不需要 JS 逐帧重绘，性能开销很低。
- * data-liquid-effects="off" 时（用户在皮肤设置里关闭了液态特效）整段规则不生效，
- * 退化为上面 .glass-panel 本身自带的普通颜色过渡。
- */
+/* 卡片的基础悬停反馈独立于全局透镜开关。 */
 .glass-panel:hover {
   transform: translateY(-2px) scale(1.004);
   background: rgba(9, 12, 18, 0.94);
@@ -118,24 +103,6 @@ body {
     0 0 0 1px rgba(var(--accent-rgb), 0.18),
     0 16px 36px -16px rgba(var(--accent-rgb), 0.34);
   border-color: rgba(var(--accent-rgb), 0.32);
-}
-
-:root[data-liquid-effects="on"] .glass-panel::after {
-  content: "";
-  position: absolute;
-  left: var(--mouse-x);
-  top: var(--mouse-y);
-  width: 150px;
-  height: 150px;
-  transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(var(--accent-rgb), 0.24), transparent 70%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-
-:root[data-liquid-effects="on"] .glass-panel:hover::after {
-  opacity: 1;
 }
 
 /*

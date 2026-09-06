@@ -1,7 +1,6 @@
 // 皮肤系统的配置类型与本地持久化逻辑。
 //
-// 设计取向（用户已确认）：全部用纯 CSS 方案实现视觉效果（backdrop-filter、渐变、
-// transform、CSS 变量），不引入额外的动画/WebGL 库，保持轻量、所有设备兼容性好。
+// 面板使用 CSS；全局透镜由 FluidGlass 渲染，受 liquidEffects 开关控制。
 //
 // 原理：把用户选择的主题色/背景色/动效模式存到 localStorage，
 // ThemeProvider 组件在客户端读取这份设置，把它们写成 CSS 变量挂在 <html> 上，

@@ -7,7 +7,6 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { createPortal } from "react-dom";
 import { useTheme } from "./ThemeProvider";
 import { THEME_PRESETS, type BackgroundEffect } from "@/lib/theme";
-import FluidGlass from "./FluidGlass";
 
 const BG_EFFECT_OPTIONS: { value: BackgroundEffect; label: string }[] = [
   { value: "drift", label: "几何漂浮" },
@@ -90,20 +89,6 @@ export function ThemeSettingsPanel() {
         style={panelStyle}
         className="theme-popover slide-transition w-[min(24rem,calc(100vw-1.5rem))] max-h-[calc(100vh-1.5rem)] overflow-hidden rounded-2xl"
       >
-        <div className="pointer-events-none absolute inset-0 opacity-55">
-          <FluidGlass
-            mode="lens"
-            lensProps={{
-              scale: 0.18,
-              ior: 1.12,
-              thickness: 3.5,
-              chromaticAberration: 0.05,
-              anisotropy: 0.005,
-            }}
-            backgroundColor="#040507"
-          />
-        </div>
-
         <div className="relative z-10 p-4">
         <p className="mb-3 text-sm font-medium text-white">皮肤设置</p>
 
