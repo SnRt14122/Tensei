@@ -59,6 +59,10 @@ body {
   border-color: rgba(255, 255, 255, 0.18);
 }
 
+.theme-popover.glass-panel::after {
+  content: none;
+}
+
 .theme-popover::before {
   background: linear-gradient(155deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0) 60%);
 }
