@@ -17,6 +17,7 @@
 export function AmbientBackground() {
   return (
     <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+      <div className="custom-background-image" />
       {/* drift 模式：三个几何切角形状缓慢漂浮，只在 data-bg-effect="drift" 时播放动画 */}
       <div className="shard shard-hex drift absolute -left-16 top-24 h-56 w-56 sm:h-72 sm:w-72" />
       <div className="shard shard-diamond drift absolute right-[-4rem] top-[8rem] h-40 w-40 sm:h-56 sm:w-56" />

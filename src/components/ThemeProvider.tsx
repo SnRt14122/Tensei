@@ -31,6 +31,10 @@ function applyThemeToDocument(theme: ThemeSettings) {
   root.style.setProperty("--accent", theme.accent);
   root.style.setProperty("--accent-rgb", hexToRgbString(theme.accent));
   root.style.setProperty("--background", theme.background);
+  root.style.setProperty(
+    "--background-image",
+    theme.backgroundImage ? `url(${theme.backgroundImage})` : "none",
+  );
   root.setAttribute("data-bg-effect", theme.backgroundEffect);
   root.setAttribute("data-liquid-effects", theme.liquidEffects ? "on" : "off");
 }

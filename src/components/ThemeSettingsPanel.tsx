@@ -1,12 +1,9 @@
 "use client";
 
-// 皮肤设置面板：一个可以从导航栏打开的悬浮面板，让用户调整主题色/背景色/
-// 背景动效/是否启用液态特效。所有修改立即生效（写 CSS 变量）并存 localStorage。
-
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useTheme } from "./ThemeProvider";
-import { THEME_PRESETS, type BackgroundEffect } from "@/lib/theme";
+import { DEFAULT_THEME, THEME_PRESETS, type BackgroundEffect, type ThemeCoreSettings } from "@/lib/theme";
 
 const BG_EFFECT_OPTIONS: { value: BackgroundEffect; label: string }[] = [
   { value: "drift", label: "几何漂浮" },
@@ -14,169 +11,119 @@ const BG_EFFECT_OPTIONS: { value: BackgroundEffect; label: string }[] = [
   { value: "none", label: "关闭动效" },
 ];
 
+function PresetSwatch({ settings }: { settings: ThemeCoreSettings }) {
+  return <span className="theme-preset-swatch" style={{ backgroundColor: settings.background, backgroundImage: settings.backgroundImage ? `url(${settings.backgroundImage})` : undefined }} />;
+}
+
 export function ThemeSettingsPanel() {
   const { theme, setTheme } = useTheme();
   const [open, setOpen] = useState(false);
-  const buttonRef = useRef<HTMLButtonElement | null>(null);
-  const panelRef = useRef<HTMLDivElement | null>(null);
-  const [panelStyle, setPanelStyle] = useState<CSSProperties>({ visibility: "hidden" });
+  const [presetName, setPresetName] = useState("");
+  const [imageError, setImageError] = useState("");
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
     if (!open) return;
-
-    function updatePosition() {
-      const button = buttonRef.current;
-      const panel = panelRef.current;
-      if (!button || !panel) return;
-
-      const buttonRect = button.getBoundingClientRect();
-      const panelRect = panel.getBoundingClientRect();
-      const viewportPadding = 12;
-      const gap = 10;
-
-      let left = buttonRect.right - panelRect.width;
-      left = Math.max(viewportPadding, Math.min(left, window.innerWidth - panelRect.width - viewportPadding));
-
-      let top = buttonRect.bottom + gap;
-      const maxTop = window.innerHeight - panelRect.height - viewportPadding;
-      if (top > maxTop) {
-        top = Math.max(viewportPadding, buttonRect.top - panelRect.height - gap);
-      }
-
-      setPanelStyle({
-        position: "fixed",
-        left,
-        top,
-        zIndex: 60,
-        visibility: "visible",
-      });
-    }
-
-    updatePosition();
-    window.addEventListener("resize", updatePosition);
-    window.addEventListener("scroll", updatePosition, true);
-    return () => {
-      window.removeEventListener("resize", updatePosition);
-      window.removeEventListener("scroll", updatePosition, true);
-    };
-  }, [open]);
-
-  useEffect(() => {
-    if (!open) return;
-
-    function handlePointerDown(event: PointerEvent) {
-      const target = event.target as Node | null;
-      if (panelRef.current?.contains(target) || buttonRef.current?.contains(target)) return;
-      setOpen(false);
-    }
-
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") setOpen(false);
     }
-
-    window.addEventListener("pointerdown", handlePointerDown);
-    window.addEventListener("keydown", handleKeyDown);
-    return () => {
-      window.removeEventListener("pointerdown", handlePointerDown);
-      window.removeEventListener("keydown", handleKeyDown);
-    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
   }, [open]);
 
-  const panel = open
-    ? createPortal(
-      <div
-        ref={panelRef}
-        style={panelStyle}
-        className="theme-popover slide-transition w-[min(24rem,calc(100vw-1.5rem))] max-h-[calc(100vh-1.5rem)] overflow-hidden rounded-2xl"
-      >
-        <div className="relative z-10 p-4">
-        <p className="mb-3 text-sm font-medium text-white">皮肤设置</p>
+  function applyPreset(settings: ThemeCoreSettings) {
+    setTheme({ ...settings, customPresets: theme.customPresets });
+  }
 
-        <div className="mb-4">
-          <p className="mb-2 text-xs text-white/50">预设主题</p>
-          <div className="grid grid-cols-2 gap-2">
-            {THEME_PRESETS.map((preset) => (
-              <button
-                key={preset.name}
-                onClick={() => setTheme(preset.settings)}
-                className="liquid-btn rounded-lg border border-white/10 px-2 py-1.5 text-left text-xs text-white/70 hover:border-white/30 hover:text-white"
-              >
-                <span
-                  className="mr-1.5 inline-block h-2 w-2 rounded-full"
-                  style={{ backgroundColor: preset.settings.accent }}
-                />
-                {preset.name}
-              </button>
-            ))}
-          </div>
+  function resetDefault() {
+    setTheme({ ...DEFAULT_THEME, customPresets: theme.customPresets });
+    setImageError("");
+  }
+
+  function handleImageChange(event: React.ChangeEvent<HTMLInputElement>) {
+    const file = event.target.files?.[0];
+    event.target.value = "";
+    if (!file) return;
+    if (!file.type.startsWith("image/")) {
+      setImageError("请选择图片文件");
+      return;
+    }
+    if (file.size > 3 * 1024 * 1024) {
+      setImageError("图片不能超过 3 MB");
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = () => {
+      if (typeof reader.result === "string") {
+        setTheme({ ...theme, backgroundImage: reader.result });
+        setImageError("");
+      }
+    };
+    reader.onerror = () => setImageError("图片读取失败，请重试");
+    reader.readAsDataURL(file);
+  }
+
+  function savePreset() {
+    const name = presetName.trim() || `背景 ${theme.customPresets.length + 1}`;
+    const nextPreset = {
+      id: `custom-${Date.now().toString(36)}`,
+      name: name.slice(0, 24),
+      settings: {
+        accent: theme.accent,
+        background: theme.background,
+        backgroundImage: theme.backgroundImage,
+        backgroundEffect: theme.backgroundEffect,
+        liquidEffects: theme.liquidEffects,
+      },
+    };
+    setTheme({ ...theme, customPresets: [...theme.customPresets, nextPreset].slice(0, 5) });
+    setPresetName("");
+  }
+
+  function removePreset(id: string) {
+    setTheme({ ...theme, customPresets: theme.customPresets.filter((preset) => preset.id !== id) });
+  }
+
+  const panel = open ? createPortal(
+    <div className="theme-settings-overlay" onPointerDown={(event) => { if (event.target === event.currentTarget) setOpen(false); }}>
+      <section className="theme-settings-dialog" role="dialog" aria-modal="true" aria-labelledby="theme-settings-title">
+        <header className="theme-settings-header">
+          <div><p className="theme-settings-kicker">APPEARANCE</p><h2 id="theme-settings-title">皮肤设置</h2></div>
+          <button className="theme-icon-button" onClick={() => setOpen(false)} aria-label="关闭皮肤设置">×</button>
+        </header>
+
+        <div className="theme-settings-body">
+          <section className="theme-settings-section">
+            <div className="theme-section-heading"><div><h3>主题预设</h3><p>快速切换整套颜色与背景动效</p></div><button className="theme-text-button" onClick={resetDefault}>恢复默认</button></div>
+            <div className="theme-preset-grid">
+              {THEME_PRESETS.map((preset) => <button key={preset.name} className="theme-preset-button" onClick={() => applyPreset(preset.settings)}><PresetSwatch settings={preset.settings} /><span>{preset.name}</span></button>)}
+            </div>
+          </section>
+
+          <section className="theme-settings-section">
+            <div className="theme-section-heading"><div><h3>我的背景预设 <span>{theme.customPresets.length}/5</span></h3><p>保存当前颜色、图片和动效组合</p></div></div>
+            {theme.customPresets.length > 0 && <div className="theme-preset-grid">{theme.customPresets.map((preset) => <div className="theme-custom-preset" key={preset.id}><button className="theme-preset-button" onClick={() => applyPreset(preset.settings)}><PresetSwatch settings={preset.settings} /><span>{preset.name}</span></button><button className="theme-preset-delete" onClick={() => removePreset(preset.id)} aria-label={`删除${preset.name}`}>×</button></div>)}</div>}
+            <div className="theme-save-preset"><input value={presetName} onChange={(event) => setPresetName(event.target.value)} placeholder="预设名称（可选）" maxLength={24} /><button className="theme-primary-button" onClick={savePreset} disabled={theme.customPresets.length >= 5}>保存当前预设</button></div>
+          </section>
+
+          <section className="theme-settings-section">
+            <div className="theme-section-heading"><div><h3>当前背景</h3><p>设置颜色，或使用一张本地图片</p></div></div>
+            <div className="theme-background-controls">
+              <label className="theme-control-row"><span>背景色</span><input type="color" value={theme.background} onChange={(event) => setTheme({ ...theme, background: event.target.value })} /></label>
+              <div className="theme-image-control"><div><strong>背景图片</strong><p>{theme.backgroundImage ? "已添加本地图片" : "尚未添加图片"}</p></div><div className="theme-image-actions"><button className="theme-secondary-button" onClick={() => fileInputRef.current?.click()}>添加图片</button>{theme.backgroundImage && <button className="theme-text-button" onClick={() => setTheme({ ...theme, backgroundImage: "" })}>移除</button>}<input ref={fileInputRef} type="file" accept="image/*" onChange={handleImageChange} hidden /></div></div>
+              {imageError && <p className="theme-error">{imageError}</p>}
+            </div>
+          </section>
+
+          <section className="theme-settings-section theme-settings-section-last">
+            <div className="theme-section-heading"><div><h3>交互效果</h3><p>控制背景动效和鼠标交互</p></div></div>
+            <div className="theme-effect-options">{BG_EFFECT_OPTIONS.map((option) => <button key={option.value} className={theme.backgroundEffect === option.value ? "theme-effect-option active" : "theme-effect-option"} onClick={() => setTheme({ ...theme, backgroundEffect: option.value })}>{option.label}</button>)}</div>
+            <label className="theme-toggle-row"><span><strong>液态玻璃交互</strong><small>保留按钮与卡片的悬停反馈</small></span><input type="checkbox" checked={theme.liquidEffects} onChange={(event) => setTheme({ ...theme, liquidEffects: event.target.checked })} /></label>
+          </section>
         </div>
+      </section>
+    </div>, document.body,
+  ) : null;
 
-        <label className="mb-3 flex items-center justify-between text-xs text-white/60">
-          主题色
-          <input
-            type="color"
-            value={theme.accent}
-            onChange={(e) => setTheme({ ...theme, accent: e.target.value })}
-            className="h-6 w-10 cursor-pointer rounded border border-white/15 bg-transparent"
-          />
-        </label>
-
-        <label className="mb-3 flex items-center justify-between text-xs text-white/60">
-          背景色
-          <input
-            type="color"
-            value={theme.background}
-            onChange={(e) => setTheme({ ...theme, background: e.target.value })}
-            className="h-6 w-10 cursor-pointer rounded border border-white/15 bg-transparent"
-          />
-        </label>
-
-        <div className="mb-3">
-          <p className="mb-2 text-xs text-white/50">背景动效</p>
-          <div className="flex gap-2">
-            {BG_EFFECT_OPTIONS.map((opt) => (
-              <button
-                key={opt.value}
-                onClick={() => setTheme({ ...theme, backgroundEffect: opt.value })}
-                className={`liquid-btn rounded-full px-2.5 py-1 text-xs ${
-                  theme.backgroundEffect === opt.value
-                    ? "bg-cyan-500 font-medium text-black"
-                    : "border border-white/15 text-white/60 hover:border-white/35 hover:text-white"
-                }`}
-              >
-                {opt.label}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <label className="flex items-center justify-between text-xs text-white/60">
-          液态玻璃 hover/click 特效
-          <input
-            type="checkbox"
-            checked={theme.liquidEffects}
-            onChange={(e) => setTheme({ ...theme, liquidEffects: e.target.checked })}
-            className="h-4 w-4 cursor-pointer accent-cyan-400"
-          />
-        </label>
-        </div>
-      </div>,
-      document.body,
-    )
-    : null;
-
-  return (
-    <div className="relative">
-      <button
-        ref={buttonRef}
-        onClick={() => setOpen((o) => !o)}
-        className="liquid-btn rounded-full border border-white/15 px-3 py-1 text-xs text-white/60 hover:border-white/35 hover:text-white"
-        aria-expanded={open}
-        aria-label="皮肤设置"
-      >
-        🎨 皮肤
-      </button>
-      {panel}
-    </div>
-  );
+  return <><button className="liquid-btn theme-launch-button" onClick={() => setOpen(true)} aria-expanded={open} aria-label="打开皮肤设置"><span aria-hidden="true">◐</span> 皮肤</button>{panel}</>;
 }

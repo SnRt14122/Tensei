@@ -9,38 +9,44 @@
 
 export type BackgroundEffect = "drift" | "aurora" | "none";
 
-export interface ThemeSettings {
-  /** 主题强调色（用于按钮、高光、边框等），CSS 颜色值，例如 "#22d3ee" */
+export interface ThemePresetSettings {
   accent: string;
-  /** 背景基础色 */
   background: string;
-  /** 背景动效模式：几何形状漂浮 / 极光渐变流动 / 关闭动效 */
+  backgroundImage?: string;
   backgroundEffect: BackgroundEffect;
-  /** 是否启用 hover/click 的液态玻璃交互特效（关闭后退化为普通的颜色过渡，性能更省） */
   liquidEffects: boolean;
 }
+
+export interface ThemeSettings extends ThemePresetSettings {
+  /** 用户保存的背景预设，最多保留 5 个 */
+  customPresets: { id: string; name: string; settings: ThemePresetSettings }[];
+}
+
+export type ThemeCoreSettings = ThemePresetSettings;
 
 export const DEFAULT_THEME: ThemeSettings = {
   accent: "#22d3ee", // 对应原来硬编码的 cyan-400 系
   background: "#05060a",
+  backgroundImage: "",
   backgroundEffect: "drift",
   liquidEffects: true,
+  customPresets: [],
 };
 
 /** 几套预设主题，方便用户一键切换，不用每次都手动调颜色 */
-export const THEME_PRESETS: { name: string; settings: ThemeSettings }[] = [
-  { name: "青蓝夜色（默认）", settings: DEFAULT_THEME },
+export const THEME_PRESETS: { name: string; settings: ThemePresetSettings }[] = [
+  { name: "青蓝夜色（默认）", settings: { ...DEFAULT_THEME } },
   {
     name: "紫粉极光",
-    settings: { accent: "#c084fc", background: "#0a0612", backgroundEffect: "aurora", liquidEffects: true },
+    settings: { accent: "#c084fc", background: "#0a0612", backgroundImage: "", backgroundEffect: "aurora", liquidEffects: true },
   },
   {
     name: "琥珀暖阳",
-    settings: { accent: "#fbbf24", background: "#0c0a05", backgroundEffect: "drift", liquidEffects: true },
+    settings: { accent: "#fbbf24", background: "#0c0a05", backgroundImage: "", backgroundEffect: "drift", liquidEffects: true },
   },
   {
     name: "极简静态",
-    settings: { accent: "#67e8f9", background: "#050505", backgroundEffect: "none", liquidEffects: false },
+    settings: { accent: "#67e8f9", background: "#050505", backgroundImage: "", backgroundEffect: "none", liquidEffects: false },
   },
 ];
 
@@ -54,7 +60,19 @@ export function loadThemeSettings(): ThemeSettings {
     if (!raw) return DEFAULT_THEME;
     const parsed = JSON.parse(raw);
     // 简单合并默认值，防止旧版本存的设置缺字段导致 undefined
-    return { ...DEFAULT_THEME, ...parsed };
+    const customPresets = Array.isArray(parsed.customPresets)
+      ? parsed.customPresets
+        .filter((preset: unknown): preset is { id: string; name: string; settings: ThemePresetSettings } => {
+          if (!preset || typeof preset !== "object") return false;
+          const candidate = preset as { id?: unknown; name?: unknown; settings?: unknown };
+          return typeof candidate.id === "string"
+            && typeof candidate.name === "string"
+            && !!candidate.settings
+            && typeof candidate.settings === "object";
+        })
+        .slice(0, 5)
+      : [];
+    return { ...DEFAULT_THEME, ...parsed, customPresets };
   } catch {
     return DEFAULT_THEME;
   }
@@ -63,7 +81,11 @@ export function loadThemeSettings(): ThemeSettings {
 /** 保存主题设置到 localStorage */
 export function saveThemeSettings(settings: ThemeSettings): void {
   if (typeof window === "undefined") return;
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
+  try {
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
+  } catch {
+    // A local image can exceed the browser quota. Keep the active theme in memory.
+  }
 }
 
 /** 把十六进制颜色转成 "r, g, b" 字符串，供 CSS rgba() 函数拼接透明度用 */
