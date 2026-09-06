@@ -29,7 +29,7 @@ function Lens({ pointer }) {
           samples={4}
           resolution={128}
           transparent
-          opacity={1}
+          opacity={0.28}
           envMapIntensity={1.5}
         />
       </mesh>
@@ -63,7 +63,7 @@ export default function FluidGlass() {
       lens.dataset.visible = "true";
       setVisible(true);
       if (!frame) frame = requestAnimationFrame(() => {
-        lens.style.transform = `translate3d(${x - 56}px, ${y - 56}px, 0)`;
+        lens.style.transform = `translate3d(${x - 40}px, ${y - 40}px, 0)`;
         frame = 0;
       });
     }

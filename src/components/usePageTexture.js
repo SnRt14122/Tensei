@@ -82,10 +82,11 @@ export function usePageTexture(pointer) {
     if (!frame) return;
     const ctx = texture.image.getContext("2d");
     ctx.clearRect(0, 0, 192, 192);
+    // Keep the page at 1:1 scale. The old 112 -> 192 copy made the lens a magnifier.
     ctx.drawImage(frame.canvas,
-      pointer.current.x - 56 + window.scrollX - frame.x,
-      pointer.current.y - 56 + window.scrollY - frame.y,
-      112, 112, 0, 0, 192, 192);
+      pointer.current.x - 96 + window.scrollX - frame.x,
+      pointer.current.y - 96 + window.scrollY - frame.y,
+      192, 192, 0, 0, 192, 192);
     // eslint-disable-next-line react-hooks/immutability
     texture.needsUpdate = true;
   });
