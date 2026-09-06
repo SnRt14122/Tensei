@@ -88,19 +88,19 @@ export function ThemeSettingsPanel() {
       <div
         ref={panelRef}
         style={panelStyle}
-        className="theme-popover slide-transition w-[min(24rem,calc(100vw-1.5rem))] max-h-[calc(100vh-1.5rem)] overflow-hidden rounded-2xl shadow-2xl shadow-black/50"
+        className="theme-popover slide-transition w-[min(24rem,calc(100vw-1.5rem))] max-h-[calc(100vh-1.5rem)] overflow-hidden rounded-2xl"
       >
-        <div className="pointer-events-none absolute inset-0 opacity-100">
+        <div className="pointer-events-none absolute inset-0 opacity-55">
           <FluidGlass
             mode="lens"
             lensProps={{
-              scale: 0.24,
-              ior: 1.18,
-              thickness: 6,
-              chromaticAberration: 0.12,
-              anisotropy: 0.01,
+              scale: 0.18,
+              ior: 1.12,
+              thickness: 3.5,
+              chromaticAberration: 0.05,
+              anisotropy: 0.005,
             }}
-            backgroundColor="#05060a"
+            backgroundColor="#040507"
           />
         </div>
 
