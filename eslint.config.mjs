@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    "public/assets/3d/draco/**",
+    "docs/vendor/**",
   ]),
 ]);
 

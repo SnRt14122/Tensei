@@ -6,10 +6,12 @@ import { createPortal } from "react-dom";
 import { Canvas } from "@react-three/fiber";
 import { Environment, Lightformer, MeshTransmissionMaterial, useGLTF } from "@react-three/drei";
 import * as THREE from "three";
+import { usePageTexture } from "./usePageTexture";
 import "./FluidGlass.css";
 
-function Lens() {
+function Lens({ pointer }) {
   const { nodes } = useGLTF("/assets/3d/lens.glb", "/assets/3d/draco/");
+  const buffer = usePageTexture(pointer);
   return (
     <>
       <Environment resolution={64}>
@@ -18,6 +20,7 @@ function Lens() {
       </Environment>
       <mesh geometry={nodes.Cylinder.geometry} rotation-x={Math.PI / 2} scale={0.25}>
         <MeshTransmissionMaterial
+          buffer={buffer}
           ior={1.15}
           thickness={5}
           chromaticAberration={0.1}
@@ -26,7 +29,7 @@ function Lens() {
           samples={4}
           resolution={128}
           transparent
-          opacity={0.38}
+          opacity={1}
           envMapIntensity={1.5}
         />
       </mesh>
@@ -42,6 +45,7 @@ class LensBoundary extends Component {
 
 export default function FluidGlass() {
   const lensRef = useRef(null);
+  const pointer = useRef({ x: 0, y: 0 });
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -55,6 +59,7 @@ export default function FluidGlass() {
       if (event.pointerType === "touch") { hide(); return; }
       x = event.clientX;
       y = event.clientY;
+      pointer.current = { x, y };
       lens.dataset.visible = "true";
       setVisible(true);
       if (!frame) frame = requestAnimationFrame(() => {
@@ -101,7 +106,7 @@ export default function FluidGlass() {
             gl={{ alpha: true, antialias: true, toneMapping: THREE.NoToneMapping }}
             fallback={null}
           >
-            <Suspense fallback={null}><Lens /></Suspense>
+            <Suspense fallback={null}><Lens pointer={pointer} /></Suspense>
           </Canvas>
         </LensBoundary>
       </div>
