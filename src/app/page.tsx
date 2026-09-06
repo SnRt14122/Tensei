@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { LyricShowcase } from "@/components/LyricShowcase";
+import { pickRandomLyric } from "@/lib/data/lyrics";
 
 export default async function Home() {
   const supabase = await createClient();
@@ -40,7 +41,7 @@ export default async function Home() {
         </p>
 
         <div className="mt-10 w-full max-w-lg">
-          <LyricShowcase />
+          <LyricShowcase initialLyric={pickRandomLyric()} />
         </div>
 
         <div

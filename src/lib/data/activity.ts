@@ -49,10 +49,12 @@ function first<T>(value: T | T[] | null): T | null {
   return Array.isArray(value) ? value[0] ?? null : value;
 }
 
+const activityDateFormatter = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit", day: "2-digit",
+});
+
 function localDate(timestamp: string) {
-  const parts = new Intl.DateTimeFormat("en-CA", {
-    timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit", day: "2-digit",
-  }).formatToParts(new Date(timestamp));
+  const parts = activityDateFormatter.formatToParts(new Date(timestamp));
   const values = Object.fromEntries(parts.map(part => [part.type, part.value]));
   return { key: `${values.year}-${values.month}-${values.day}`, label: `${values.year}年${Number(values.month)}月${Number(values.day)}日` };
 }

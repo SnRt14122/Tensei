@@ -1,7 +1,7 @@
 "use client";
 
 // Adapted from React Bits FluidGlass. See docs/vendor/react-bits-LICENSE.md.
-import { Component, Suspense, useEffect, useRef, useState } from "react";
+import { Component, Suspense, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import { Canvas } from "@react-three/fiber";
 import { Environment, Lightformer, MeshTransmissionMaterial, useGLTF } from "@react-three/drei";
@@ -43,34 +43,37 @@ class LensBoundary extends Component {
   render() { return this.state.failed ? null : this.props.children; }
 }
 
-export default function FluidGlass() {
+export default function FluidGlass({ pointer }) {
   const lensRef = useRef(null);
-  const pointer = useRef({ x: 0, y: 0 });
-  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const lens = lensRef.current;
+    const moveEvent = new Event("fluid-glass-move");
     let frame = 0;
-    let x = 0;
-    let y = 0;
+    let x = pointer.current.x;
+    let y = pointer.current.y;
+    lens.style.transform = `translate3d(${x - 40}px, ${y - 40}px, 0)`;
+    lens.dataset.visible = String(pointer.current.active && !document.hidden);
     // The overlay never intercepts clicks. Coordinates come from the window,
     // not R3F's canvas-local pointer, so portals and nested panels work too.
     function move(event) {
       if (event.pointerType === "touch") { hide(); return; }
       x = event.clientX;
       y = event.clientY;
-      pointer.current = { x, y };
+      pointer.current.x = x;
+      pointer.current.y = y;
+      pointer.current.active = true;
       lens.dataset.visible = "true";
-      setVisible(true);
       if (!frame) frame = requestAnimationFrame(() => {
         lens.style.transform = `translate3d(${x - 40}px, ${y - 40}px, 0)`;
+        window.dispatchEvent(moveEvent);
         frame = 0;
       });
     }
     function hide() {
       lens.dataset.visible = "false";
       lens.dataset.pressed = "false";
-      setVisible(false);
+      pointer.current.active = false;
     }
     function press(event) { if (event.pointerType !== "touch") lens.dataset.pressed = "true"; }
     function release() { lens.dataset.pressed = "false"; }
@@ -92,7 +95,7 @@ export default function FluidGlass() {
       document.documentElement.removeEventListener("pointerleave", hide);
       document.removeEventListener("visibilitychange", visibility);
     };
-  }, []);
+  }, [pointer]);
 
   return createPortal(
     <div ref={lensRef} className="fluid-glass-cursor" aria-hidden="true" data-visible="false" data-fluid-glass="global-v1">
@@ -102,7 +105,7 @@ export default function FluidGlass() {
           <Canvas
             camera={{ position: [0, 0, 2], fov: 20 }}
             dpr={[1, 1.5]}
-            frameloop={visible ? "always" : "never"}
+            frameloop="demand"
             gl={{ alpha: true, antialias: true, toneMapping: THREE.NoToneMapping }}
             fallback={null}
           >

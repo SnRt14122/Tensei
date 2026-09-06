@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
-import dynamic from "next/dynamic";
+import { FluidGlassLoader } from "./FluidGlassLoader";
 import {
   DEFAULT_THEME,
   hexToRgbString,
@@ -9,8 +9,6 @@ import {
   saveThemeSettings,
   type ThemeSettings,
 } from "@/lib/theme";
-
-const FluidGlass = dynamic(() => import("./FluidGlass"), { ssr: false });
 
 interface ThemeContextValue {
   theme: ThemeSettings;
@@ -46,6 +44,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     applyThemeToDocument(theme);
   }, [theme]);
 
+  useEffect(() => {
+    const update = () => { document.documentElement.dataset.pageHidden = String(document.hidden); };
+    update();
+    document.addEventListener("visibilitychange", update);
+    return () => document.removeEventListener("visibilitychange", update);
+  }, []);
+
   const setTheme = useCallback((next: ThemeSettings) => {
     if (!saveThemeSettings(next)) return false;
     setThemeState(next);
@@ -55,7 +60,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       {children}
-      {theme.liquidEffects && <FluidGlass />}
+      {theme.liquidEffects && <FluidGlassLoader />}
     </ThemeContext.Provider>
   );
 }
