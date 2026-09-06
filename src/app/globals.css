@@ -100,9 +100,12 @@ body {
  * 退化为上面 .glass-panel 本身自带的普通颜色过渡。
  */
 .glass-panel:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 0 0 1px rgba(var(--accent-rgb), 0.1), 0 10px 24px -20px rgba(var(--accent-rgb), 0.18);
-  border-color: rgba(var(--accent-rgb), 0.2);
+  transform: translateY(-2px) scale(1.004);
+  background: rgba(9, 12, 18, 0.94);
+  box-shadow:
+    0 0 0 1px rgba(var(--accent-rgb), 0.14),
+    0 14px 34px -18px rgba(var(--accent-rgb), 0.28);
+  border-color: rgba(var(--accent-rgb), 0.26);
 }
 
 :root[data-liquid-effects="on"] .glass-panel {
@@ -110,8 +113,11 @@ body {
 }
 
 :root[data-liquid-effects="on"] .glass-panel:hover {
-  box-shadow: 0 0 0 1px rgba(var(--accent-rgb), 0.14), 0 10px 24px -20px rgba(var(--accent-rgb), 0.22);
-  border-color: rgba(var(--accent-rgb), 0.26);
+  background: rgba(9, 12, 18, 0.96);
+  box-shadow:
+    0 0 0 1px rgba(var(--accent-rgb), 0.18),
+    0 16px 36px -16px rgba(var(--accent-rgb), 0.34);
+  border-color: rgba(var(--accent-rgb), 0.32);
 }
 
 :root[data-liquid-effects="on"] .glass-panel::after {
@@ -152,11 +158,13 @@ body {
 }
 
 .liquid-btn:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 :root[data-liquid-effects="on"] .liquid-btn:hover {
-  box-shadow: 0 0 0 1px rgba(var(--accent-rgb), 0.14);
+  box-shadow:
+    0 0 0 1px rgba(var(--accent-rgb), 0.18),
+    0 8px 18px -14px rgba(var(--accent-rgb), 0.3);
 }
 
 /* 几何切角装饰形状，用于首页背景 */
