@@ -24,6 +24,7 @@ import { useMemo, useState, useTransition } from "react";
 import { Furigana } from "./Furigana";
 import { PitchAccent } from "./PitchAccent";
 import { StudyCard } from "./StudyCard";
+import { StarButton } from "./StarButton";
 import { markWordLearned, toggleEasy, toggleStar } from "@/app/memorize/actions";
 import { getWordTypeLabel } from "@/lib/conjugation";
 import type { WordWithProgress } from "@/lib/types";
@@ -126,15 +127,7 @@ export function MemoryCardRunner({ words }: { words: WordWithProgress[] }) {
         <p className="text-sm text-white/40">
           第 {index + 1} / {snapshot.length} 个{isPending && <span className="ml-2 text-white/25">保存中…</span>}
         </p>
-        <button
-          onClick={handleToggleStar}
-          aria-label={currentState?.starred ? "取消星标" : "标记星标"}
-          className={`liquid-btn text-xl ${
-            currentState?.starred ? "text-amber-400" : "text-white/25 hover:text-white/50"
-          }`}
-        >
-          ★
-        </button>
+        <StarButton starred={!!currentState?.starred} onClick={handleToggleStar} disabled={isPending} />
       </div>
 
       <div className="text-center">

@@ -37,7 +37,7 @@ export function GlowCursor() {
       }
       if (!frame) frame = requestAnimationFrame(() => {
         frame = 0;
-        glow.style.transform = `translate3d(${x - 160}px, ${y - 160}px, 0)`;
+        glow.style.transform = `translate3d(${x}px, ${y}px, 0) translate(-50%, -50%)`;
         if (glow.hasAttribute("popover") && !isPopoverOpen()) glow.showPopover();
         glow.dataset.visible = "true";
       });

@@ -16,6 +16,7 @@
 import { useMemo, useState, useTransition } from "react";
 import { Furigana } from "./Furigana";
 import { StudyCard } from "./StudyCard";
+import { StarButton } from "./StarButton";
 import {
   markPatternLearned,
   togglePatternEasy,
@@ -132,15 +133,7 @@ export function PatternCardRunner({ patterns }: { patterns: PatternWithProgress[
               {current.level}
             </span>
           )}
-          <button
-            onClick={handleToggleStar}
-            aria-label={currentState?.starred ? "取消星标" : "标记星标"}
-            className={`liquid-btn text-xl ${
-              currentState?.starred ? "text-amber-400" : "text-white/25 hover:text-white/50"
-            }`}
-          >
-            ★
-          </button>
+          <StarButton starred={!!currentState?.starred} onClick={handleToggleStar} disabled={isPending} />
         </div>
       </div>
 

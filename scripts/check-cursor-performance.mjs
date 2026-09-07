@@ -63,6 +63,11 @@ try {
   await glow.goto(`${base}/login`);
   await glow.mouse.move(80, 240);
   await glow.waitForFunction(() => document.querySelector('.glow-cursor')?.dataset.visible === 'true');
+  const glowBounds = await glow.locator('.glow-cursor').boundingBox();
+  assert.equal(glowBounds.width, 160, 'classic glow diameter must remain compact');
+  assert.equal(glowBounds.height, 160);
+  assert.equal(glowBounds.x + glowBounds.width / 2, 80, 'glow center must track the pointer');
+  assert.equal(glowBounds.y + glowBounds.height / 2, 240);
   assert.equal(await glow.locator('canvas').count(), 0, 'classic glow must not load WebGL');
   assert.equal(await glow.evaluate(() => document.elementFromPoint(80, 240)?.classList.contains('glow-cursor')), false, 'glow must not intercept input');
   await glow.getByRole('textbox').first().fill('test@example.com');

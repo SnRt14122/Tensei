@@ -4,6 +4,7 @@ import { useState, useTransition } from "react";
 import { Furigana } from "./Furigana";
 import { PitchAccent } from "./PitchAccent";
 import { StudyCard } from "./StudyCard";
+import { StarButton } from "./StarButton";
 import { markWordLearned, toggleStar } from "@/app/memorize/actions";
 import { getWordTypeLabel } from "@/lib/conjugation";
 import type { WordWithProgress } from "@/lib/types";
@@ -34,19 +35,11 @@ export function WordCard({ word }: { word: WordWithProgress }) {
 
   return (
     <StudyCard contentClassName="p-6">
-      <button
-        onClick={handleToggleStar}
-        aria-label={starred ? "取消星标" : "标记星标"}
-        className={`liquid-btn absolute right-4 top-4 text-xl ${
-          starred ? "text-amber-400" : "text-white/25 hover:text-white/50"
-        }`}
-      >
-        ★
-      </button>
+      <div className="absolute right-4 top-4"><StarButton starred={starred} onClick={handleToggleStar} disabled={isPending} /></div>
 
       <Furigana
         segments={word.segments}
-        className="text-3xl font-medium text-white leading-relaxed"
+        className="pr-12 text-3xl font-medium text-white leading-relaxed"
       />
 
       <div className="mt-2 flex flex-wrap items-center gap-2 text-sm text-white/50">

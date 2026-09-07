@@ -27,8 +27,24 @@
 
 适配项：增加客户端标记、独立禁用开关与内容样式入口；补充可选扫光动画的卸载清理；触屏和减少动态效果模式不显示发光；窄屏外发光范围限制为 12px，避免撑宽页面。`animated={false}` 保证本站没有自动扫光循环。
 
-皮肤设置的“鼠标效果”提供液态玻璃、经典光晕和关闭三种选择。“卡片边缘光效”独立控制 Border Glow，二者都随自定义预设保存。经典光晕复用历史版本 320px、中心透明度 0.16 的径向渐变，并改为全局覆盖，不限制在 `.glass-panel` 内部。它只在鼠标事件后更新位置，不启动 Three.js 或网页截图，不拦截按钮输入；离开窗口、触屏操作和减少动态效果时隐藏。
+皮肤设置的“鼠标效果”提供液态玻璃、经典光晕和关闭三种选择。“卡片边缘光效”独立控制 Border Glow，二者都随自定义预设保存。经典光晕复用历史版本中心透明度 0.16 的径向渐变，并改为全局覆盖，不限制在 `.glass-panel` 内部。直径已按反馈从 320px 缩小至 160px，使用百分比偏移保持居中。它只在鼠标事件后更新位置，不启动 Three.js 或网页截图，不拦截按钮输入；离开窗口、触屏操作和减少动态效果时隐藏。
 
 老版本设置和自定义预设缺少新字段时，保留原有玻璃开关状态；原来关闭特效的预设也默认关闭边缘光效。水合阶段先保持服务端默认外观，随后应用浏览器保存的设置，防止 className 不匹配。
 
 测试：`node --test tests/*.test.mjs`；生产构建后运行 `scripts/check-cursor-performance.mjs` 可验证玻璃与光晕模式的懒加载和空闲行为（需设置 `PLAYWRIGHT_MODULE`、`TEST_BASE_URL`）。
+
+## Pill Nav
+
+来源：[组件文档](https://reactbits.dev/components/pill-nav)、[JS-CSS registry](https://reactbits.dev/r/PillNav-JS-CSS.json)。源文件为 `PillNav.jsx` 和 `PillNav.css`，依赖 `gsap`。
+
+`NavBar` 保留记忆、学习、检测、记录入口以及皮肤、同步、退出工具。PillNav 采用请求中的黑白配色和 power2 缓出曲线，保留原版圆形填充与文字上移的悬停动画。不播放首屏宽度/Logo 入场动画，避免导航布局跳动。Logo 沿用本站“単語”字样，没有使用示例占位图。
+
+原 registry 的 `react-router-dom` 链接已替换为 Next.js `Link`，不安装第二套路由库。增加键盘焦点反馈、`aria-current` 子路由选中状态、减少动态效果支持和 GSAP 卸载清理。手机菜单使用 Lucide 图标，支持同链接点击、路由切换、Esc、点击外部和切换至桌面布局时关闭；菜单不遮挡顶部工具按钮。
+
+## Specular Button
+
+来源：[组件文档](https://reactbits.dev/components/specular-button)、[JS-CSS registry](https://reactbits.dev/r/SpecularButton-JS-CSS.json)。源文件为 `SpecularButton.jsx` 和 `SpecularButton.css`，新增依赖 `ogl`。保留官方圆角矩形 SDF 高光着色器及鼠标角度/距离算法。
+
+`StarButton` 用它替换单词记忆、语法记忆、词条卡片的收藏按钮。固定 44px 正方形触摸尺寸，圆角 18px；其它光效参数沿用请求配置。空心星为未收藏、琥珀色实心星为已收藏，通过 `aria-pressed`、标签、tooltip 暴露状态。收藏动作与失败回滚沿用原逻辑，保存中禁用按钮避免重复请求。
+
+性能适配：鼠标进入 proximity 范围后才创建 WebGL2 上下文；`autoAnimate=false` 时角度与亮度稳定后停止 requestAnimationFrame，页面隐藏/按钮离屏时停止绘制。卸载时释放程序、几何和上下文。触屏、减少动态效果或无 WebGL2 时保留可操作的静态按钮。桌面与窄屏截图、画布像素差异、Firefox、键盘、触屏、无 WebGL 回退和空闲绘制检查均通过；浏览器测试使用临时本地数据页面，不进行真实收藏数据写入。
