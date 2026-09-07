@@ -18,3 +18,17 @@
 周视图沿用 `getLearningActivity` 返回的数据范围，不补造历史数据。单词与语法按已有掌握时间归日，检测只包含已同步到云端的最近 1000 条数据；单词和语法查询仍受 Supabase 返回条数限制。它不是逐次学习行为的完整事件日志。自测跳过缺少释义的内容，不从缺少正确答案的错题记录生成题目。
 
 数据逻辑测试：`node --test tests/activityPractice.test.mjs tests/activityView.test.mjs`。
+
+## Border Glow 与经典光晕
+
+来源：[Border Glow 文档](https://reactbits.dev/components/border-glow)、[JS-CSS registry](https://reactbits.dev/r/BorderGlow-JS-CSS.json)。registry 无额外依赖，源码保存在 `src/components/BorderGlow.jsx` 和 `BorderGlow.css`，使用现有 `docs/vendor/react-bits-LICENSE.md` 许可文件。
+
+`StudyCard` 将其用于单词记忆卡、语法记忆卡和词条卡，替换原卡片外壳，不额外嵌套玻璃卡片。参数沿用请求配置：edgeSensitivity 30、glowColor `40 80 80`、backgroundColor `#120F17`、borderRadius 28、glowRadius 40、glowIntensity 1、coneSpread 25、animated false、三种颜色 `#c084fc` / `#f472b6` / `#38bdf8`。
+
+适配项：增加客户端标记、独立禁用开关与内容样式入口；补充可选扫光动画的卸载清理；触屏和减少动态效果模式不显示发光；窄屏外发光范围限制为 12px，避免撑宽页面。`animated={false}` 保证本站没有自动扫光循环。
+
+皮肤设置的“鼠标效果”提供液态玻璃、经典光晕和关闭三种选择。“卡片边缘光效”独立控制 Border Glow，二者都随自定义预设保存。经典光晕复用历史版本 320px、中心透明度 0.16 的径向渐变，并改为全局覆盖，不限制在 `.glass-panel` 内部。它只在鼠标事件后更新位置，不启动 Three.js 或网页截图，不拦截按钮输入；离开窗口、触屏操作和减少动态效果时隐藏。
+
+老版本设置和自定义预设缺少新字段时，保留原有玻璃开关状态；原来关闭特效的预设也默认关闭边缘光效。水合阶段先保持服务端默认外观，随后应用浏览器保存的设置，防止 className 不匹配。
+
+测试：`node --test tests/*.test.mjs`；生产构建后运行 `scripts/check-cursor-performance.mjs` 可验证玻璃与光晕模式的懒加载和空闲行为（需设置 `PLAYWRIGHT_MODULE`、`TEST_BASE_URL`）。

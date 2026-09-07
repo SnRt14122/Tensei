@@ -1,0 +1,26 @@
+.glow-cursor {
+  position: fixed;
+  inset: auto;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 320px;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  z-index: 2147483000;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  background: radial-gradient(circle, rgba(var(--accent-rgb), 0.16), transparent 70%);
+  will-change: transform;
+  transition: scale 120ms ease;
+}
+.glow-cursor[data-visible="true"] { opacity: 1; visibility: visible; }
+.glow-cursor[data-pressed="true"] { scale: 0.94; }
+.glow-cursor::backdrop { background: transparent; pointer-events: none; }
+@media (prefers-reduced-motion: reduce) {
+  .glow-cursor { visibility: hidden !important; transition: none; }
+}

@@ -1,6 +1,6 @@
 // 皮肤系统的配置类型与本地持久化逻辑。
 //
-// 面板使用 CSS；全局透镜由 FluidGlass 渲染，受 liquidEffects 开关控制。
+// 面板使用 CSS；cursorEffect 选择玻璃或光晕，liquidEffects 控制总开关。
 //
 // 原理：把用户选择的主题色/背景色/动效模式存到 localStorage，
 // ThemeProvider 组件在客户端读取这份设置，把它们写成 CSS 变量挂在 <html> 上，
@@ -8,6 +8,7 @@
 // 这样"换主题"本质上只是改几个 CSS 变量的值，不需要重新渲染整个组件树。
 
 export type BackgroundEffect = "drift" | "aurora" | "none";
+export type CursorEffect = "glass" | "glow";
 
 export interface ThemePresetSettings {
   accent: string;
@@ -15,6 +16,8 @@ export interface ThemePresetSettings {
   backgroundImage?: string;
   backgroundEffect: BackgroundEffect;
   liquidEffects: boolean;
+  cursorEffect: CursorEffect;
+  borderGlow: boolean;
 }
 
 export interface ThemeSettings extends ThemePresetSettings {
@@ -30,6 +33,8 @@ export const DEFAULT_THEME: ThemeSettings = {
   backgroundImage: "",
   backgroundEffect: "drift",
   liquidEffects: true,
+  cursorEffect: "glass",
+  borderGlow: true,
   customPresets: [],
 };
 
@@ -38,19 +43,31 @@ export const THEME_PRESETS: { name: string; settings: ThemePresetSettings }[] = 
   { name: "青蓝夜色（默认）", settings: { ...DEFAULT_THEME } },
   {
     name: "紫粉极光",
-    settings: { accent: "#c084fc", background: "#0a0612", backgroundImage: "", backgroundEffect: "aurora", liquidEffects: true },
+    settings: { accent: "#c084fc", background: "#0a0612", backgroundImage: "", backgroundEffect: "aurora", liquidEffects: true, cursorEffect: "glass", borderGlow: true },
   },
   {
     name: "琥珀暖阳",
-    settings: { accent: "#fbbf24", background: "#0c0a05", backgroundImage: "", backgroundEffect: "drift", liquidEffects: true },
+    settings: { accent: "#fbbf24", background: "#0c0a05", backgroundImage: "", backgroundEffect: "drift", liquidEffects: true, cursorEffect: "glass", borderGlow: true },
   },
   {
     name: "极简静态",
-    settings: { accent: "#67e8f9", background: "#050505", backgroundImage: "", backgroundEffect: "none", liquidEffects: false },
+    settings: { accent: "#67e8f9", background: "#050505", backgroundImage: "", backgroundEffect: "none", liquidEffects: false, cursorEffect: "glass", borderGlow: false },
   },
 ];
 
 const STORAGE_KEY = "tenseiing-theme-settings";
+
+function normalizeAppearance(value: Partial<ThemePresetSettings>): ThemePresetSettings {
+  return {
+    accent: value.accent ?? DEFAULT_THEME.accent,
+    background: value.background ?? DEFAULT_THEME.background,
+    backgroundImage: value.backgroundImage ?? "",
+    backgroundEffect: value.backgroundEffect ?? DEFAULT_THEME.backgroundEffect,
+    liquidEffects: typeof value.liquidEffects === "boolean" ? value.liquidEffects : DEFAULT_THEME.liquidEffects,
+    cursorEffect: value.cursorEffect === "glow" ? "glow" : "glass",
+    borderGlow: typeof value.borderGlow === "boolean" ? value.borderGlow : value.liquidEffects !== false,
+  };
+}
 
 /** 从 localStorage 读取用户保存的主题设置，没有则返回默认值 */
 export function loadThemeSettings(): ThemeSettings {
@@ -71,8 +88,9 @@ export function loadThemeSettings(): ThemeSettings {
             && typeof candidate.settings === "object";
         })
         .slice(0, 5)
+        .map((preset: ThemeSettings["customPresets"][number]) => ({ ...preset, settings: normalizeAppearance(preset.settings) }))
       : [];
-    return { ...DEFAULT_THEME, ...parsed, customPresets };
+    return { ...normalizeAppearance(parsed), customPresets };
   } catch {
     return DEFAULT_THEME;
   }

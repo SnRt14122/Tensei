@@ -56,11 +56,36 @@ try {
   await reduced.mouse.move(640, 240);
   await reduced.waitForTimeout(1000);
   assert.equal(await reduced.locator('canvas').count(), 0);
+
+  const glow = await browser.newPage({ viewport: { width: 1280, height: 800 } });
+  glow.on('pageerror', error => errors.push(error.message));
+  await glow.addInitScript(() => localStorage.setItem('tenseiing-theme-settings', JSON.stringify({ liquidEffects: true, cursorEffect: 'glow', backgroundEffect: 'none' })));
+  await glow.goto(`${base}/login`);
+  await glow.mouse.move(80, 240);
+  await glow.waitForFunction(() => document.querySelector('.glow-cursor')?.dataset.visible === 'true');
+  assert.equal(await glow.locator('canvas').count(), 0, 'classic glow must not load WebGL');
+  assert.equal(await glow.evaluate(() => document.elementFromPoint(80, 240)?.classList.contains('glow-cursor')), false, 'glow must not intercept input');
+  await glow.getByRole('textbox').first().fill('test@example.com');
+  await glow.mouse.move(80, 240);
+  await glow.waitForTimeout(300);
+  await glow.evaluate(() => {
+    window.__glowChanges = 0;
+    window.__glowObserver = new MutationObserver(() => window.__glowChanges++);
+    window.__glowObserver.observe(document.querySelector('.glow-cursor'), { attributes: true });
+  });
+  await glow.waitForTimeout(1200);
+  const glowIdleChanges = await glow.evaluate(() => window.__glowChanges);
+  assert.equal(glowIdleChanges, 0, 'stationary glow must not keep updating');
+  await glow.screenshot({ path: `${output}/classic-glow.png` });
+  await glow.emulateMedia({ reducedMotion: 'reduce' });
+  await glow.mouse.move(100, 260);
+  assert.equal(await glow.locator('.glow-cursor').isVisible(), false);
+
   await desktop.goto(base);
   await desktop.getByRole('button', { name: '换一句' }).click();
   await desktop.waitForTimeout(300);
   assert.deepEqual(errors, []);
-  const result = { initialJsBytes, idleDrawsIn3Seconds: after.draws - before.draws, idleClonesIn3Seconds: after.clones - before.clones, touchCanvas: 0, reducedMotionCanvas: 0 };
+  const result = { initialJsBytes, idleDrawsIn3Seconds: after.draws - before.draws, idleClonesIn3Seconds: after.clones - before.clones, touchCanvas: 0, reducedMotionCanvas: 0, glowCanvas: 0, glowIdleChanges };
   await writeFile(`${output}/results.json`, JSON.stringify(result, null, 2));
   console.log(result);
 } finally {

@@ -1,7 +1,8 @@
 "use client";
 
-import { createContext, useCallback, useContext, useEffect, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useState, useSyncExternalStore } from "react";
 import { FluidGlassLoader } from "./FluidGlassLoader";
+import { GlowCursor } from "./GlowCursor";
 import {
   DEFAULT_THEME,
   hexToRgbString,
@@ -20,6 +21,10 @@ const ThemeContext = createContext<ThemeContextValue>({
   setTheme: () => false,
 });
 
+const subscribeHydration = () => () => {};
+const clientSnapshot = () => true;
+const serverSnapshot = () => false;
+
 export function useTheme() {
   return useContext(ThemeContext);
 }
@@ -35,14 +40,18 @@ function applyThemeToDocument(theme: ThemeSettings) {
   );
   root.setAttribute("data-bg-effect", theme.backgroundEffect);
   root.setAttribute("data-liquid-effects", theme.liquidEffects ? "on" : "off");
+  root.setAttribute("data-cursor-effect", theme.liquidEffects ? theme.cursorEffect : "none");
+  root.setAttribute("data-border-glow", theme.borderGlow ? "on" : "off");
 }
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setThemeState] = useState<ThemeSettings>(() => loadThemeSettings());
+  const hydrated = useSyncExternalStore(subscribeHydration, clientSnapshot, serverSnapshot);
+  const appearance = hydrated ? theme : DEFAULT_THEME;
 
   useEffect(() => {
-    applyThemeToDocument(theme);
-  }, [theme]);
+    applyThemeToDocument(appearance);
+  }, [appearance]);
 
   useEffect(() => {
     const update = () => { document.documentElement.dataset.pageHidden = String(document.hidden); };
@@ -58,9 +67,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ theme: appearance, setTheme }}>
       {children}
-      {theme.liquidEffects && <FluidGlassLoader />}
+      {appearance.liquidEffects && (appearance.cursorEffect === "glow" ? <GlowCursor /> : <FluidGlassLoader />)}
     </ThemeContext.Provider>
   );
 }

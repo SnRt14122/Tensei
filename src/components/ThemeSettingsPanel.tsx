@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type CSSProperties } from "react";
-import { Check, Palette, RotateCcw, Save, Trash2, Upload, X } from "lucide-react";
+import { Ban, Check, Circle, Palette, RotateCcw, Save, Sun, Trash2, Upload, X } from "lucide-react";
 import { createPortal } from "react-dom";
 import { useTheme } from "./ThemeProvider";
 import { DEFAULT_THEME, THEME_PRESETS, type BackgroundEffect, type ThemeCoreSettings, type ThemeSettings } from "@/lib/theme";
@@ -11,6 +11,12 @@ const BG_EFFECT_OPTIONS: { value: BackgroundEffect; label: string }[] = [
   { value: "aurora", label: "极光流动" },
   { value: "none", label: "关闭动效" },
 ];
+
+const CURSOR_EFFECT_OPTIONS = [
+  { value: "glass", label: "液态玻璃", icon: Circle },
+  { value: "glow", label: "经典光晕", icon: Sun },
+  { value: "none", label: "关闭", icon: Ban },
+] as const;
 
 function PresetSwatch({ settings }: { settings: ThemeCoreSettings }) {
   return <span aria-hidden="true" className="theme-preset-swatch" style={{ "--preview-accent": settings.accent, backgroundColor: settings.background, backgroundImage: settings.backgroundImage ? `url(${settings.backgroundImage})` : undefined } as CSSProperties}>
@@ -23,7 +29,9 @@ function isSameAppearance(left: ThemeCoreSettings, right: ThemeCoreSettings) {
     && left.background === right.background
     && (left.backgroundImage || "") === (right.backgroundImage || "")
     && left.backgroundEffect === right.backgroundEffect
-    && left.liquidEffects === right.liquidEffects;
+    && left.liquidEffects === right.liquidEffects
+    && left.borderGlow === right.borderGlow
+    && (!left.liquidEffects || left.cursorEffect === right.cursorEffect);
 }
 
 function PresetButton({ settings, active, children, onClick }: { settings: ThemeCoreSettings; active: boolean; children: React.ReactNode; onClick: () => void }) {
@@ -109,6 +117,8 @@ export function ThemeSettingsPanel() {
         backgroundImage: draft.backgroundImage,
         backgroundEffect: draft.backgroundEffect,
         liquidEffects: draft.liquidEffects,
+        cursorEffect: draft.cursorEffect,
+        borderGlow: draft.borderGlow,
       },
     };
     setDraft((current) => ({ ...current, customPresets: [...current.customPresets, nextPreset].slice(0, 5) }));
@@ -122,6 +132,7 @@ export function ThemeSettingsPanel() {
   function openSettings() {
     setDraft(theme);
     setImageError("");
+    setSaveError("");
     setOpen(true);
   }
 
@@ -164,7 +175,14 @@ export function ThemeSettingsPanel() {
           <section className="theme-settings-section theme-settings-section-last">
             <div className="theme-section-heading"><div><h3>交互效果</h3></div></div>
             <div className="theme-effect-options">{BG_EFFECT_OPTIONS.map((option) => <button key={option.value} className={draft.backgroundEffect === option.value ? "theme-effect-option active" : "theme-effect-option"} onClick={() => setDraft((current) => ({ ...current, backgroundEffect: option.value }))}>{option.label}</button>)}</div>
-            <label className="theme-toggle-row"><span><strong>液态玻璃交互</strong></span><input type="checkbox" checked={draft.liquidEffects} onChange={(event) => setDraft((current) => ({ ...current, liquidEffects: event.target.checked }))} /></label>
+            <fieldset className="theme-cursor-settings"><legend>鼠标效果</legend><div className="theme-cursor-options">{CURSOR_EFFECT_OPTIONS.map(({ value, label, icon: Icon }) => {
+              const selected = (draft.liquidEffects ? draft.cursorEffect : "none") === value;
+              return <label key={value} className={selected ? "theme-cursor-option active" : "theme-cursor-option"}>
+                <input className="sr-only" type="radio" name="cursor-effect" value={value} checked={selected} onChange={() => setDraft(current => ({ ...current, liquidEffects: value !== "none", cursorEffect: value === "none" ? current.cursorEffect : value }))} />
+                <Icon size={17} aria-hidden="true" /><span>{label}</span><Check size={14} aria-hidden="true" className="theme-cursor-check" />
+              </label>;
+            })}</div></fieldset>
+            <label className="theme-toggle-row"><span><strong>卡片边缘光效</strong></span><input type="checkbox" checked={draft.borderGlow} onChange={event => setDraft(current => ({ ...current, borderGlow: event.target.checked }))} /></label>
           </section>
         </div>
         <footer className="theme-settings-footer">{saveError && <p className="theme-error" role="alert">{saveError}</p>}<button className="theme-secondary-button" onClick={() => setOpen(false)}>取消</button><button className="theme-primary-button" onClick={saveChanges}><Save size={15} />保存修改</button></footer>

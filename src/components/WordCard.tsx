@@ -3,6 +3,7 @@
 import { useState, useTransition } from "react";
 import { Furigana } from "./Furigana";
 import { PitchAccent } from "./PitchAccent";
+import { StudyCard } from "./StudyCard";
 import { markWordLearned, toggleStar } from "@/app/memorize/actions";
 import { getWordTypeLabel } from "@/lib/conjugation";
 import type { WordWithProgress } from "@/lib/types";
@@ -32,9 +33,7 @@ export function WordCard({ word }: { word: WordWithProgress }) {
   }
 
   return (
-    // 用 .glass-panel 统一液态玻璃质感 + hover 时的光晕/抬起特效（由皮肤设置里的
-    // liquidEffects 开关控制是否启用，见 globals.css 里 data-liquid-effects 相关规则）
-    <div className="glass-panel relative rounded-2xl p-6 shadow-xl">
+    <StudyCard contentClassName="p-6">
       <button
         onClick={handleToggleStar}
         aria-label={starred ? "取消星标" : "标记星标"}
@@ -80,6 +79,6 @@ export function WordCard({ word }: { word: WordWithProgress }) {
       >
         {learned ? "已标记为记住" : "标记为记住"}
       </button>
-    </div>
+    </StudyCard>
   );
 }

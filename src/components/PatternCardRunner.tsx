@@ -15,6 +15,7 @@
 
 import { useMemo, useState, useTransition } from "react";
 import { Furigana } from "./Furigana";
+import { StudyCard } from "./StudyCard";
 import {
   markPatternLearned,
   togglePatternEasy,
@@ -106,7 +107,7 @@ export function PatternCardRunner({ patterns }: { patterns: PatternWithProgress[
 
   if (finished) {
     return (
-      <div className="glass-panel rounded-2xl p-8 text-center">
+      <StudyCard contentClassName="p-8 text-center">
         <p className="text-2xl text-white font-semibold">今日完成！</p>
         <p className="mt-2 text-white/60">
           本次记住 {learnedThisSession} / {snapshot.length}
@@ -114,12 +115,12 @@ export function PatternCardRunner({ patterns }: { patterns: PatternWithProgress[
         <p className="mt-1 text-xs text-white/40">
           刷新页面可以从头再看一遍今天的语法点（已记住/简单标记的状态会保留）
         </p>
-      </div>
+      </StudyCard>
     );
   }
 
   return (
-    <div key={index} className="glass-panel slide-transition relative rounded-2xl p-8">
+    <StudyCard key={index} className="slide-transition" contentClassName="p-8">
       <div className="mb-4 flex items-center justify-between">
         <p className="text-sm text-white/40">
           第 {index + 1} / {snapshot.length} 条{isPending && <span className="ml-2 text-white/25">保存中…</span>}
@@ -201,6 +202,6 @@ export function PatternCardRunner({ patterns }: { patterns: PatternWithProgress[
           记住了
         </button>
       </div>
-    </div>
+    </StudyCard>
   );
 }

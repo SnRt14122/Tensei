@@ -23,6 +23,7 @@
 import { useMemo, useState, useTransition } from "react";
 import { Furigana } from "./Furigana";
 import { PitchAccent } from "./PitchAccent";
+import { StudyCard } from "./StudyCard";
 import { markWordLearned, toggleEasy, toggleStar } from "@/app/memorize/actions";
 import { getWordTypeLabel } from "@/lib/conjugation";
 import type { WordWithProgress } from "@/lib/types";
@@ -107,7 +108,7 @@ export function MemoryCardRunner({ words }: { words: WordWithProgress[] }) {
 
   if (finished) {
     return (
-      <div className="glass-panel rounded-2xl p-8 text-center">
+      <StudyCard contentClassName="p-8 text-center">
         <p className="text-2xl text-white font-semibold">今日完成！</p>
         <p className="mt-2 text-white/60">
           本次记住 {learnedThisSession} / {snapshot.length}
@@ -115,12 +116,12 @@ export function MemoryCardRunner({ words }: { words: WordWithProgress[] }) {
         <p className="mt-1 text-xs text-white/40">
           刷新页面可以从头再看一遍今天的词库（已记住/简单标记的状态会保留）
         </p>
-      </div>
+      </StudyCard>
     );
   }
 
   return (
-    <div key={index} className="glass-panel slide-transition relative rounded-2xl p-8">
+    <StudyCard key={index} className="slide-transition" contentClassName="p-8">
       <div className="mb-4 flex items-center justify-between">
         <p className="text-sm text-white/40">
           第 {index + 1} / {snapshot.length} 个{isPending && <span className="ml-2 text-white/25">保存中…</span>}
@@ -183,6 +184,6 @@ export function MemoryCardRunner({ words }: { words: WordWithProgress[] }) {
           记住了
         </button>
       </div>
-    </div>
+    </StudyCard>
   );
 }
